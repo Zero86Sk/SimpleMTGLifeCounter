@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0a23dc0d-fb8b-491c-ad6a-38f205705a24",
+            "Value": {
+                "id": "8337d98b-3758-4acc-af54-241160ab32d5",
+                "resourcePath": "sounds\\snd_dice\\snd_dice.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0b6e63c8-41f7-4ed2-8ceb-fa7a3c4d1446",
             "Value": {
                 "id": "d6fd9553-8c57-48d8-a8f9-e15e62b94db3",
@@ -556,6 +564,14 @@
                 "id": "05c1f5ee-1d2f-4d3d-adb3-2f5fc3a0d14e",
                 "resourcePath": "views\\533bfe2a-f936-47f5-830e-0011262c40b0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "53d790f3-25cf-48af-a73a-694d2c3421fe",
+            "Value": {
+                "id": "d8bd02ef-b548-4832-aa9f-5ded4f1dd5cf",
+                "resourcePath": "sounds\\snd_coinflip\\snd_coinflip.yy",
+                "resourceType": "GMSound"
             }
         },
         {

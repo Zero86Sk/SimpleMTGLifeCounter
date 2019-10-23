@@ -39,6 +39,15 @@ if (position_meeting(mouse_x, mouse_y, self))
 	       audio_play_sound(global.SndClick, 10, false);
         }
     }
+	
+	//Dice Roll
+	if (device_mouse_check_button_released(0, global.MouseLeft))
+    {
+        if (!audio_is_playing(global.SndDice))
+        {
+	       audio_play_sound(global.SndDice, 10, false);
+        }
+    }
 }
 
 ///FadeIn

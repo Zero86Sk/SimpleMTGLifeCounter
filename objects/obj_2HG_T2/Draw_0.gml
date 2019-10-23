@@ -7,7 +7,7 @@ draw_set_colour(global.C1);
 draw_set_font(global.FontMedium);
 draw_set_alpha(0.5);
 //draw_text(TXX, TXY, string(global.txt_P1Name));
-draw_text(TXX, TXY - room_height/6, string(global.txt_P3Name) + " & " + string(global.txt_P4Name));
+draw_text(TXX, TXY - room_height/5, string(global.txt_P3Name) + " &\n " + string(global.txt_P4Name));
 draw_set_alpha(1.0);
 draw_set_font(global.FontHuge);
 

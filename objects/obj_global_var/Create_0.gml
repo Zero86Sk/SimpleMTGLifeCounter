@@ -44,6 +44,8 @@ audio_group_load(ag_music);
 
 global.SndClick = snd_button;
 global.SndBgm = bgm_placeholder;
+global.SndCoin = snd_coinflip;
+global.SndDice = snd_dice;
 
 //Fonts
 global.FontSmallest = fnt_Selena_Smallest;

@@ -37,8 +37,17 @@ if (position_meeting(mouse_x, mouse_y, self))
         if (!audio_is_playing(global.SndClick))
         {
 	       audio_play_sound(global.SndClick, 10, false);
-        }
+        }	
     }
+	
+	//Coin Flip
+	if (device_mouse_check_button_released(0, global.MouseLeft))
+    {
+        if (!audio_is_playing(global.SndCoin))
+        {
+	       audio_play_sound(global.SndCoin, 10, false);
+        }
+	}
 }
 
 ///FadeIn
