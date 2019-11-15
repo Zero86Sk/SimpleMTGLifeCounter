@@ -19,8 +19,8 @@ if (file_exists("settings.ini"))
     global.txt_P2Name = ini_read_string("Names", "player2", "Player 2");
     global.txt_P3Name = ini_read_string("Names", "player3", "Player 3");
     global.txt_P4Name = ini_read_string("Names", "player4", "Player 4");
-    global.txt_Team1 = ini_read_string("Names", "team1", "Team 1");
-    global.txt_Team2 = ini_read_string("Names", "team2", "Team 2");
+    //global.txt_Team1 = ini_read_string("Names", "team1", "Team 1");
+    //global.txt_Team2 = ini_read_string("Names", "team2", "Team 2");
                
     //Close File
     ini_close();

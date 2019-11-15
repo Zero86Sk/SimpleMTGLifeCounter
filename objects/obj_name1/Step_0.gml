@@ -38,58 +38,45 @@ if (Time == 120)
 if (global.NameEntery1 == true)
 {
     Cursor = "|";
-    depth = -5000  
-    
-    switch (os_type)
+    depth = -5000;
+	
+	switch (os_type)
     {
-    case os_windows:
-    case os_linux:
-    case os_uwp:
-	case os_macosx:
-        if(string_length(keyboard_string) <= InputLength)
-        {
-            global.txt_P1Name = string_copy(keyboard_string, 1, InputLength);
-        }   
-        
-        if (keyboard_check_pressed(vk_enter))
-        //|| (device_mouse_check_button_pressed(0, global.MouseLeft))
-        {
-            if(string_length(keyboard_string) < MinLength)
-            {
-                global.txt_P1Name = "Player 1";
-            }
-                
-            global.NameEntery1 = false;
-            keyboard_string = "";
-            scr_save_settings();
-        }
-		exit;
-        break;    
-    case os_android:
-    case os_winphone:
+	case os_android:
 	case os_ios:
-            global.txt_P1Name = get_string("Enter Name:", "Player 1");
-            
-            if (string_length(keyboard_string) <= InputLength)
-            {    
-                keyboard_string = global.txt_P1Name;
+		var _status = keyboard_virtual_status();
+		if (_status == false)
+		{
+			keyboard_virtual_show(kbv_type_default, kbv_returnkey_done, kbv_autocapitalize_none, true)
+		}
+	break;
+	}
+		
+    if(string_length(keyboard_string) <= InputLength)
+    {
+        global.txt_P1Name = string_copy(keyboard_string, 1, InputLength);
+    }   
 
-               if(string_length(keyboard_string) < MinLength)
-               {
-                    global.txt_P1Name = "Player 1";
-               } 
-                
-                global.NameEntery1 = false;
-                //keyboard_string = "";
-                scr_save_settings();                
-                break;
-            }
-            else
-            {
-                show_message("Name must be under " + InputLength + " characters");
-            }
-        break;
-    }         
+    if (keyboard_check_pressed(vk_enter))
+    //|| (device_mouse_check_button_pressed(0, global.MouseLeft))
+    {
+        if(string_length(keyboard_string) < MinLength)
+        {
+            global.txt_P1Name = "Player 1";
+        }
+
+		switch (os_type)
+		{
+	    case os_android:
+		case os_ios:		
+			keyboard_virtual_hide();
+			break;
+		}
+
+		global.NameEntery1 = false;
+		keyboard_string = "";
+		scr_save_settings();  
+	}
 }
 else
 {

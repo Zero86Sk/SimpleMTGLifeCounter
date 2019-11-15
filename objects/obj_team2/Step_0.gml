@@ -67,7 +67,7 @@ if (global.NameEntery1 == true)
     case os_android:
     case os_winphone:
 	case os_ios:
-            global.txt_P1Name = get_string("Enter Name:", "Player 1");
+            global.txt_P1Name = get_string_async("Enter Name:", "Player 1");
             
             if (string_length(keyboard_string) <= InputLength)
             {    

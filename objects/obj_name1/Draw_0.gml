@@ -56,5 +56,18 @@ if (global.NameEntery1 == true)
 		
 		draw_text(x, y, global.txt_P1Name + Cursor);
         break;
+	case os_ios:
+	case os_android:
+		draw_set_colour(global.C1);        
+		draw_text(room_width/2, room_height/6 - 65, "Enter Name");
+		//scr_draw_text_outlined(x, y - 65, 2, c_black, global.C1, "Enter Name");
+		
+		if (global.MagicMode == true)
+		{
+			draw_sprite(spr_button_dark, 1, room_width/2, room_height/6);
+		} else draw_sprite(spr_button_light, 1, room_width/2, room_height/6);
+		
+		draw_text(room_width/2, room_height/6, global.txt_P1Name + Cursor);
+        break;
     }
 }
