@@ -19,10 +19,10 @@ if (room == rm_3players)
 
 if (room == rm_4players)
 {
-	ZX1 = room_width/2;
+	ZX1 = 0;
 	ZY1 = room_height/2;
-	ZX2 = room_width;
+	ZX2 = room_width/2;
 	ZY2 = room_height;
-	TXX = room_width/4 + room_width/2;
+	TXX = room_width/4;
 	TXY = room_height/4 + room_height/2;
 }

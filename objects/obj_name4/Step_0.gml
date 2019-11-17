@@ -75,7 +75,7 @@ if (global.NameEntery4 == true)
 			input_hide = false;
 			keyboard_string = "";
 			scr_save_settings();
-			global.NameEntery1 = false;
+			global.NameEntery4 = false;
 			instance_activate_object(obj_macros);
 			
 			switch (os_type)

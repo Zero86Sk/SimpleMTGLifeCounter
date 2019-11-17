@@ -1,5 +1,4 @@
 ///Player 1 variables
-
 T1hp = 30;
 Pw1 = 0;
 Pw2 = 0;

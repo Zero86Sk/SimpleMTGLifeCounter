@@ -5,3 +5,5 @@ image_alpha = 0;
 
 FadeIn = true;
 FadeOut = false;
+
+TXX = 115;

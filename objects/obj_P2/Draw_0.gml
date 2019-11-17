@@ -6,6 +6,11 @@ draw_set_colour(global.C1);
 
 if (global.Planes2 == true)
 {
+	if (global.MagicMode == true)
+	{
+		draw_sprite_ext(spr_planeswalker_dark, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);	
+	} else draw_sprite_ext(spr_planeswalker_lite, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);
+	
 	draw_text(TXX, TXY, Pw2);      
 	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw2);  
 }

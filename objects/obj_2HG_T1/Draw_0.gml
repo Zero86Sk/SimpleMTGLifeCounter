@@ -7,18 +7,27 @@ draw_set_colour(global.C1);
 draw_set_font(global.FontMedium);
 draw_set_alpha(0.5);
 //draw_text(TXX, TXY, string(global.txt_P1Name));
-draw_text(TXX, TXY - room_height/5, string(global.txt_P1Name) + " &\n" + string(global.txt_P2Name));
+draw_text(TXX, TXY - room_height/4.5, string(global.txt_P1Name) + " &\n" + string(global.txt_P2Name));
 draw_set_alpha(1.0);
 draw_set_font(global.FontHuge);
 
-
 if (global.Planes_2HG_1 == true)
 {
+	if (global.MagicMode == true)
+	{
+		draw_sprite_ext(spr_planeswalker_dark, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);	
+	} else draw_sprite_ext(spr_planeswalker_lite, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);	
+	
 	draw_text(TXX, TXY, Pw1);  
 	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw1);  
 }
 else if (global.Planes_2HG_2 == true)
 {
+	if (global.MagicMode == true)
+	{
+		draw_sprite_ext(spr_planeswalker_dark, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);	
+	} else draw_sprite_ext(spr_planeswalker_lite, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);	
+	
 	draw_text(TXX, TXY, Pw2);  
 	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw2);  
 }

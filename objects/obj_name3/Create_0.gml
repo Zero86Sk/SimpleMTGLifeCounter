@@ -9,5 +9,8 @@ FadeOut = false;
 Time = 0;
 
 Cursor = "";
-InputLength = 13;
+InputLength = 12;
 MinLength = 3;
+
+input_show = false;
+input_hide = false;
