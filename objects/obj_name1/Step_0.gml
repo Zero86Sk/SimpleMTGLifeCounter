@@ -14,8 +14,7 @@ if (position_meeting(mouse_x, mouse_y, self))
 
     if (device_mouse_check_button(0, global.MouseLeft))
     {
-        image_index = 2;
-        
+        image_index = 2;       
         Time++;   
     }
     
@@ -29,53 +28,63 @@ else
     image_index = 0;
 }
 
-if (Time == 120)
+if (Time == 30)
 {
     global.NameEntery1 = true;    
     Time = 0;
+	input_show = true;
 }
 
 if (global.NameEntery1 == true)
 {
     Cursor = "|";
     depth = -5000;
-	
-	switch (os_type)
-    {
-	case os_android:
-	case os_ios:
-		var _status = keyboard_virtual_status();
-		if (_status == false)
+	instance_deactivate_object(obj_macros);
+
+	if (input_show == true)
+	{
+		switch (os_type)
 		{
-			keyboard_virtual_show(kbv_type_default, kbv_returnkey_done, kbv_autocapitalize_none, true)
+		case os_android:
+		case os_ios:
+			keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
+		break;
 		}
-	break;
+		input_show = false;
 	}
-		
+
     if(string_length(keyboard_string) <= InputLength)
     {
         global.txt_P1Name = string_copy(keyboard_string, 1, InputLength);
     }   
 
     if (keyboard_check_pressed(vk_enter))
-    //|| (device_mouse_check_button_pressed(0, global.MouseLeft))
+	xor (os_is_paused())
+	xor (keyboard_check(vk_backspace))
     {
         if(string_length(keyboard_string) < MinLength)
         {
             global.txt_P1Name = "Player 1";
         }
-
-		switch (os_type)
-		{
-	    case os_android:
-		case os_ios:		
-			keyboard_virtual_hide();
+		
+		input_hide = true;
+		
+		if (input_hide == true)
+		{	
+			input_hide = false;
+			keyboard_string = "";
+			scr_save_settings();
+			global.NameEntery1 = false;
+			instance_activate_object(obj_macros);
+			
+			switch (os_type)
+			{
+			case os_android:
+			case os_ios:
+				keyboard_virtual_hide();
 			break;
+			}
 		}
-
-		global.NameEntery1 = false;
-		keyboard_string = "";
-		scr_save_settings();  
 	}
 }
 else

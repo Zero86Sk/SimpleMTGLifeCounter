@@ -1,5 +1,5 @@
 ///@description scr_music()
-
+/*
 if (global.MusicVol == true)
 {
     global.MusicVol = false;

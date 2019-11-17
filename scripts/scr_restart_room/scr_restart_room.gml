@@ -2,6 +2,10 @@ global.Planes1 = false;
 global.Planes2 = false;
 global.Planes3 = false;
 global.Planes4 = false;
+global.Planes_2HG_1 = false;
+global.Planes_2HG_2 = false;
+global.Planes_2HG_3 = false;
+global.Planes_2HG_4 = false;
 
 if (instance_exists(obj_P1))
 {

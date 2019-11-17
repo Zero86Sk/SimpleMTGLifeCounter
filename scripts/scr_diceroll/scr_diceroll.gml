@@ -1,11 +1,5 @@
 global.Exit = true;
 
-if (room == rm_1player)
-{
-	instance_create_layer(obj_P1.TXX, obj_P1.TXY, "Win", obj_dice);
-	instance_create_layer(x, y, "Win", obj_rect);
-}
-
 if (room == rm_2players)
 {
 	instance_create_layer(obj_P1.TXX, obj_P1.TXY, "Win", obj_dice);

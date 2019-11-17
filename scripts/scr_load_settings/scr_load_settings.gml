@@ -12,7 +12,7 @@ if (file_exists("settings.ini"))
 	global.MagicBGIndex = ini_read_real("Options", "bg_index", 5);
     global.FullScreen = ini_read_real("Options", "fullscreen", 0);    
     global.SoundFXVol = ini_read_real("Options", "soundfx", true);
-    global.MusicVol = ini_read_real("Options", "music", true);
+    //global.MusicVol = ini_read_real("Options", "music", true);
 
     //Names
     global.txt_P1Name = ini_read_string("Names", "player1", "Player 1");
@@ -29,4 +29,4 @@ if (file_exists("settings.ini"))
 window_set_fullscreen(global.FullScreen);
 audio_group_set_gain(audiogroup_default, global.SoundFXVol, 0);
 audio_group_set_gain(ag_soundfx, global.SoundFXVol, 0);  
-audio_group_set_gain(ag_music, global.MusicVol, 0);
+//audio_group_set_gain(ag_music, global.MusicVol, 0);

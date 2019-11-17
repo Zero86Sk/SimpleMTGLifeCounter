@@ -13,10 +13,9 @@
 //True = dark mode
 if (global.MagicMode == true)
 {
-	with(obj_logo) sprite_index = spr_logo_dark;
+	with (obj_logo) sprite_index = spr_logo_dark;
 
 	// Main Menu Items
-	with(obj_button_1player) sprite_index = spr_button_dark;
 	with (obj_button_2players) sprite_index = spr_button_dark;
 	with (obj_button_3players) sprite_index = spr_button_dark;
 	with (obj_button_4players) sprite_index = spr_button_dark;
@@ -26,7 +25,6 @@ if (global.MagicMode == true)
 	// Settings
 	with (obj_button_fullscreen) sprite_index = spr_button_dark;
 	with (obj_button_soundfx) sprite_index = spr_button_dark;
-	with (obj_button_music) sprite_index = spr_button_dark;
 	with (obj_button_mode) sprite_index = spr_button_dark;
 	with (obj_button_reset) sprite_index = spr_button_dark;
 
@@ -46,8 +44,6 @@ if (global.MagicMode == true)
 	with (obj_name2) sprite_index = spr_button_dark;
 	with (obj_name3) sprite_index = spr_button_dark;
 	with (obj_name4) sprite_index = spr_button_dark;
-	//with (obj_team1) sprite_index = spr_button_dark;	
-	//with (obj_name2) sprite_index = spr_button_dark;	
 	
 	// Dice, Coin and Reset
 	with (obj_button_diceroll) sprite_index = spr_dice_dark;
@@ -77,12 +73,11 @@ if (global.MagicMode == true)
 }
 else
 {
-	with(obj_logo) sprite_index = spr_logo_light;
+	with (obj_logo) sprite_index = spr_logo_light;
 
 	// Settings
 	with (obj_button_fullscreen) sprite_index = spr_button_light;
 	with (obj_button_soundfx) sprite_index = spr_button_light;
-	with (obj_button_music) sprite_index = spr_button_light;
 	with (obj_button_mode) sprite_index = spr_button_light;
 	with (obj_button_reset) sprite_index = spr_button_light;
 

@@ -20,24 +20,7 @@ if (position_meeting(mouse_x, mouse_y, self))
     
     if (device_mouse_check_button_released(0, global.MouseLeft))
     {
-        if (room == rm_1player)
-		|| (room == rm_2players)
-		|| (room == rm_3players)
-		|| (room == rm_4players)
-		|| (room == rm_2headed)
-		{
-			global.Exit = true;
-			global.Back = true;
-			instance_create_depth(room_width/2, room_height/2 - 60, -200, obj_exit_text);
-			instance_create_depth(room_width/2 - 55, room_height/2 + 60, -200, obj_button_exit_yes);
-			instance_create_depth(room_width/2 + 55, room_height/2 + 60, -200, obj_button_exit_no);
-		}
-		else
-		if (room == rm_help)
-        {
-            room_goto(rm_main_menu);
-        }
-        else room_goto(rm_main_menu);
+
     }   
 }
 else

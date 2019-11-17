@@ -34,5 +34,5 @@ if (room == rm_4players)
 	ZX2 = room_width;
 	ZY2 = room_height/2;
 	TXX = room_width/4 + room_width/2 ;
-	TXY = room_height/4;
+	TXY = room_height/3.4;
 }

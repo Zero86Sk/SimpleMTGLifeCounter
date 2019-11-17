@@ -4,13 +4,6 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(global.C1);
 
-draw_set_font(global.FontMedium);
-draw_set_alpha(0.5);
-//draw_text(TXX, TXY, string(global.txt_P1Name));
-draw_text(TXX, TXY - room_height/6, string(global.txt_P2Name));
-draw_set_alpha(1.0);
-draw_set_font(global.FontHuge);
-
 if (global.Planes2 == true)
 {
 	draw_text(TXX, TXY, Pw2);      
@@ -27,6 +20,20 @@ else
 		draw_text(TXX, TXY, P2hp);              
 	}
 }
+
+draw_set_font(global.FontMedium);
+draw_set_alpha(0.5);
+//draw_text(TXX, TXY, string(global.txt_P1Name));
+
+if (room == rm_4players)
+{
+	draw_text(TXX, TXY - room_height/-7, string(global.txt_P2Name));
+}
+else draw_text(TXX, TXY - room_height/6, string(global.txt_P2Name));
+
+draw_set_alpha(1.0);
+draw_set_font(global.FontHuge);
+
 if (global.Debug =  true)
 {
 	///To See the Play areas in the different modes

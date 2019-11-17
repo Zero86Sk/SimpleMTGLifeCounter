@@ -21,8 +21,6 @@ if (position_meeting(mouse_x, mouse_y, self))
         global.txt_P2Name = "Player 2";
         global.txt_P3Name = "Player 3";
         global.txt_P4Name = "Player 4";
-        global.txt_Team1 = "Team 1";
-        global.txt_Team2 = "Team 2";
         
         global.FullScreen = 0;
         //global.MagicBG = bg_magic;
@@ -31,12 +29,12 @@ if (position_meeting(mouse_x, mouse_y, self))
         global.SoundFXVol = true;
 		global.MusicVol = true;
 		
-
+/*
 		if (!audio_is_playing(global.SndBgm))
         {
 			audio_play_sound(global.SndBgm, 9, true);
         }
-
+*/
 		audio_group_set_gain(ag_music, global.MusicVol, 0);           
 		audio_group_set_gain(audiogroup_default, global.MusicVol, 0);           
 		audio_group_set_gain(ag_soundfx, global.SoundFXVol, 0);      

@@ -4,13 +4,6 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(global.C1);
 
-draw_set_font(global.FontMedium);
-draw_set_alpha(0.5);
-//draw_text(TXX, TXY, string(global.txt_P1Name));
-draw_text(TXX, TXY - room_height/6, string(global.txt_P4Name));
-draw_set_alpha(1.0);
-draw_set_font(global.FontHuge);
-
 if (global.Planes4 == true)
 {
 	draw_text(TXX, TXY, Pw4);    
@@ -27,6 +20,13 @@ else
 		draw_text(TXX, TXY, P4hp);              
 	}
 }
+
+draw_set_font(global.FontMedium);
+draw_set_alpha(0.5);
+//draw_text(TXX, TXY, string(global.txt_P1Name));
+draw_text(TXX, TXY - room_height/6, string(global.txt_P4Name));
+draw_set_alpha(1.0);
+draw_set_font(global.FontHuge);
 
 if (global.Debug =  true)
 {

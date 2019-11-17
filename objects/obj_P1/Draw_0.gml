@@ -4,17 +4,15 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(global.C1);
 
-draw_set_font(global.FontMedium);
-draw_set_alpha(0.5);
-//draw_text(TXX, TXY, string(global.txt_P1Name));
-draw_text(TXX, TXY - room_height/6, string(global.txt_P1Name));
-draw_set_alpha(1.0);
-draw_set_font(global.FontHuge);
-
 if (global.Planes1 == true)
-{	
+{
+	if (global.MagicMode == true)
+	{
+		draw_sprite_ext(spr_planeswalker_dark, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);	
+	} else draw_sprite_ext(spr_planeswalker_lite, 0, TXX, TXY, 0.5, 0.5, 0, -1, 0.9);
+	
 	draw_text(TXX, TXY, Pw1); 
-	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw1);  
+	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw1);
 }
 else
 {	
@@ -27,6 +25,19 @@ else
 		draw_text(TXX, TXY, P1hp);              
 	}
 }
+
+draw_set_font(global.FontMedium);
+draw_set_alpha(0.5);
+//draw_text(TXX, TXY, string(global.txt_P1Name));
+
+if (room == rm_4players)
+{
+	draw_text(TXX, TXY - room_height/-7, string(global.txt_P1Name));
+}
+else draw_text(TXX, TXY - room_height/6, string(global.txt_P1Name));
+
+draw_set_alpha(1.0);
+draw_set_font(global.FontHuge);
 
 if (global.Debug =  true)
 {

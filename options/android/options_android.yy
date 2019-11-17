@@ -54,7 +54,7 @@
     "option_android_permission_network_state": false,
     "option_android_permission_read_phone_state": false,
     "option_android_permission_record_audio": false,
-    "option_android_permission_write_external_storage": true,
+    "option_android_permission_write_external_storage": false,
     "option_android_scale": 0,
     "option_android_screen_depth": 0,
     "option_android_sleep_margin": 4,

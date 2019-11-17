@@ -11,6 +11,7 @@ if (!file_exists("settings.ini"))
 }
 
 //Play Music
+/*
 if (global.MusicVol == true)
 {
     audio_play_sound(global.SndBgm, 9, true);
