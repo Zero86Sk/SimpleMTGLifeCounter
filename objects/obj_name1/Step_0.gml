@@ -8,13 +8,13 @@ or (global.NameEntery4 == true)
     exit;
 }
 
+image_index = 0;
+
 if (position_meeting(mouse_x, mouse_y, self))
 {
-    image_index = 1;
-
     if (device_mouse_check_button(0, global.MouseLeft))
     {
-        image_index = 2;       
+        image_index = 1;       
         Time++;   
     }
     
@@ -22,10 +22,6 @@ if (position_meeting(mouse_x, mouse_y, self))
     {
         Time = 0;
     }
-}
-else
-{
-    image_index = 0;
 }
 
 if (Time == 30)

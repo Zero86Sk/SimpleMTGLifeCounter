@@ -9,25 +9,20 @@ or (global.NameEntery4 == true)
     exit;
 }
 
+image_index = 0;
+
 if (position_meeting(mouse_x, mouse_y, self))
 {
-    image_index = 1;
-
     if (device_mouse_check_button(0, global.MouseLeft))
     {
-        image_index = 2;
+        image_index = 1;
     }
     
     if (device_mouse_check_button_released(0, global.MouseLeft))
     {
 		instance_create_layer(room_width/2, room_height/2, "Win", obj_coin);
-		//instance_create_depth(room_width/2, room_height/2, -10000, obj_coin);
 		global.Exit = true;
     }   
-}
-else
-{
-    image_index = 0;
 }
 
 ///Play Sound

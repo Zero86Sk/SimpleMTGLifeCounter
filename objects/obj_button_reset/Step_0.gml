@@ -4,13 +4,13 @@ if (global.Exit == true)
     exit;
 }
 
+image_index = 0;
+
 if (position_meeting(mouse_x, mouse_y, self))
 {
-    image_index = 1;
-
     if (device_mouse_check_button(0, global.MouseLeft))
     {
-        image_index = 2;
+        image_index = 1;
     }
     
     if (device_mouse_check_button_released(0, global.MouseLeft))
@@ -27,7 +27,7 @@ if (position_meeting(mouse_x, mouse_y, self))
 		global.MagicBGIndex = 5;
         global.MagicMode = true;
         global.SoundFXVol = true;
-		global.MusicVol = true;
+		//global.MusicVol = true;
 		
 /*
 		if (!audio_is_playing(global.SndBgm))
@@ -43,10 +43,6 @@ if (position_meeting(mouse_x, mouse_y, self))
 		scr_magic_mode();
 		scr_save_settings();
     }
-}
-else
-{
-    image_index = 0;
 }
 
 ///Play Sound

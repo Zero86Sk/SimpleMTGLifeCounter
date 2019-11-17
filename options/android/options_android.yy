@@ -11,7 +11,7 @@
     "option_android_build_tools": "28.0.3",
     "option_android_compile_sdk": "29",
     "option_android_device_support": 0,
-    "option_android_display_name": "Magic Swipe Counter",
+    "option_android_display_name": "Swipe Counter for Magic The Gathering",
     "option_android_facebook_app_display_name": "",
     "option_android_facebook_id": "",
     "option_android_gamepad_support": true,
@@ -71,8 +71,8 @@
     "option_android_use_facebook": false,
     "option_android_version": {
         "build": 0,
-        "major": 1,
-        "minor": 0,
+        "major": 0,
+        "minor": 5,
         "revision": 0
     }
 }

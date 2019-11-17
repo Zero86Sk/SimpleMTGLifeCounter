@@ -11,7 +11,7 @@
     "option_windows_description_info": "",
     "option_windows_disable_sandbox": false,
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "Swipe Counter for Magic the Gathering",
+    "option_windows_display_name": "Swipe Counter for Magic The Gathering",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "${project_name}",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
@@ -20,7 +20,7 @@
     "option_windows_interpolate_pixels": false,
     "option_windows_license": "${base_options_dir}\\windows\\installer\\license.txt",
     "option_windows_nsis_file": "${base_options_dir}\\windows\\installer\\nsis_script.nsi",
-    "option_windows_product_info": "Swipe Counter for Magic the Gathering",
+    "option_windows_product_info": "Swipe Counter for Magic The Gathering",
     "option_windows_resize_window": false,
     "option_windows_save_location": 0,
     "option_windows_scale": 0,
@@ -32,8 +32,8 @@
     "option_windows_use_splash": false,
     "option_windows_version": {
         "build": 0,
-        "major": 1,
-        "minor": 0,
+        "major": 0,
+        "minor": 5,
         "revision": 0
     },
     "option_windows_vsync": false

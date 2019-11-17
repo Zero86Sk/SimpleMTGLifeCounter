@@ -17,22 +17,6 @@ or (global.NameEntery4 == true)
     exit;
 }
 
-if (position_meeting(mouse_x, mouse_y, self))
-{
-    draw_set_colour(c_orange);
-    draw_text(x, y, global.txt_P1Name);
-
-	if (device_mouse_check_button(0, global.MouseLeft))
-    {
-
-	}
-}
-else
-{
-    draw_set_colour(global.C1);
-    draw_text(x, y, global.txt_P1Name);
-}
-
 if (global.NameEntery1 == true)
 {
     draw_set_colour(global.CBack);
@@ -46,13 +30,17 @@ if (global.NameEntery1 == true)
     case os_linux:
 	case os_macosx:
 		draw_set_colour(global.C1);        
-		draw_text(x, y - 105, "Enter name");
+
+		if (room == rm_4players)
+		{
+			draw_text(x, y + 105, "Enter name");
+		} else draw_text(x, y - 105, "Enter name");
 		//scr_draw_text_outlined(x, y - 65, 2, c_black, global.C1, "Enter Name");
 		
 		if (global.MagicMode == true)
 		{
-			draw_sprite_ext(spr_button_dark, 1, x, y, 1.3, 1.3, 0, -1, 1);
-		} else draw_sprite_ext(spr_button_light, 1, x, y, 1.3, 1.3, 0, -1, 1);
+			draw_sprite_ext(spr_button_dark, 1, x, y, 1.32, 1.32, 0, -1, 1);
+		} else draw_sprite_ext(spr_button_light, 1, x, y, 1.32, 1.32, 0, -1, 1);
 		
 		draw_text(x, y, global.txt_P1Name + Cursor);
         break;
@@ -64,8 +52,8 @@ if (global.NameEntery1 == true)
 		
 		if (global.MagicMode == true)
 		{
-			draw_sprite_ext(spr_button_dark, 1, room_width/2, room_height/6, 1.3, 1.3, 0, -1, 1);
-		} else draw_sprite_ext(spr_button_light, 1, room_width/2, room_height/6, 1.3, 1.3, 0, -1, 1);
+			draw_sprite_ext(spr_button_dark, 1, room_width/2, room_height/6, 1.32, 1.32, 0, -1, 1);
+		} else draw_sprite_ext(spr_button_light, 1, room_width/2, room_height/6, 1.32, 1.32, 0, -1, 1);
 		
 		draw_text(room_width/2, room_height/6, global.txt_P1Name + Cursor);
         break;
