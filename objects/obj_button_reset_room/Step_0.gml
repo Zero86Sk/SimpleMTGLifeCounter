@@ -16,12 +16,21 @@ if (position_meeting(mouse_x, mouse_y, self))
     if (device_mouse_check_button(0, global.MouseLeft))
     {
         image_index = 1;
+		Time++;
+		depth = -5000;
     }
     
     if (device_mouse_check_button_released(0, global.MouseLeft))
     {
-        scr_restart_room();
+        Time = 0;
+		depth = -10;
     }   
+}
+
+if (Time == 150)
+{
+	scr_restart_room();
+    Time = 0;
 }
 
 ///Play Sound

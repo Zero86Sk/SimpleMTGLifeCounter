@@ -8,7 +8,7 @@
     "exportAction": 0,
     "exportDir": "",
     "fileName": "Selena.otf",
-    "filePath": "datafiles",
+    "filePath": "datafiles\\Fonts",
     "freeData": false,
     "origName": "",
     "overwrite": false,

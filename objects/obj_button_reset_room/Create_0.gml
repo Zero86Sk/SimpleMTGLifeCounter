@@ -7,3 +7,4 @@ FadeIn = true;
 FadeOut = false;
 
 Button = "P";
+Time = 0;

@@ -658,7 +658,7 @@
             "Key": "6ac6a4b2-19c8-42e6-a6f8-3100b4b89872",
             "Value": {
                 "id": "b48947dc-310c-4337-b5e6-26bdbfe8523c",
-                "resourcePath": "datafiles_yy\\SIL Open Font License.txt.yy",
+                "resourcePath": "datafiles_yy\\Fonts\\SIL Open Font License.txt.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "b228b217-ec63-49ae-8f9a-08c5e2b5118c",
+            "Value": {
+                "id": "d610df4d-cb79-45ca-86f6-c4a0cf013428",
+                "resourcePath": "views\\b228b217-ec63-49ae-8f9a-08c5e2b5118c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b44fef02-7dbe-4bff-b6a8-aadb6cc0da52",
             "Value": {
                 "id": "54dbcd7b-f6bb-460b-b240-00749b7bf426",
@@ -1138,7 +1146,7 @@
             "Key": "cab78dea-e025-49f4-bf56-7299908206e3",
             "Value": {
                 "id": "9c3f7a20-52a6-4b7c-be24-899ca769c02c",
-                "resourcePath": "datafiles_yy\\Selena.otf.yy",
+                "resourcePath": "datafiles_yy\\Fonts\\Selena.otf.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -1348,6 +1356,14 @@
                 "id": "9be6cc44-bc47-4143-9dea-8595f5f958bc",
                 "resourcePath": "objects\\obj_swipe_controls\\obj_swipe_controls.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f8af5505-662f-4dc5-9aef-ce2d89dfa30e",
+            "Value": {
+                "id": "cb3a8f35-341b-47ac-bfe7-4303f080b62b",
+                "resourcePath": "views\\f8af5505-662f-4dc5-9aef-ce2d89dfa30e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

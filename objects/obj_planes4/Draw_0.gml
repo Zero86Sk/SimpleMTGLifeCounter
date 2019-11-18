@@ -10,4 +10,4 @@ draw_set_colour(global.C1);
 if (obj_P4.Pw4 == 0)
 {
 	draw_text(x + 115, y, "");
-} else draw_text(x + 115, y, obj_P4.Pw4);
+} else draw_text(x + 115, y + 5, obj_P4.Pw4);

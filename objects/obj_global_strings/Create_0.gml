@@ -17,3 +17,5 @@ global.txt_Settings_str = "Settings:";
 global.txt_Help_str = "Help:";
 global.txt_Reset = "Reset Settings";
 global.txt_Backgrounds_str = "Backgrounds:";
+
+global.txt_Resetting_Room = "Hold the button for 5 sec\nto reset the current game."
