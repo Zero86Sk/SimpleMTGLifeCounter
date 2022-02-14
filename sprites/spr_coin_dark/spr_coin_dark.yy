@@ -1,92 +1,83 @@
 {
-    "id": "2a12057f-daa3-4d32-b6bb-da2d25eb148f",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_coin_dark",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 99,
-    "bbox_left": 6,
-    "bbox_right": 99,
-    "bbox_top": 7,
-    "bboxmode": 0,
-    "colkind": 0,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "4840a512-b871-46e9-9573-24944c03e740",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "2a12057f-daa3-4d32-b6bb-da2d25eb148f",
-            "compositeImage": {
-                "id": "103d9966-fcd2-4742-b241-75ca922c244f",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "4840a512-b871-46e9-9573-24944c03e740",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "e523866c-cbd5-4abb-85b5-851160649838",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "4840a512-b871-46e9-9573-24944c03e740",
-                    "LayerId": "86f00e45-487a-44cb-a97d-4f685d2e65b3"
-                }
-            ]
-        },
-        {
-            "id": "8c038734-68cc-46df-bb66-a7c11af74f0c",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "2a12057f-daa3-4d32-b6bb-da2d25eb148f",
-            "compositeImage": {
-                "id": "5bfad8da-e571-446c-a740-658b43f5aef0",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "8c038734-68cc-46df-bb66-a7c11af74f0c",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "8d1b2dd4-5a8f-4aa8-8f43-4c4cb4e200c6",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "8c038734-68cc-46df-bb66-a7c11af74f0c",
-                    "LayerId": "86f00e45-487a-44cb-a97d-4f685d2e65b3"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 100,
-    "layers": [
-        {
-            "id": "86f00e45-487a-44cb-a97d-4f685d2e65b3",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "2a12057f-daa3-4d32-b6bb-da2d25eb148f",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 0,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "bboxMode": 0,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 6,
+  "bbox_right": 99,
+  "bbox_top": 7,
+  "bbox_bottom": 99,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 100,
+  "height": 100,
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"4840a512-b871-46e9-9573-24944c03e740","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4840a512-b871-46e9-9573-24944c03e740","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"LayerId":{"name":"86f00e45-487a-44cb-a97d-4f685d2e65b3","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_coin_dark","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"resourceVersion":"1.0","name":"4840a512-b871-46e9-9573-24944c03e740","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8c038734-68cc-46df-bb66-a7c11af74f0c","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8c038734-68cc-46df-bb66-a7c11af74f0c","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"LayerId":{"name":"86f00e45-487a-44cb-a97d-4f685d2e65b3","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_coin_dark","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"resourceVersion":"1.0","name":"8c038734-68cc-46df-bb66-a7c11af74f0c","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_coin_dark","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 100,
-    "xorig": 50,
-    "yorig": 50
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"985b88a0-b2b7-48cb-b199-abf2614e5b8c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4840a512-b871-46e9-9573-24944c03e740","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0fc819d2-12d5-46af-807a-98ae8ecfa7c1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c038734-68cc-46df-bb66-a7c11af74f0c","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 50,
+    "yorigin": 50,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_coin_dark","path":"sprites/spr_coin_dark/spr_coin_dark.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"86f00e45-487a-44cb-a97d-4f685d2e65b3","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Dark Mode Buttons",
+    "path": "folders/Sprites/Dark Mode Buttons.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_coin_dark",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

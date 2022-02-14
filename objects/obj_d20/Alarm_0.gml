@@ -1,0 +1,2 @@
+rolling = false;
+rolled = true;

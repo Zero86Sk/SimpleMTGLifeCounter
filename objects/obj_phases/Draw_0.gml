@@ -15,9 +15,9 @@ draw_set_alpha(1.0);
 draw_set_colour(global.C1);
 draw_text(x, y, "Turn Structure");
 
-draw_text(x, y + 64, "| Untap | Upkeep | Draw | Main | "
+draw_text(x, y + 64, "| Untap | Upkeep | Draw | Main 1 | "
 + "Begin Combat | Attackers | Blockers | Damage | End Combat | " 
-+ "Main | End Turn | Cleanup |");
++ "Main 2 | End Turn | Cleanup |");
 
 
 //draw_set_colour(global.C1);

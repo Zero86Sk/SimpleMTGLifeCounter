@@ -1,8 +1,12 @@
 {
-    "id": "bc588567-8838-4cfd-820b-e3503a8e3d76",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_draw_text_outlined",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_draw_text_outlined",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -10,6 +10,7 @@ if (global.MagicMode == true)
 	draw_sprite_ext(spr_planes_dark, 0, x + 82, y + 364, 2, 2, 1, -1, 1);
 	draw_sprite_ext(spr_dice_dark, 0, x + 82, y + 564, 2, 2, 1, -1, 1);
 	draw_sprite_ext(spr_coin_dark, 0, x + 82, y + 764, 2, 2, 1, -1, 1);
+	draw_sprite_ext(spr_d20_dark, 0, x + 682, y + 564, 2, 2, 1, -1, 1);
 	//draw_sprite(spr_button_dark, 0, x + 796, y + 564);
 }
 else
@@ -18,14 +19,16 @@ else
 	draw_sprite_ext(spr_planes_light, 0, x + 82, y + 364, 2, 2, 1, -1, 1);
 	draw_sprite_ext(spr_dice_light, 0, x + 82, y + 564, 2, 2, 1, -1, 1);
 	draw_sprite_ext(spr_coin_light, 0, x + 82, y + 764, 2, 2, 1, -1, 1);
+	draw_sprite_ext(spr_d20_light, 0, x + 682, y + 564, 2, 2, 1, -1, 1);
 	//draw_sprite(spr_button_light, 0, x + 796, y + 564);
 }
 
 draw_text(x, y, global.txt_Help_str);
-draw_text(x + 32, y + 164, "Swipe up or swipe down over the player numbers to add or subtract 1 life.");
+draw_text(x + 32, y + 164, "Swipe UP and DOWN over the player numbers to add or subtract life.");
 draw_text(x + 216, y + 364, "Toggle between Life Counter & Planeswalker Loyalty counter.");
-draw_text(x + 216, y + 564, "Roll a dice for each player.");
+draw_text(x + 216, y + 564, "Roll a dice.");
 draw_text(x + 216, y + 764, "Flip a coin.");
+draw_text(x + 816, y + 564, "Roll a 20 sided dice.");
 
 /*
 draw_text(x, y + 564, "To change a players name hold f.e. the");
