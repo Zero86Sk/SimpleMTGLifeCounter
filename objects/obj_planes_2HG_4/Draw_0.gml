@@ -9,5 +9,5 @@ draw_set_colour(global.C1);
 
 if (obj_2HG_T2.Pw2 == 0)
 {
-	draw_text(x - 115, y, "0");
+	draw_text(x - 115, y, "");
 } else draw_text(x - 115, y + 5, obj_2HG_T2.Pw2);

@@ -12,5 +12,5 @@ Cursor = "";
 InputLength = 12;
 MinLength = 1;
 
-input_show = false;
-input_hide = false;
+input_start = false;
+input_finish = false;

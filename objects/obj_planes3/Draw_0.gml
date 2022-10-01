@@ -11,7 +11,7 @@ if (room == rm_3players)
 {
 	if (obj_P3.Pw3 == 0)
 	{
-		draw_text(x - 115, y, "0");
+		draw_text(x - 115, y, "");
 	} else draw_text(x - 115, y + 5, obj_P3.Pw3);
 }
 else

@@ -28,7 +28,7 @@ if (Time == 30)
 {
     global.NameEntery1 = true;    
     Time = 0;
-	input_show = true;
+	input_start = true;
 }
 
 if (global.NameEntery1 == true)
@@ -37,7 +37,7 @@ if (global.NameEntery1 == true)
     depth = -5000;
 	instance_deactivate_object(obj_macros);
 
-	if (input_show == true)
+	if (input_start == true)
 	{
 		switch (os_type)
 		{
@@ -46,7 +46,7 @@ if (global.NameEntery1 == true)
 			keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
 		break;
 		}
-		input_show = false;
+		input_start = false;
 	}
 
     if(string_length(keyboard_string) <= InputLength)
@@ -55,19 +55,20 @@ if (global.NameEntery1 == true)
     }   
 
     if (keyboard_check_pressed(vk_enter))
-	xor (os_is_paused())
-	xor (keyboard_check(vk_backspace))
+	|| (os_is_paused())
+	//|| (keyboard_check(vk_backspace))
+	|| (device_mouse_check_button_pressed(0, global.MouseLeft))
     {
         if(string_length(keyboard_string) < MinLength)
         {
             global.txt_P1Name = "Player 1";
         }
 		
-		input_hide = true;
+		input_finish = true;
 		
-		if (input_hide == true)
+		if (input_finish == true)
 		{	
-			input_hide = false;
+			input_finish = false;
 			keyboard_string = "";
 			scr_save_settings();
 			global.NameEntery1 = false;
@@ -81,6 +82,7 @@ if (global.NameEntery1 == true)
 			break;
 			}
 		}
+		
 	}
 }
 else

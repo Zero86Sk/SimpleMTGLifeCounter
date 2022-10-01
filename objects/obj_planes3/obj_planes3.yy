@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Planeswalkers",
-    "path": "folders/Objects/Main/Planeswalkers.yy",
+    "path": "folders/Objects/Planeswalkers.yy",
   },
 }
