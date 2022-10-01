@@ -13,21 +13,13 @@ draw_set_font(global.FontHuge);
 
 if (global.Planes_2HG_3 == true)
 {
-	if (global.MagicMode == true)
-	{
-		draw_sprite_ext(spr_planeswalker_dark, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
-	} else draw_sprite_ext(spr_planeswalker_lite, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
-	
+	draw_sprite_ext(spr_planeswalker, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
 	draw_text(TXX, TXY, Pw1); 
 	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw1);  
 }
 else if (global.Planes_2HG_4 == true)
 {
-	if (global.MagicMode == true)
-	{
-		draw_sprite_ext(spr_planeswalker_dark, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
-	} else draw_sprite_ext(spr_planeswalker_lite, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
-	
+	draw_sprite_ext(spr_planeswalker, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
 	draw_text(TXX, TXY, Pw2); 
 	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw2);  
 }

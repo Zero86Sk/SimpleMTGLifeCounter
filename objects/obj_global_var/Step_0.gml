@@ -13,19 +13,13 @@ if (global.SoundFXVol == true)
 }
 else global.txt_SoundFX = "Sound: Off";
 
-//BGSize    
-if (global.MagicMode == true)
-{
-    global.txt_Mode = "Theme: Dark";
-}
-else global.txt_Mode = "Theme: Light"
-
 //Back button text
 if (room == rm_settings)
 || (room == rm_help)
 {
 	global.txt_Back_Twice = "Press back again to return\nto the main menu"
 }
+
 else if (room == rm_2players)
 or (room == rm_3players)
 or (room == rm_4players)

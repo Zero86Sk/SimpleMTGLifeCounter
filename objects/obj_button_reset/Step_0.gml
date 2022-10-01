@@ -25,7 +25,6 @@ if (position_meeting(mouse_x, mouse_y, self))
         global.FullScreen = 0;
         //global.MagicBG = bg_magic;
 		global.MagicBGIndex = 5;
-        global.MagicMode = true;
         global.SoundFXVol = true;
 		//global.MusicVol = true;
 		
@@ -40,7 +39,6 @@ if (position_meeting(mouse_x, mouse_y, self))
 		audio_group_set_gain(ag_soundfx, global.SoundFXVol, 0);      
         
 		scr_set_background();
-		scr_magic_mode();
 		scr_save_settings();
     }
 }

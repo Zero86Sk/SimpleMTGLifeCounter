@@ -9,7 +9,6 @@ function scr_save_settings() {
 	ini_write_real("Options", "soundfx", global.SoundFXVol);
 	//ini_write_real("Options", "music", global.MusicVol);
 	//ini_write_real("Options", "background", global.MagicBG);  
-	ini_write_real("Options", "mode", global.MagicMode);
 	ini_write_real("Options", "bg_index", global.MagicBGIndex);
 
 	//Names
@@ -22,7 +21,4 @@ function scr_save_settings() {
 
 	//Closes File
 	ini_close();
-
-
-
 }

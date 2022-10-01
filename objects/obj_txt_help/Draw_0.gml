@@ -5,23 +5,12 @@ draw_set_valign(fa_middle);
 draw_set_colour(global.C1);
 
 //scr_draw_text_outlined(x, y, 2, c_black, c_white, global.txt_Settings_str);
-if (global.MagicMode == true)
-{	
-	draw_sprite_ext(spr_planes_dark, 0, x + 82, y + 364, 2, 2, 1, -1, 1);
-	draw_sprite_ext(spr_dice_dark, 0, x + 82, y + 564, 2, 2, 1, -1, 1);
-	draw_sprite_ext(spr_coin_dark, 0, x + 82, y + 764, 2, 2, 1, -1, 1);
-	draw_sprite_ext(spr_d20_dark, 0, x + 682, y + 564, 2, 2, 1, -1, 1);
-	//draw_sprite(spr_button_dark, 0, x + 796, y + 564);
-}
-else
-{
-	
-	draw_sprite_ext(spr_planes_light, 0, x + 82, y + 364, 2, 2, 1, -1, 1);
-	draw_sprite_ext(spr_dice_light, 0, x + 82, y + 564, 2, 2, 1, -1, 1);
-	draw_sprite_ext(spr_coin_light, 0, x + 82, y + 764, 2, 2, 1, -1, 1);
-	draw_sprite_ext(spr_d20_light, 0, x + 682, y + 564, 2, 2, 1, -1, 1);
-	//draw_sprite(spr_button_light, 0, x + 796, y + 564);
-}
+draw_sprite_ext(spr_btn_planes, 0, x + 82, y + 364, 2, 2, 1, -1, 1);
+draw_sprite_ext(spr_btn_dice, 0, x + 82, y + 564, 2, 2, 1, -1, 1);
+draw_sprite_ext(spr_btn_coin, 0, x + 82, y + 764, 2, 2, 1, -1, 1);
+draw_sprite_ext(spr_btn_d20, 0, x + 682, y + 564, 2, 2, 1, -1, 1);
+//draw_sprite(spr_btn, 0, x + 796, y + 564);
+
 
 draw_text(x, y, global.txt_Help_str);
 draw_text(x + 32, y + 164, "Swipe UP and DOWN over the player numbers to add or subtract life.");

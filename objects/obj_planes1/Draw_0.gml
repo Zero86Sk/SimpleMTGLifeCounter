@@ -9,5 +9,5 @@ draw_set_colour(global.C1);
 
 if (obj_P1.Pw1 == 0)
 {
-	draw_text(x + 115, y, "");
+	draw_text(x + 115, y, "0");
 } else draw_text(x + 115, y + 5, obj_P1.Pw1);

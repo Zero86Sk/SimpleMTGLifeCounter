@@ -6,11 +6,7 @@ draw_set_colour(global.C1);
 
 if (global.Planes3 == true)
 {
-	if (global.MagicMode == true)
-	{
-		draw_sprite_ext(spr_planeswalker_dark, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
-	} else draw_sprite_ext(spr_planeswalker_lite, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
-	
+	draw_sprite_ext(spr_planeswalker, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
 	draw_text(TXX, TXY, Pw3);  
 	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw3);  
 }
@@ -28,7 +24,6 @@ else
 
 draw_set_font(global.FontMedium);
 draw_set_alpha(0.5);
-//draw_text(TXX, TXY, string(global.txt_P1Name));
 draw_text(TXX, TXY - room_height/6, string(global.txt_P3Name));
 draw_set_alpha(1.0);
 draw_set_font(global.FontHuge);

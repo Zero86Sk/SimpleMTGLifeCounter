@@ -34,11 +34,7 @@ if (global.NameEntery4 == true)
 		draw_text(x, y - 105, "Enter name");
 		//scr_draw_text_outlined(x, y - 65, 2, c_black, global.C1, "Enter Name");
 		
-		if (global.MagicMode == true)
-		{
-			draw_sprite_ext(spr_button_dark, 0, x, y, 1.32, 1.32, 0, -1, 1);
-		} else draw_sprite_ext(spr_button_light, 0, x, y, 1.32, 1.32, 0, -1, 1);
-        
+		draw_sprite_ext(spr_btn, 0, x, y, 1.32, 1.32, 0, -1, 1);
 		draw_text(x, y, global.txt_P4Name + Cursor);
         break;
 	case os_ios:
@@ -47,11 +43,7 @@ if (global.NameEntery4 == true)
 		draw_text(room_width/2, room_height/6 - 105, "Enter name");
 		//scr_draw_text_outlined(x, y - 65, 2, c_black, global.C1, "Enter Name");
 		
-		if (global.MagicMode == true)
-		{
-			draw_sprite_ext(spr_button_dark, 1, room_width/2, room_height/6, 1.32, 1.32, 0, -1, 1);
-		} else draw_sprite_ext(spr_button_light, 1, room_width/2, room_height/6, 1.32, 1.32, 0, -1, 1);
-		
+		draw_sprite_ext(spr_btn, 1, room_width/2, room_height/6, 1.32, 1.32, 0, -1, 1);
 		draw_text(room_width/2, room_height/6, global.txt_P4Name + Cursor);
         break;
     }

@@ -9,7 +9,6 @@ function scr_load_settings() {
 
 	    //Reads var inside the INI and assigns it to the goobal variables
 	    //global.MagicBG = ini_read_real("Options", "background", bg_magic); //Reads File
-		global.MagicMode = ini_read_real("Options", "mode", true);
 		global.MagicBGIndex = ini_read_real("Options", "bg_index", 5);
 	    global.FullScreen = ini_read_real("Options", "fullscreen", 0);    
 	    global.SoundFXVol = ini_read_real("Options", "soundfx", true);

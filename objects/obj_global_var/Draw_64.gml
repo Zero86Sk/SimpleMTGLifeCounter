@@ -1,7 +1,8 @@
 ///Subtitle String
 draw_set_font(global.FontSmall);
+draw_set_halign(fa_left);
 draw_set_valign(fa_center);
-draw_set_colour(c_white);
+draw_set_colour(global.C1);
 
 if (global.Debug == true)
 {

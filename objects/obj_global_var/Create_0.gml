@@ -31,7 +31,6 @@ global.txt_P4Name = "Player 4";
 //Options
 global.FullScreen = false;
 //global.MagicBG = bg_magic;
-global.MagicMode = true;
 global.MagicBGIndex = 5;
 
 //Sound
@@ -53,3 +52,22 @@ global.FontMedium = fnt_Selena_Medium;
 global.FontBig = fnt_Selena_Big;
 global.FontHuge = fnt_Selena_Huge;
 global.FontSymbols = fnt_Wingdings_3_B25;
+
+//C1 text colour
+R1 = 245;
+G1 = 245;
+B1 = 245;
+	
+//CBack Background
+R2 = 52;
+G2 = 52;
+B2 = 52;
+		
+// C2 Orange Text
+RO = 254;
+GO = 156;
+BO = 1;
+
+global.C1 = make_color_rgb(R1,G1,B1);		// Text Colour
+global.CBack = make_color_rgb(R2,G2,B2);	// Background 
+global.COrange = make_color_rgb(RO,GO,BO); 	// C2 Orange Text

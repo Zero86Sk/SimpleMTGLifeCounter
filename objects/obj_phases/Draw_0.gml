@@ -1,11 +1,7 @@
 draw_set_font(global.FontSmall);
 draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
-
-if (global.MagicMode == true)
-{
-	draw_set_colour(c_black);
-} else draw_set_colour(c_white);
+draw_set_colour(c_white);
 
 // Horizontal
 draw_set_alpha(0.5);
