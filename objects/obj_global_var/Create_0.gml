@@ -5,9 +5,11 @@ global.Debug = false;
 global.Exit = false;
 global.Win = false;
 
+//Pressing Backspace
 global.back_once = false;
 global.back_twice = false;
 
+//Name Entery Fields
 global.NameEntery1 = false;
 global.NameEntery2 = false;
 global.NameEntery3 = false;
@@ -28,14 +30,49 @@ global.txt_P2Name = "Player 2";
 global.txt_P3Name = "Player 3";
 global.txt_P4Name = "Player 4";
 
+//Mouse and Keyboard
+global.MouseLeft = mb_left;
+//global.BackKey = vk_backspace;
+
+//Back Key is ESC on PC and Backspace (back button) on Phones
+switch (os_type)
+	{
+	case os_windows:
+	case os_macosx:
+	case os_linux:
+		global.BackKey = vk_escape
+		break;;	
+	case os_ios:
+	case os_android:
+		global.BackKey = vk_backspace;	
+		break;
+	}
+
+//Health Managment
+//Player 1
+global.KeyQ = ord("Q");
+global.KeyA = ord("A");
+
+//Player 2
+global.KeyW = ord("W");
+global.KeyS = ord("S");
+
+//Player 3
+global.KeyE = ord("E");
+global.KeyD = ord("D");
+
+//Player 4
+global.KeyR = ord("R");
+global.KeyF = ord("F");
+
 //Options
 global.FullScreen = false;
-//global.MagicBG = bg_magic;
 global.MagicBGIndex = 5;
+//global.MagicBG = bg_magic;
 
 //Sound
 global.SoundFXVol = 1;
-global.MusicVol = 1;
+///global.MusicVol = 1;
 
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);
@@ -44,14 +81,6 @@ audio_group_load(ag_soundfx);
 global.SndClick = snd_button;
 global.SndCoin = snd_coinflip;
 global.SndDice = snd_dice;
-
-//Fonts
-//global.FontSmallest = fnt_Selena_Smallest;
-global.FontSmall = fnt_Selena_Small;
-global.FontMedium = fnt_Selena_Medium;
-global.FontBig = fnt_Selena_Big;
-global.FontHuge = fnt_Selena_Huge;
-global.FontSymbols = fnt_Wingdings_3_B25;
 
 //C1 text colour
 R1 = 245;
@@ -68,6 +97,6 @@ RO = 254;
 GO = 156;
 BO = 1;
 
-global.C1 = make_color_rgb(R1,G1,B1);		// Text Colour
+global.C1 = make_color_rgb(R1,G1,B1);		// Text Colour (White)
+global.COrange = make_color_rgb(RO,GO,BO); 	// Text Colour Orange
 global.CBack = make_color_rgb(R2,G2,B2);	// Background 
-global.COrange = make_color_rgb(RO,GO,BO); 	// C2 Orange Text

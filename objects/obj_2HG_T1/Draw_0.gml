@@ -1,15 +1,15 @@
 ///Player 1 Hit Points
-draw_set_font(global.FontHuge);
+draw_set_font(fnt_huge);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(global.C1);
 
-draw_set_font(global.FontMedium);
+draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
 //draw_text(TXX, TXY, string(global.txt_P1Name));
 draw_text(TXX, TXY - room_height/4.5, string(global.txt_P1Name) + " &\n" + string(global.txt_P2Name));
 draw_set_alpha(1.0);
-draw_set_font(global.FontHuge);
+draw_set_font(fnt_huge);
 
 if (global.Planes_2HG_1 == true)
 {
@@ -38,7 +38,7 @@ else
 if (global.Debug =  true)
 {
 	///To See the Play areas in the different modes
-	draw_set_font(fnt_Selena_Small);
+	draw_set_font(fnt_small);
 	draw_set_alpha(0.5);
 	draw_set_colour(c_red);
 	draw_rectangle(ZX1, ZY1, ZX2, ZY2, 0);

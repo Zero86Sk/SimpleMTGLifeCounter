@@ -34,8 +34,8 @@ if (position_meeting(mouse_x, mouse_y, self))
 			audio_play_sound(global.SndBgm, 9, true);
         }
 */
-		audio_group_set_gain(ag_music, global.MusicVol, 0);           
-		audio_group_set_gain(audiogroup_default, global.MusicVol, 0);           
+		//audio_group_set_gain(ag_music, global.MusicVol, 0);           
+		//audio_group_set_gain(audiogroup_default, global.MusicVol, 0);           
 		audio_group_set_gain(ag_soundfx, global.SoundFXVol, 0);      
         
 		scr_set_background();

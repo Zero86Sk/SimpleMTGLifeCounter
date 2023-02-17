@@ -8,15 +8,26 @@ image_index = 0;
 
 if (position_meeting(mouse_x, mouse_y, self))
 {
-    if (device_mouse_check_button(0, global.MouseLeft))
+	//scales image
+	image_xscale = lerp(image_xscale, 1.2, 0.1);
+	image_yscale = lerp(image_yscale, 1.2, 0.1);
+	
+	if (device_mouse_check_button(0, global.MouseLeft))
     {
 		image_index = 1;
+
     }
     
     if (device_mouse_check_button_released(0, global.MouseLeft))
     {
 		room_goto(rm_2players);
     }
+}
+else
+{
+	//returns image scale to normal
+	image_xscale = lerp(image_xscale, 1, 0.1);
+	image_yscale = lerp(image_yscale, 1, 0.1);
 }
  
 ///Play Sound

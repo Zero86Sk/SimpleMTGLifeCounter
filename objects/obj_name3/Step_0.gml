@@ -44,7 +44,7 @@ if (global.NameEntery3 == true)
 		case os_android:
 		case os_ios:
 			keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
-		break;
+			break;
 		}
 		input_start = false;
 	}
@@ -55,9 +55,9 @@ if (global.NameEntery3 == true)
     }   
 
     if (keyboard_check_pressed(vk_enter))
-	|| (os_is_paused())
-	//|| (keyboard_check_pressed(vk_backspace))
-    || (device_mouse_check_button_pressed(0, global.MouseLeft))
+	or (os_is_paused())
+	//or (keyboard_check_pressed(vk_backspace))
+    or (device_mouse_check_button_pressed(0, global.MouseLeft))
     {
         if(string_length(keyboard_string) < MinLength)
         {
@@ -79,7 +79,7 @@ if (global.NameEntery3 == true)
 			case os_android:
 			case os_ios:
 				keyboard_virtual_hide();
-			break;
+				break;
 			}
 		} 
 	}

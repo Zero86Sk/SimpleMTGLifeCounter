@@ -1,23 +1,25 @@
 ///Subtitle String
-draw_set_font(global.FontSmall);
+draw_set_font(fnt_small);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_colour(global.C1);
 
 //scr_draw_text_outlined(x, y, 2, c_black, c_white, global.txt_Settings_str);
-draw_sprite_ext(spr_btn_planes, 0, x + 82, y + 364, 2, 2, 1, -1, 1);
-draw_sprite_ext(spr_btn_dice, 0, x + 82, y + 564, 2, 2, 1, -1, 1);
-draw_sprite_ext(spr_btn_coin, 0, x + 82, y + 764, 2, 2, 1, -1, 1);
-draw_sprite_ext(spr_btn_d20, 0, x + 682, y + 564, 2, 2, 1, -1, 1);
-//draw_sprite(spr_btn, 0, x + 796, y + 564);
 
+draw_text(x, y, "Help");
+draw_text(x + 32, y + 164, "Swipe UP or DOWN over the numbers to add or subtract life.");
 
-draw_text(x, y, global.txt_Help_str);
-draw_text(x + 32, y + 164, "Swipe UP and DOWN over the player numbers to add or subtract life.");
-draw_text(x + 216, y + 364, "Toggle between Life Counter & Planeswalker Loyalty counter.");
-draw_text(x + 216, y + 564, "Roll a dice.");
-draw_text(x + 216, y + 764, "Flip a coin.");
-draw_text(x + 816, y + 564, "Roll a 20 sided dice.");
+draw_sprite_ext(spr_btn_planes, 0, x + 82, y + 264, 1, 1, 1, -1, 1);
+draw_text(x + 216, y + 264, "Toggle the Life Counter "+ "& Planeswalker Loyalty Counter.");
+
+draw_sprite_ext(spr_btn_dice, 0, x + 82, y + 364, 1, 1, 1, -1, 1);
+draw_text(x + 216, y + 364, "Roll a dice.");
+
+draw_sprite_ext(spr_btn_coin, 0, x + 82, y + 464, 1, 1, 1, -1, 1);
+draw_text(x + 216, y + 464, "Flip a coin.");
+
+draw_sprite_ext(spr_btn_d20, 0, x + 82, y + 564, 1, 1, 1, -1, 1);
+draw_text(x + 216, y + 564, "Roll a D20.");
 
 /*
 draw_text(x, y + 564, "To change a players name hold f.e. the");

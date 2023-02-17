@@ -1,7 +1,7 @@
 ///Draw
 if (global.Win == true)
 {
-    draw_set_font(global.FontMedium);
+    draw_set_font(fnt_medium);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_colour(global.CBack);

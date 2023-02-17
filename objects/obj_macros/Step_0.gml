@@ -15,7 +15,7 @@ if (global.back_once == true)
 }
 else
 {
-	instance_destroy(obj_back_twice);
+	instance_destroy(obj_back_msg);
 }
 
 if (time > 5)
@@ -31,25 +31,27 @@ if (time == 60)
 }
 
 //Exit 
-if (keyboard_check_pressed(vk_backspace))
+if (keyboard_check_pressed(global.BackKey))
 {
 	global.back_once = true;
-	instance_create_layer(room_width/2, room_height/1.2, "Objects", obj_back_twice);	
+	instance_create_depth(room_width/2, room_height/1.2, -500, obj_back_msg);	
 
 	if (global.back_twice == true)
-	&& (keyboard_check_pressed(vk_backspace))
+	and (keyboard_check_pressed(global.BackKey))
 	{
 		if (room == rm_main_menu)
         {
 			game_end();
         }
-        
+        else
+		/*
 		if (room == rm_2players)
-		|| (room == rm_3players)
-		|| (room == rm_4players)
-		|| (room == rm_2headed)
-		|| (room == rm_help)
-		|| (room == rm_settings)
+		or (room == rm_3players)
+		or (room == rm_4players)
+		or (room == rm_2headed)
+		or (room == rm_help)
+		or (room == rm_settings)
+		*/
 		{
 			room_goto(rm_main_menu);
 			scr_restart_room();

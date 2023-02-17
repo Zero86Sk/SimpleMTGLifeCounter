@@ -30,19 +30,19 @@ if (Swipe = true)
 	    SwipeSpeed = point_distance(MouseXStart, MouseYStart, MouseX, MouseY) / SwipeTime; 
 	    SwipeTime = 0;
 
-	    if ((PDir > 315) && (PDir < 45)) && (SwipeSpeed > 4.5)	//Right
+	    if ((PDir > 315) and (PDir < 45)) and (SwipeSpeed > 4.5)	//Right
         {
         
         }
-		else if ((PDir > 45) && (PDir < 135)) && (SwipeSpeed > 4.5)	//Up  
+		else if ((PDir > 45) and (PDir < 135)) and (SwipeSpeed > 4.5)	//Up  
         {
 			with(obj_P1)
 			{
 	            if(P1Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes1 == true)
 					{
@@ -55,10 +55,10 @@ if (Swipe = true)
 			with(obj_P2)
 			{
 	            if(P2Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes2 == true)
 					{
@@ -71,10 +71,10 @@ if (Swipe = true)
 			with(obj_P3)
 			{
 	            if(P3Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes3 == true)
 					{
@@ -87,10 +87,10 @@ if (Swipe = true)
 			with(obj_P4)
 			{
 	            if(P4Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes4 == true)
 					{
@@ -103,10 +103,10 @@ if (Swipe = true)
 			with(obj_2HG_T1)
 			{
 	            if(P1Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes_2HG_1 == true)
 					{
@@ -123,10 +123,10 @@ if (Swipe = true)
 			with(obj_2HG_T2)
 			{
 	            if(P2Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes_2HG_3 == true)
 					{
@@ -140,19 +140,19 @@ if (Swipe = true)
 				}
 			}
         }
-		else if ((PDir > 135) && (PDir < 225)) && (SwipeSpeed > 4.5)	//Left    
+		else if ((PDir > 135) and (PDir < 225)) and (SwipeSpeed > 4.5)	//Left    
         {
 
         }
-		else if ((PDir > 225) && (PDir < 315)) && (SwipeSpeed > 4.5)	//Down    
+		else if ((PDir > 225) and (PDir < 315)) and (SwipeSpeed > 4.5)	//Down    
         {
 			with(obj_P1)
 			{
 	            if(P1Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes1 == true)
 					{
@@ -165,10 +165,10 @@ if (Swipe = true)
 			with(obj_P2)
 			{
 	            if(P2Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes2 == true)
 					{
@@ -181,10 +181,10 @@ if (Swipe = true)
 			with(obj_P3)
 			{
 	            if(P3Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes3 == true)
 					{
@@ -197,10 +197,10 @@ if (Swipe = true)
 			with(obj_P4)
 			{
 	            if(P4Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes4 == true)
 					{
@@ -213,10 +213,10 @@ if (Swipe = true)
 			with(obj_2HG_T1)
 			{
 	            if(P1Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes_2HG_1 == true)
 					{
@@ -233,10 +233,10 @@ if (Swipe = true)
 			with(obj_2HG_T2)
 			{
 	            if(P2Zone)
-				&& (obj_swipe_controls.MouseXStart > ZX1)
-				&& (obj_swipe_controls.MouseXStart < ZX2)
-				&& (obj_swipe_controls.MouseYStart > ZY1)
-				&& (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZX1)
+				and (obj_swipe_controls.MouseXStart < ZX2)
+				and (obj_swipe_controls.MouseYStart > ZY1)
+				and (obj_swipe_controls.MouseYStart < ZY2)
 	            {
 					if (global.Planes_2HG_3 == true)
 					{
