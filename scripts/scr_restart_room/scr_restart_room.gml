@@ -1,4 +1,5 @@
-function scr_restart_room() {
+function scr_restart_room()
+{
 	global.Planes1 = false;
 	global.Planes2 = false;
 	global.Planes3 = false;
@@ -45,5 +46,4 @@ function scr_restart_room() {
 		obj_2HG_T2.Pw1 = 0;
 		obj_2HG_T2.Pw2 = 0;
 	}
-
 }

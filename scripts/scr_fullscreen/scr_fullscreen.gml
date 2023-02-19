@@ -1,6 +1,5 @@
-///@description scr_fullscreen()
-function scr_fullscreen() {
-
+function scr_fullscreen()
+{
 	if (global.FullScreen == false)
 	{
 	    global.FullScreen = true;
@@ -8,7 +7,4 @@ function scr_fullscreen() {
 	else global.FullScreen = false;
     
 	window_set_fullscreen(global.FullScreen);
-
-
-
 }

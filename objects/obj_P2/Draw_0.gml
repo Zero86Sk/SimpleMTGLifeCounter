@@ -2,18 +2,16 @@
 draw_set_font(fnt_huge);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_colour(global.C1);
+draw_set_colour(global.CWhite);
 
 if (global.Planes2 == true)
 {
 	draw_sprite_ext(spr_planeswalker, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
 	draw_text(TXX, TXY, Pw2);      
-	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw2);  
 }
 else
 {
 	draw_text(TXX, TXY, P2hp);      
-	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, P2hp); 
 	
 	if (P2hp <= 0)
 	{
@@ -24,7 +22,6 @@ else
 
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
-//draw_text(TXX, TXY, string(global.txt_P1Name));
 
 if (room == rm_4players)
 {

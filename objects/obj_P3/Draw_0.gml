@@ -2,18 +2,16 @@
 draw_set_font(fnt_huge);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_colour(global.C1);
+draw_set_colour(global.CWhite);
 
 if (global.Planes3 == true)
 {
 	draw_sprite_ext(spr_planeswalker, 0, TXX, TXY, 0.5, 0.5, 0, -1, 1);	
 	draw_text(TXX, TXY, Pw3);  
-	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, Pw3);  
 }
 else
 {
 	draw_text(TXX, TXY, P3hp);  
-	//scr_draw_text_outlined(TXX, TXY, 2, c_black, global.C1, P3hp); 
 	
 	if (P3hp <= 0)
 	{

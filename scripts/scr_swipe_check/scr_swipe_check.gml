@@ -6,8 +6,8 @@
 ///@param object
 ///@param prec
 ///@param notme
-function scr_swipe_check(argument0, argument1, argument2, argument3, argument4, argument5, argument6) {
-
+function scr_swipe_check(argument0, argument1, argument2, argument3, argument4, argument5, argument6)
+{
 	StartX = argument0;
 	StartY = argument1;
 	EndX = argument2;
@@ -18,5 +18,4 @@ function scr_swipe_check(argument0, argument1, argument2, argument3, argument4, 
 
 	Inst = collision_line(StartX, StartY, EndX, EndY, object, prec, notme);
 	return Inst;
-
 }

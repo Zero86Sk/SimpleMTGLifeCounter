@@ -13,6 +13,12 @@ if (flipping == true)
 	{
 		image_index = 1;
 	} else image_index = 0;
+
+	//Play Sound
+    if (!audio_is_playing(snd_coinflip))
+    {
+	    audio_play_sound(snd_coinflip, 10, false);
+    }
 }
 
 if (flipped == true)

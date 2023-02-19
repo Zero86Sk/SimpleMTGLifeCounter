@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Settings",
-    "path": "folders/Objects/Settings.yy",
+    "name": "Text",
+    "path": "folders/Objects/Text.yy",
   },
   "parentObjectId": null,
   "persistent": false,

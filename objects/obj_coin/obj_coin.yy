@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Coin Flip",
-    "path": "folders/Objects/Coin Flip.yy",
+    "name": "Main",
+    "path": "folders/Objects/Main.yy",
   },
   "parentObjectId": null,
   "persistent": false,

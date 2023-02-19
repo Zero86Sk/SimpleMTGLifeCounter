@@ -67,22 +67,14 @@ global.KeyF = ord("F");
 
 //Options
 global.FullScreen = false;
-global.MagicBGIndex = 5;
+global.SoundFXVol = true;
+global.MagicBGIndex = 0;
 //global.MagicBG = bg_magic;
-
-//Sound
-global.SoundFXVol = 1;
-///global.MusicVol = 1;
 
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);
-//audio_group_load(ag_music);
 
-global.SndClick = snd_button;
-global.SndCoin = snd_coinflip;
-global.SndDice = snd_dice;
-
-//C1 text colour
+//CWhite text colour
 R1 = 245;
 G1 = 245;
 B1 = 245;
@@ -97,6 +89,6 @@ RO = 254;
 GO = 156;
 BO = 1;
 
-global.C1 = make_color_rgb(R1,G1,B1);		// Text Colour (White)
+global.CWhite = make_color_rgb(R1,G1,B1);		// Text Colour (White)
 global.COrange = make_color_rgb(RO,GO,BO); 	// Text Colour Orange
 global.CBack = make_color_rgb(R2,G2,B2);	// Background 

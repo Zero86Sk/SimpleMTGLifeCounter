@@ -13,10 +13,7 @@ if (global.back_once == true)
 {
 	time++;
 }
-else
-{
-	instance_destroy(obj_back_msg);
-}
+else instance_destroy(obj_back_msg);
 
 if (time > 5)
 {
@@ -44,14 +41,6 @@ if (keyboard_check_pressed(global.BackKey))
 			game_end();
         }
         else
-		/*
-		if (room == rm_2players)
-		or (room == rm_3players)
-		or (room == rm_4players)
-		or (room == rm_2headed)
-		or (room == rm_help)
-		or (room == rm_settings)
-		*/
 		{
 			room_goto(rm_main_menu);
 			scr_restart_room();

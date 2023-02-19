@@ -30,11 +30,17 @@ if (Swipe = true)
 	    SwipeSpeed = point_distance(MouseXStart, MouseYStart, MouseX, MouseY) / SwipeTime; 
 	    SwipeTime = 0;
 
-	    if ((PDir > 315) and (PDir < 45)) and (SwipeSpeed > 4.5)	//Right
+		//Right
+	    if ((PDir > 315)
+		and (PDir < 45))
+		and (SwipeSpeed > 4.5)
         {
         
         }
-		else if ((PDir > 45) and (PDir < 135)) and (SwipeSpeed > 4.5)	//Up  
+		//Up  
+		else if ((PDir > 45)
+		and (PDir < 135))
+		and (SwipeSpeed > 4.5)
         {
 			with(obj_P1)
 			{
@@ -140,11 +146,17 @@ if (Swipe = true)
 				}
 			}
         }
-		else if ((PDir > 135) and (PDir < 225)) and (SwipeSpeed > 4.5)	//Left    
+		//Left
+		else if ((PDir > 135)
+		and (PDir < 225))
+		and (SwipeSpeed > 4.5) 
         {
 
         }
-		else if ((PDir > 225) and (PDir < 315)) and (SwipeSpeed > 4.5)	//Down    
+		//Down  
+		else if ((PDir > 225)
+		and (PDir < 315))
+		and (SwipeSpeed > 4.5)  
         {
 			with(obj_P1)
 			{

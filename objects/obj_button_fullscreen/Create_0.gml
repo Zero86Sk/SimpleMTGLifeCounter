@@ -1,10 +1,4 @@
-///Variables
-image_index = 0;
-image_speed = 0;
-image_alpha = 0;
-
-FadeIn = true;
-FadeOut = false;
+event_inherited();
 
 ///Destroy if on Android and Windows Universal
 switch(os_type)

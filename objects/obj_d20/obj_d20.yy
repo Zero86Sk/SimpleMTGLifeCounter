@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dice Roll D20",
-    "path": "folders/Objects/Dice Roll D20.yy",
+    "name": "Main",
+    "path": "folders/Objects/Main.yy",
   },
   "parentObjectId": null,
   "persistent": false,

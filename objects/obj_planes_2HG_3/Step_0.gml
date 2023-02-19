@@ -1,3 +1,5 @@
+event_inherited();
+
 ///Button Script
 if (global.Exit == true)
 or (global.Win == true)
@@ -11,63 +13,14 @@ or (global.NameEntery4 == true)
 
 if (global.Planes_2HG_3 == true)
 {
-	image_index = 2;
-	
-	if (position_meeting(mouse_x, mouse_y, self))
-	{
-	    if (device_mouse_check_button(0, global.MouseLeft))
-	    {
-	        image_index = 3;
-		}
-    }	
+	sprite_index = spr_btn_planes_on
 } 
-else
+else sprite_index = spr_btn_planes_off
+
+if (position_meeting(mouse_x, mouse_y, self))
 {
-	image_index = 0;
-	
-	if (position_meeting(mouse_x, mouse_y, self))
+	if (device_mouse_check_button_released(0, global.MouseLeft))
 	{
-	    if (device_mouse_check_button(0, global.MouseLeft))
-	    {
-	        image_index = 1;
-		}
-    }
-}
-
-if (position_meeting(mouse_x, mouse_y, self))
-and (device_mouse_check_button_released(0, global.MouseLeft))
-{
-    scr_count_2hg_3();
-}
-
-///Play Sound
-if (position_meeting(mouse_x, mouse_y, self))
-{
-    if (device_mouse_check_button_pressed(0, global.MouseLeft))
-    {
-        if (!audio_is_playing(global.SndClick))
-        {
-	        audio_play_sound(global.SndClick, 10, false);
-        }
-    }
-}
-
-///FadeIn
-if (FadeIn == true)
-{
-    if (image_alpha < 1)
-    {
-	    image_alpha += 0.05;
-	    alarm[0] = 2;
-    }
-}
-
-///FadeOut
-if (FadeOut == true)
-{
-    if (image_alpha > 1)
-    {
-	    image_alpha -= 0.05;
-	    alarm[0] = 2;
-    }
+	    scr_count_2hg_3();
+	}
 }

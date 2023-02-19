@@ -5,6 +5,12 @@ if (rolling == true)
 		image_angle -= 15;
 		image_index = irandom(5);
 	}
+	
+	//Play Sound
+	if (!audio_is_playing(snd_dice))
+    {
+	    audio_play_sound(snd_dice, 10, false);
+    }
 }
 
 if (rolled == true)
