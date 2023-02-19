@@ -14,27 +14,23 @@ or (global.NameEntery3 == true)
 
 if (global.NameEntery4 == true)
 {
-	//Draw Rectangle
-    draw_set_colour(global.CBack);
-    draw_set_alpha(0.8);
-    draw_rectangle(0, 0, room_width, room_height, 0);
-    draw_set_alpha(1.0);
+	scr_draw_rectangle();
+	draw_set_colour(global.CWhite);
+	entername = "Enter Name:"
     
     switch(os_type)
     {
     case os_windows:
     case os_linux:
 	case os_macosx:
-		draw_set_colour(global.CWhite);
-		draw_text(x, y - 105, "Enter name");
-		draw_sprite_ext(spr_btn, 0, x, y, 1.32, 1.32, 0, -1, 1);
+		draw_text(x, y - 105, entername);
+		draw_sprite_ext(spr_btn, 0, x, y, 1.2, 1.2, 0, -1, 1);
 		draw_text(x, y, global.txt_P4Name + Cursor);
         break;
 	case os_ios:
 	case os_android:
-		draw_set_colour(global.CWhite);        
-		draw_text(room_width/2, room_height/6 - 105, "Enter name");
-		draw_sprite_ext(spr_btn, 1, room_width/2, room_height/6, 1.32, 1.32, 0, -1, 1);
+		draw_sprite_ext(spr_btn, 1, room_width/2, room_height/6, 1.2, 1.2, 0, -1, 1);
+		draw_text(room_width/2, room_height/6 - 105, entername);
 		draw_text(room_width/2, room_height/6, global.txt_P4Name + Cursor);
         break;
     }

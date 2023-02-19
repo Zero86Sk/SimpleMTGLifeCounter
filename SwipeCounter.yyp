@@ -87,6 +87,7 @@
     {"id":{"name":"scr_magicbg_light","path":"scripts/scr_magicbg_light/scr_magicbg_light.yy",},"order":13,},
     {"id":{"name":"scr_fullscreen","path":"scripts/scr_fullscreen/scr_fullscreen.yy",},"order":0,},
     {"id":{"name":"scr_soundfx","path":"scripts/scr_soundfx/scr_soundfx.yy",},"order":1,},
+    {"id":{"name":"obj_reset_msg","path":"objects/obj_reset_msg/obj_reset_msg.yy",},"order":11,},
     {"id":{"name":"scr_save_settings","path":"scripts/scr_save_settings/scr_save_settings.yy",},"order":1,},
     {"id":{"name":"scr_load_settings","path":"scripts/scr_load_settings/scr_load_settings.yy",},"order":0,},
     {"id":{"name":"scr_delete_settings","path":"scripts/scr_delete_settings/scr_delete_settings.yy",},"order":2,},
@@ -160,6 +161,7 @@
     {"id":{"name":"rm_2headed","path":"rooms/rm_2headed/rm_2headed.yy",},"order":5,},
     {"id":{"name":"rm_settings","path":"rooms/rm_settings/rm_settings.yy",},"order":6,},
     {"id":{"name":"rm_help","path":"rooms/rm_help/rm_help.yy",},"order":7,},
+    {"id":{"name":"scr_draw_rectangle","path":"scripts/scr_draw_rectangle/scr_draw_rectangle.yy",},"order":7,},
     {"id":{"name":"rm_res_manager","path":"rooms/rm_res_manager/rm_res_manager.yy",},"order":0,},
   ],
   "RoomOrderNodes": [

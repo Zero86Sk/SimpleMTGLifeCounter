@@ -62,6 +62,7 @@
     {"name":"scr_magicbg_water","order":11,"path":"scripts/scr_magicbg_water/scr_magicbg_water.yy",},
     {"name":"scr_magicbg_light","order":13,"path":"scripts/scr_magicbg_light/scr_magicbg_light.yy",},
     {"name":"scr_soundfx","order":1,"path":"scripts/scr_soundfx/scr_soundfx.yy",},
+    {"name":"obj_reset_msg","order":11,"path":"objects/obj_reset_msg/obj_reset_msg.yy",},
     {"name":"scr_save_settings","order":1,"path":"scripts/scr_save_settings/scr_save_settings.yy",},
     {"name":"scr_delete_settings","order":2,"path":"scripts/scr_delete_settings/scr_delete_settings.yy",},
     {"name":"scr_swipe_check","order":5,"path":"scripts/scr_swipe_check/scr_swipe_check.yy",},
@@ -126,5 +127,6 @@
     {"name":"rm_2headed","order":5,"path":"rooms/rm_2headed/rm_2headed.yy",},
     {"name":"rm_settings","order":6,"path":"rooms/rm_settings/rm_settings.yy",},
     {"name":"rm_help","order":7,"path":"rooms/rm_help/rm_help.yy",},
+    {"name":"scr_draw_rectangle","order":7,"path":"scripts/scr_draw_rectangle/scr_draw_rectangle.yy",},
   ],
 }

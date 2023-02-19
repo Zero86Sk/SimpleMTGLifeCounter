@@ -1,12 +1,5 @@
-///@description scr_swipe_check(StartX, StartY, EndX, EndY, object, prec, notme)
-///@param StartX
-///@param StartY
-///@param EndX
-///@param EndY
-///@param object
-///@param prec
-///@param notme
-function scr_swipe_check(argument0, argument1, argument2, argument3, argument4, argument5, argument6)
+
+function scr_swipe_check(StartX, StartY, EndX, EndY, object, prec, notme)
 {
 	StartX = argument0;
 	StartY = argument1;
