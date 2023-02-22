@@ -9,10 +9,10 @@ or (global.NameEntery4 == true)
     exit;
 }
 
-P1Zone = device_mouse_x(0) >= ZX1
-and device_mouse_x(0) <= ZX2
-and device_mouse_y(0) >= ZY1
-and device_mouse_y(0) <= ZY2;
+P1Zone = device_mouse_x(0) >= ZoneX1
+and device_mouse_x(0) <= ZoneX2
+and device_mouse_y(0) >= ZoneY1
+and device_mouse_y(0) <= ZoneY2;
 
 if (P1Zone)
 {
@@ -36,14 +36,14 @@ if (T1hp >= 999)
     T1hp = 999;
 }
 
-if (Pw1 >= 999)
+if (P1L >= 999)
 {
-	Pw1 = 999;
+	P1L = 999;
 }
 
-if (Pw2 >= 999)
+if (P2L >= 999)
 {
-	Pw2 = 999;
+	P2L = 999;
 }
 
 //Down Limit
@@ -52,12 +52,12 @@ if (T1hp <= -20)
     T1hp = -20;
 }
 
-if (Pw1 <= 0)
+if (P1L <= 0)
 {
-	Pw1 = 0;
+	P1L = 0;
 }
 
-if (Pw2 <= 0)
+if (P2L <= 0)
 {
-	Pw2 = 0;
+	P2L = 0;
 }

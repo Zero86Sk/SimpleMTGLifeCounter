@@ -15,7 +15,7 @@ or (global.NameEntery4 == true)
 if (global.NameEntery2 == true)
 {
 	scr_draw_rectangle();
-	draw_set_colour(global.CWhite);
+	draw_set_color(global.CWhite);
     entername = "Enter Name:"
 		
     switch(os_type)

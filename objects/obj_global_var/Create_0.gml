@@ -15,14 +15,14 @@ global.NameEntery2 = false;
 global.NameEntery3 = false;
 global.NameEntery4 = false;
 
-global.Planes1 = false;
-global.Planes2 = false;
-global.Planes4 = false;
-global.Planes3 = false;
-global.Planes_2HG_1 = false;
-global.Planes_2HG_2 = false;
-global.Planes_2HG_3 = false;
-global.Planes_2HG_4 = false;
+global.Loyalty1 = false;
+global.Loyalty2 = false;
+global.Loyalty4 = false;
+global.Loyalty3 = false;
+global.Loyalty_2HG1 = false;
+global.Loyalty_2HG2 = false;
+global.Loyalty_2HG3 = false;
+global.Loyalty_2HG4 = false;
 
 //Player Names
 global.txt_P1Name = "Player 1";
@@ -32,7 +32,6 @@ global.txt_P4Name = "Player 4";
 
 //Mouse and Keyboard
 global.MouseLeft = mb_left;
-//global.BackKey = vk_backspace;
 
 //Back Key is ESC on PC and Backspace (back button) on Phones
 switch (os_type)
@@ -74,21 +73,27 @@ global.MagicBGIndex = 0;
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);
 
-//CWhite text colour
+//CWhite Text
 R1 = 245;
 G1 = 245;
 B1 = 245;
-	
-//CBack Background
-R2 = 52;
-G2 = 52;
-B2 = 52;
-		
-// C2 Orange Text
-RO = 254;
-GO = 156;
-BO = 1;
 
-global.CWhite = make_color_rgb(R1,G1,B1);		// Text Colour (White)
-global.COrange = make_color_rgb(RO,GO,BO); 	// Text Colour Orange
-global.CBack = make_color_rgb(R2,G2,B2);	// Background 
+// COrange Text
+R2 = 254;
+G2 = 156;
+B2 = 1;
+
+// CRed Text
+R3 = 200;
+G3 = 0;
+B3 = 0;
+
+//CBack Background
+RB = 52;
+GB = 52;
+BB = 52;
+
+global.CWhite = make_color_rgb(R1,G1,B1);	// Text Color (White)
+global.COrange = make_color_rgb(R2,G2,B2); 	// Text Color Orange
+global.CRed = make_color_rgb(R3,G3,B3); 	// Text Color Red
+global.CBack = make_color_rgb(RB,GB,BB);	// Background 

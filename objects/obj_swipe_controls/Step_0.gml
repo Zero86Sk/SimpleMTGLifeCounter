@@ -45,14 +45,14 @@ if (Swipe = true)
 			with(obj_P1)
 			{
 	            if(P1Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes1 == true)
+					if (global.Loyalty1 == true)
 					{
-						Pw1 += 1;
+						P1L += 1;
 					}
 					else P1hp += 1;
 				}
@@ -61,14 +61,14 @@ if (Swipe = true)
 			with(obj_P2)
 			{
 	            if(P2Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes2 == true)
+					if (global.Loyalty2 == true)
 					{
-						Pw2 += 1;
+						P2L += 1;
 					}
 					else P2hp += 1;
 				}
@@ -77,14 +77,14 @@ if (Swipe = true)
 			with(obj_P3)
 			{
 	            if(P3Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes3 == true)
+					if (global.Loyalty3 == true)
 					{
-						Pw3 += 1;
+						P3L += 1;
 					}
 					else P3hp += 1;
 				}
@@ -93,14 +93,14 @@ if (Swipe = true)
 			with(obj_P4)
 			{
 	            if(P4Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes4 == true)
+					if (global.Loyalty4 == true)
 					{
-						Pw4 += 1;
+						P4L += 1;
 					}
 					else P4hp += 1;
 				}
@@ -109,18 +109,18 @@ if (Swipe = true)
 			with(obj_2HG_T1)
 			{
 	            if(P1Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes_2HG_1 == true)
+					if (global.Loyalty_2HG1 == true)
 					{
-						Pw1 += 1;
+						P1L += 1;
 					}
-					else if (global.Planes_2HG_2 == true)
+					else if (global.Loyalty_2HG2 == true)
 					{
-						Pw2 += 1;
+						P2L += 1;
 					}
 					else T1hp += 1;
 				}
@@ -129,18 +129,18 @@ if (Swipe = true)
 			with(obj_2HG_T2)
 			{
 	            if(P2Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes_2HG_3 == true)
+					if (global.Loyalty_2HG3 == true)
 					{
-						Pw1 += 1;
+						P1L += 1;
 					}
-					else if (global.Planes_2HG_4 == true)
+					else if (global.Loyalty_2HG4 == true)
 					{
-						Pw2 += 1;
+						P2L += 1;
 					}
 					else T2hp += 1;
 				}
@@ -161,14 +161,14 @@ if (Swipe = true)
 			with(obj_P1)
 			{
 	            if(P1Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes1 == true)
+					if (global.Loyalty1 == true)
 					{
-						Pw1 -= 1;
+						P1L -= 1;
 					}
 					else P1hp -= 1;
 				}
@@ -177,14 +177,14 @@ if (Swipe = true)
 			with(obj_P2)
 			{
 	            if(P2Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes2 == true)
+					if (global.Loyalty2 == true)
 					{
-						Pw2 -= 1;
+						P2L -= 1;
 					}
 					else P2hp -= 1;
 				}
@@ -193,14 +193,14 @@ if (Swipe = true)
 			with(obj_P3)
 			{
 	            if(P3Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes3 == true)
+					if (global.Loyalty3 == true)
 					{
-						Pw3 -= 1;
+						P3L -= 1;
 					}
 					else P3hp -= 1;
 				}
@@ -209,14 +209,14 @@ if (Swipe = true)
 			with(obj_P4)
 			{
 	            if(P4Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes4 == true)
+					if (global.Loyalty4 == true)
 					{
-						Pw4 -= 1;
+						P4L -= 1;
 					}
 					else P4hp -= 1;
 				}
@@ -225,18 +225,18 @@ if (Swipe = true)
 			with(obj_2HG_T1)
 			{
 	            if(P1Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes_2HG_1 == true)
+					if (global.Loyalty_2HG1 == true)
 					{
-						Pw1 -= 1;
+						P1L -= 1;
 					}
-					else if (global.Planes_2HG_2 == true)
+					else if (global.Loyalty_2HG2 == true)
 					{
-						Pw2 -= 1;
+						P2L -= 1;
 					}
 					else T1hp -= 1;
 				}
@@ -245,18 +245,18 @@ if (Swipe = true)
 			with(obj_2HG_T2)
 			{
 	            if(P2Zone)
-				and (obj_swipe_controls.MouseXStart > ZX1)
-				and (obj_swipe_controls.MouseXStart < ZX2)
-				and (obj_swipe_controls.MouseYStart > ZY1)
-				and (obj_swipe_controls.MouseYStart < ZY2)
+				and (obj_swipe_controls.MouseXStart > ZoneX1)
+				and (obj_swipe_controls.MouseXStart < ZoneX2)
+				and (obj_swipe_controls.MouseYStart > ZoneY1)
+				and (obj_swipe_controls.MouseYStart < ZoneY2)
 	            {
-					if (global.Planes_2HG_3 == true)
+					if (global.Loyalty_2HG3 == true)
 					{
-						Pw1 -= 1;
+						P1L -= 1;
 					}
-					else if (global.Planes_2HG_4 == true)
+					else if (global.Loyalty_2HG4 == true)
 					{
-						Pw2 -= 1;
+						P2L -= 1;
 					}
 					else T2hp -= 1;
 				}

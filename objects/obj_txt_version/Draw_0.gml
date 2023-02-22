@@ -2,7 +2,7 @@
 draw_set_font(fnt_tiny);
 draw_set_halign(fa_right);
 draw_set_valign(fa_center);
-draw_set_colour(global.CWhite);
+draw_set_color(global.CWhite);
 
 ///Variables
 text = "Version: " + string(GM_version)

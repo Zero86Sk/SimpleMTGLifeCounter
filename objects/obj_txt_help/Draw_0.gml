@@ -2,7 +2,7 @@
 draw_set_font(fnt_small);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-draw_set_colour(global.CWhite);
+draw_set_color(global.CWhite);
 
 draw_text(x, y, "Help:");
 draw_text(x + 32, y + 164, "Swipe UP or DOWN over the numbers to add or subtract life.");

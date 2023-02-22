@@ -11,7 +11,7 @@ or (global.NameEntery4 == true)
     exit;
 }
 
-if (global.Planes3 == true)
+if (global.Loyalty3 == true)
 {
 	sprite_index = spr_btn_planes_on
 } 

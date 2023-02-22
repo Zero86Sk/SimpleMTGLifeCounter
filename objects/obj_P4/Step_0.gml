@@ -9,10 +9,10 @@ or (global.NameEntery4 == true)
     exit;
 }
 
-P4Zone = device_mouse_x(0) >= ZX1
-and device_mouse_x(0) <= ZX2
-and device_mouse_y(0) >= ZY1
-and device_mouse_y(0) <= ZY2;
+P4Zone = device_mouse_x(0) >= ZoneX1
+and device_mouse_x(0) <= ZoneX2
+and device_mouse_y(0) >= ZoneY1
+and device_mouse_y(0) <= ZoneY2;
 
 if (P4Zone)
 {
@@ -36,9 +36,9 @@ if (P4hp >= 999)
     P4hp = 999;
 }
 
-if (Pw4 >= 999)
+if (P4L >= 999)
 {
-	Pw4 = 999;
+	P4L = 999;
 }
 
 //Down Limit
@@ -47,7 +47,7 @@ if (P4hp <= -20)
     P4hp = -20;
 }
 
-if (Pw4 <= 0)
+if (P4L <= 0)
 {
-	Pw4 = 0;
+	P4L = 0;
 }

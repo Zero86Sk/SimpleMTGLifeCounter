@@ -1,7 +1,7 @@
 function scr_count2()
 {
-	if (global.Planes2 == false)
+	if (global.Loyalty2 == false)
 	{
-		global.Planes2 = true;
-	} else global.Planes2 = false;
+		global.Loyalty2 = true;
+	} else global.Loyalty2 = false;
 }
