@@ -32,7 +32,7 @@ else draw_text(TextX, TextY - room_height/6, string(global.txt_P1Name));
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);
 
-if (global.Debug =  true)
+if (global.Debug == true)
 {
 	///To See the Play areas in the different modes
 	draw_set_font(fnt_small);

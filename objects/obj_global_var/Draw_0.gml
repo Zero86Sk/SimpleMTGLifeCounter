@@ -6,10 +6,11 @@ draw_set_color(global.COrange);
 
 if (global.Debug == true)
 {
+	//Corner Text
 	draw_set_halign(fa_left);
-	draw_text(x, y + 10, "< Top Left");
-	draw_text(x, room_height - 10, "< Bottom Left");
+	draw_text(0, 0 + 20, "| Top Left");
+	draw_text(0, room_height - 20, "| Bottom Left");
 	draw_set_halign(fa_right);
-	draw_text(room_width, y + 10, "Top Right >");
-	draw_text(room_width, room_height - 10, "Bottom Right >");
+	draw_text(room_width, 0 + 20, "Top Right |");
+	draw_text(room_width, room_height - 20, "Bottom Right |");
 }

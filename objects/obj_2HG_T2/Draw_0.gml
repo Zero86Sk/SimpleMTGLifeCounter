@@ -4,12 +4,6 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(global.CWhite);
 
-draw_set_font(fnt_medium);
-draw_set_alpha(0.5);
-draw_text(TextX, TextY - room_height/4.5, string(global.txt_P3Name) + " &\n " + string(global.txt_P4Name));
-draw_set_alpha(1.0);
-draw_set_font(fnt_huge);
-
 if (global.Loyalty_2HG3 == true)
 {
 	draw_sprite_ext(spr_planeswalker, 0, TextX, TextY, 0.5, 0.5, 0, -1, 1);	
@@ -31,7 +25,13 @@ else
 	}
 }
 
-if (global.Debug =  true)
+draw_set_font(fnt_medium);
+draw_set_alpha(0.5);
+draw_text(TextX, TextY - room_height/4.5, string(global.txt_P3Name) + " &\n " + string(global.txt_P4Name));
+draw_set_alpha(1.0);
+draw_set_font(fnt_huge);
+
+if (global.Debug == true)
 {
 	///To See the Play areas in the different modes
 	draw_set_font(fnt_small);

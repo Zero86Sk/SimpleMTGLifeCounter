@@ -67,8 +67,7 @@ global.KeyF = ord("F");
 //Options
 global.FullScreen = false;
 global.SoundFXVol = true;
-global.MagicBGIndex = 0;
-//global.MagicBG = bg_magic;
+global.MagicBG = bg_black;
 
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);

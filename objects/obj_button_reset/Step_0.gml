@@ -12,14 +12,14 @@ if (position_meeting(mouse_x, mouse_y, self))
         global.txt_P4Name = "Player 4";
         
         global.FullScreen = 0;
-        //global.MagicBG = bg_magic;
-		global.MagicBGIndex = 5;
+        global.MagicBG = bg_black;
         global.SoundFXVol = true;
+		global.Debug = false;
          
 		audio_group_set_gain(ag_soundfx, global.SoundFXVol, 0);      
         
+		scr_background(bg_black);
 		scr_set_background();
-		//scr_delete_settings();
 		scr_save_settings();
     }
 }

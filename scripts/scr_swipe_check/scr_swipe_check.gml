@@ -1,4 +1,3 @@
-
 function scr_swipe_check(StartX, StartY, EndX, EndY, object, prec, notme)
 {
 	StartX = argument0;
