@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_btn_fire",
-    "path": "sprites/spr_btn_fire/spr_btn_fire.yy",
+    "name": "spr_btn_red",
+    "path": "sprites/spr_btn_red/spr_btn_red.yy",
   },
   "spriteMaskId": null,
   "visible": true,

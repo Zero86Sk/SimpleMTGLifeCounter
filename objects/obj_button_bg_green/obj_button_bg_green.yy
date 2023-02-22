@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_btn_forest",
-    "path": "sprites/spr_btn_forest/spr_btn_forest.yy",
+    "name": "spr_btn_green",
+    "path": "sprites/spr_btn_green/spr_btn_green.yy",
   },
   "spriteMaskId": null,
   "visible": true,

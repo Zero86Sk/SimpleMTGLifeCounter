@@ -3,11 +3,6 @@ T1hp = 30;
 P1L = 0;
 P2L = 0;
 
-r = 255;
-g = 0;
-b = 0;
-CLOW = make_colour_rgb(r, g, b);
-
 if (room == rm_2headed)
 {
 	ZoneX1 = 0;

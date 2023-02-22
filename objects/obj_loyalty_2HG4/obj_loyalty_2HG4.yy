@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_planes_2HG_2",
+  "name": "obj_loyalty_2HG4",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Player 2",
-    "path": "folders/Objects/Buttons/Player 2.yy",
+    "name": "Main",
+    "path": "folders/Objects/Buttons/Main.yy",
   },
   "parentObjectId": {
     "name": "obj_parent_button",

@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_btn_dark",
-    "path": "sprites/spr_btn_dark/spr_btn_dark.yy",
+    "name": "spr_btn_black",
+    "path": "sprites/spr_btn_black/spr_btn_black.yy",
   },
   "spriteMaskId": null,
   "visible": true,

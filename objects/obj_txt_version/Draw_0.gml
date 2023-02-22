@@ -6,8 +6,8 @@ draw_set_color(global.CWhite);
 
 ///Variables
 text = "Version: " + string(GM_version)
-+ " Made By: ZeeSvk"
-+ "\nSwipe Counter is unofficial Fan Content permitted under the Fan Content Policy."
++ "\nMade By: Zero86Sk"
++ "\nSwipe Counter is an unofficial Fan App permitted under the Fan Content Policy."
 + "\nNot approved/endorsed by Wizards. Portions of the materials used are property"
 + "\nof Wizards of the Coast. (C) Wizards of the Coast LLC.";
 
