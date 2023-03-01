@@ -27,7 +27,6 @@ if (global.NameEntery3 == true)
 		draw_sprite_ext(spr_btn, 1, x, y, 1.2, 1.2, 0, -1, 1);
 		draw_text(x, y, global.txt_P3Name + Cursor);
         break;
-	case os_ios:
 	case os_android:	     
 		draw_sprite_ext(spr_btn, 1, room_width/2, room_height/6, 1.2, 1.2, 0, -1, 1);
 		draw_text(room_width/2, room_height/6 - 105, entername);

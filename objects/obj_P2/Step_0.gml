@@ -19,17 +19,6 @@ if (P2Zone)
 
 }
 
-//Player 2
-if (keyboard_check_pressed(global.KeyW))
-{
-	P2hp += 1;
-}
-
-if (keyboard_check_pressed(global.KeyS))
-{
-	P2hp -= 1;
-}
-
 //Up Limit
 if (P2hp >= 999)
 {

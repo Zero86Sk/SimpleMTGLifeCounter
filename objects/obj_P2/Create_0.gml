@@ -2,32 +2,30 @@
 P2hp = 20;
 P2L = 0;
 
-if (room == rm_2players) 
+switch (room)
 {
-	ZoneX1 = room_width/2;
-	ZoneY1 = 0;
-	ZoneX2 = room_width;
-	ZoneY2 = room_height;
-	TextX = room_width/2 + room_width/4;
-	TextY = room_height/2;
-}
-
-if (room == rm_3players)
-{
-	ZoneX1 = room_width/3
-	ZoneY1 = 0;
-	ZoneX2 = room_width/3 + room_width/3;
-	ZoneY2 = room_height;
-	TextX = room_width/2;
-	TextY = room_height/2;
-}
-
-if (room == rm_4players)
-{
-	ZoneX1 = room_width/2;
-	ZoneY1 = 0;
-	ZoneX2 = room_width;
-	ZoneY2 = room_height/2;
-	TextX = room_width/4 + room_width/2 ;
-	TextY = room_height/3.4;
+	case rm_2players:	
+		TextX = room_width/1.3;
+		TextY = room_height/1.8;
+		ZoneX1 = room_width/2;
+		ZoneX2 = room_width;
+		ZoneY1 = 0;
+		ZoneY2 = room_height;
+		break;
+	case rm_3players:	
+		TextX = room_width/2;
+		TextY = room_height/1.8;
+		ZoneX1 = room_width/3;
+		ZoneX2 = room_width/1.5;
+		ZoneY1 = 0;
+		ZoneY2 = room_height;
+		break;
+	case rm_4players:	
+		TextX = room_width/1.3;
+		TextY = room_height/3.35;
+		ZoneX1 = room_width/2;
+		ZoneX2 = room_width;
+		ZoneY1 = 0;
+		ZoneY2 = room_height/2;
+		break;
 }

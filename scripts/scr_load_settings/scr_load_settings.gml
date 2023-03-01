@@ -15,6 +15,7 @@ function scr_load_settings()
 	    global.FullScreen = ini_read_real("settings", "fullscreen", false);    
 	    global.SoundFXVol = ini_read_real("settings", "sfx", true);
 	    global.MagicBG = ini_read_real("settings", "background", bg_black);
+		global.InputMode = ini_read_real("settings", "mode", 0);
 
 		//Close File
 	    ini_close();

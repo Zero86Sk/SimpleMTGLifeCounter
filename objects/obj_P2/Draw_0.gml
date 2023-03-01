@@ -1,4 +1,7 @@
-///Player 2 Hit Points
+//Rectangle
+scr_draw_roundrect_ext();
+
+//Player 2 Hit Points
 draw_set_font(fnt_huge);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -23,11 +26,7 @@ else
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
 
-if (room == rm_4players)
-{
-	draw_text(TextX, TextY - room_height/-7, string(global.txt_P2Name));
-}
-else draw_text(TextX, TextY - room_height/6, string(global.txt_P2Name));
+draw_text(TextX, TextY - room_height/6, string(global.txt_P2Name));
 
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);

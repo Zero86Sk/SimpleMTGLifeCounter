@@ -19,17 +19,6 @@ if (P3Zone)
 
 }
 
-//Player 3
-if (keyboard_check_pressed(global.KeyE))
-{
-	P3hp += 1;
-}
-
-if (keyboard_check_pressed(global.KeyD))
-{
-	P3hp -= 1;
-}
-
 //Up Limit
 if (P3hp >= 999)
 {

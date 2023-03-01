@@ -1,8 +1,12 @@
 event_inherited();
 draw_self();
 
-if (global.SoundFXVol == true)
+switch (global.SoundFXVol)
 {
-    draw_text(x, y, "Sound: On");
+	case true:
+		draw_text(x, y, "Sound: On");
+		break;
+	case false:	
+		draw_text(x, y, "Sound: Off");
+		break;
 }
-else draw_text(x, y, "Sound: Off");

@@ -15,7 +15,6 @@ if (position_meeting(mouse_x, mouse_y, self))
 	if (device_mouse_check_button(0, global.MouseLeft))
     {
 		image_index = 1;
-
     }
 	
     if (device_mouse_check_button_pressed(0, global.MouseLeft))
@@ -29,7 +28,7 @@ if (position_meeting(mouse_x, mouse_y, self))
 	
 	if (device_mouse_check_button_released(0, global.MouseLeft))
     {	
-
+	
     }
 }
 else

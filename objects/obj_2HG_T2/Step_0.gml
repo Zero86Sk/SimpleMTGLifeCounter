@@ -19,17 +19,6 @@ if (P2Zone)
 
 }
 
-//Player 2
-if (keyboard_check_pressed(global.KeyW))
-{
-	T2hp += 1;
-}
-
-if (keyboard_check_pressed(global.KeyS))
-{
-	T2hp -= 1;
-}
-
 //Up Limit
 if (T2hp >= 999)
 {

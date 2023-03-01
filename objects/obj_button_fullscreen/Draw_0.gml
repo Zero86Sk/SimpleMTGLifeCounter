@@ -1,8 +1,12 @@
 event_inherited();
 draw_self();
 
-if (global.FullScreen == true)
+switch (global.FullScreen)
 {
-    draw_text(x, y, "Fullscreen");
+	case true:
+		draw_text(x, y, "Fullscreen");
+		break;
+	case false:
+		draw_text(x, y, "Windowed");
+		break;
 }
-else draw_text(x, y, "Windowed");

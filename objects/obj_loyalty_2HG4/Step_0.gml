@@ -21,6 +21,6 @@ if (position_meeting(mouse_x, mouse_y, self))
 {
 	if (device_mouse_check_button_released(0, global.MouseLeft))
 	{
-	    scr_count_2hg_4();
+	    scr_loyalty_2hg_4();
 	}
 }

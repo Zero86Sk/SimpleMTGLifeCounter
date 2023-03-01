@@ -1,8 +1,12 @@
 event_inherited();
 draw_self();
 
-if (global.Debug == true)
+switch (global.Debug)
 {
-    draw_text(x, y, "Debug: On");
+	case true:
+		draw_text(x, y, "Debug: On");
+		break;
+	case false:	
+		draw_text(x, y, "Debug: Off");
+		break;
 }
-else draw_text(x, y, "Debug: Off");

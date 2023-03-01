@@ -14,3 +14,4 @@ if (global.Debug == true)
 	draw_text(room_width, 0 + 20, "Top Right |");
 	draw_text(room_width, room_height - 20, "Bottom Right |");
 }
+

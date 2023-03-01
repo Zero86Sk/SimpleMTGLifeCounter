@@ -2,12 +2,14 @@
 P4hp = 20;
 P4L = 0;
 
-if (room == rm_4players)
+switch (room)
 {	
-	ZoneX1 = room_width/2;
-	ZoneY1 = room_height/2;
-	ZoneX2 = room_width;
-	ZoneY2 = room_height;
-	TextX = room_width/4 + room_width/2;
-	TextY = room_height/4 + room_height/2;
+	case rm_4players:	
+		TextX = room_width/1.3;
+		TextY = room_height/1.25;
+		ZoneX1 = room_width/2;
+		ZoneY1 = room_height/2;
+		ZoneX2 = room_width;
+		ZoneY2 = room_height;
+		break;
 }

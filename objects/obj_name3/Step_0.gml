@@ -40,7 +40,6 @@ if (global.NameEntery3 == true)
 		switch (os_type)
 		{
 		case os_android:
-		case os_ios:
 			keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
 			break;
 		}
@@ -77,7 +76,6 @@ if (global.NameEntery3 == true)
 			switch (os_type)
 			{
 			case os_android:
-			case os_ios:
 				keyboard_virtual_hide();
 				break;
 			}

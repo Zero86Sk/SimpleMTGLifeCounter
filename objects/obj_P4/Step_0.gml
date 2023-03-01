@@ -19,17 +19,6 @@ if (P4Zone)
 
 }
 
-//Player 4
-if (keyboard_check_pressed(global.KeyR))
-{
-	P4hp += 1;
-}
-
-if (keyboard_check_pressed(global.KeyF))
-{
-	P4hp -= 1;
-}
-
 //Up Limit
 if (P4hp >= 999)
 {

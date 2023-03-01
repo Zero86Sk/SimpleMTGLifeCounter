@@ -1,6 +1,6 @@
 event_inherited();
 
-///Destroy if on Android and Windows Universal
+///Destroy if on Android and Windows
 switch(os_type)
 {
 	case os_windows:
@@ -8,9 +8,6 @@ switch(os_type)
 	case os_macosx:
 	    break;
 	case os_android:
-	case os_winphone:
-	case os_uwp:
-	case os_ios:
-	    instance_destroy();
+	    instance_deactivate_object(self);
 	    break;
 }

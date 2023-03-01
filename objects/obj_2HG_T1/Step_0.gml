@@ -19,17 +19,6 @@ if (P1Zone)
 
 }
 
-//Player 1
-if (keyboard_check_pressed(global.KeyQ))
-{
-	T1hp += 1;
-}
-
-if (keyboard_check_pressed(global.KeyA))
-{
-	T1hp -= 1;
-}
-
 //Up Limit
 if (T1hp >= 999)
 {

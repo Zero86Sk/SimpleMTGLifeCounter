@@ -1,4 +1,7 @@
-///Player 4 Hit Points
+//Rectangle
+scr_draw_roundrect_ext();
+
+//Player 4 Hit Points
 draw_set_font(fnt_huge);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -22,7 +25,9 @@ else
 
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
+
 draw_text(TextX, TextY - room_height/6, string(global.txt_P4Name));
+
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);
 
