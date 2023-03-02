@@ -1,18 +1,15 @@
 ///Swipe Action Individualy
-if (global.InputMode != 0)
+if (global.GameMode != 0)
 {
 	instance_deactivate_object(self);
 }
 
 if (global.Exit == true)
 or (global.Win == true)
-or (global.NameEntery1 == true)
-or (global.NameEntery2 == true)
-or (global.NameEntery3 == true)
-or (global.NameEntery4 == true)
 {
     exit;
 }
+
 
 if (device_mouse_check_button_pressed(0, global.MouseLeft))
 {

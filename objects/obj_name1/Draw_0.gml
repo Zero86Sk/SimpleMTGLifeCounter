@@ -14,6 +14,7 @@ or (global.NameEntery4 == true)
 
 if (global.NameEntery1 == true)
 {
+	draw_set_color(global.CBack);
 	scr_draw_rectangle();
 	draw_set_color(global.CWhite);     
 	entername = "Enter Name:"

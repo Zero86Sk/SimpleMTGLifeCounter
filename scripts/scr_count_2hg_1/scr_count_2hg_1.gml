@@ -21,7 +21,7 @@ function scr_swipe_life_2HG1_add()
 {
 	with (obj_2HG_T1)
 	{
-	    if (P1Zone)
+	    if (SwipeZone)
 		and (obj_swipe.MouseXStart > ZoneX1)
 		and (obj_swipe.MouseXStart < ZoneX2)
 		and (obj_swipe.MouseYStart > ZoneY1)
@@ -38,14 +38,13 @@ function scr_swipe_life_2HG1_add()
 			else T1hp += 1;
 		}
 	}
-
 }
 
 function scr_swipe_life_2HG1_sub()
 {
 	with (obj_2HG_T1)
 	{
-		if (P1Zone)
+		if (SwipeZone)
 		and (obj_swipe.MouseXStart > ZoneX1)
 		and (obj_swipe.MouseXStart < ZoneX2)
 		and (obj_swipe.MouseYStart > ZoneY1)
@@ -61,6 +60,43 @@ function scr_swipe_life_2HG1_sub()
 			}
 			else T1hp -= 1;
 		}
+	}	
+}
+
+function scr_tap_life_2HG1_add()
+{
+	with (obj_2HG_T1)
+	{
+		if (TapZoneA)
+		{
+			if (global.Loyalty_2HG1 == true)
+			{
+				P1L += 1;
+			}
+			else if (global.Loyalty_2HG2 == true)
+			{
+				P2L += 1;
+			}
+			else T1hp += 1;
+		}
 	}
-	
+}
+
+function scr_tap_life_2HG1_sub()
+{
+	with (obj_2HG_T1)
+	{
+		if (TapZoneB)
+		{
+			if (global.Loyalty_2HG1 == true)
+			{
+				P1L -= 1;
+			}
+			else if (global.Loyalty_2HG2 == true)
+			{
+				P2L -= 1;
+			}
+			else T1hp -= 1;
+		}
+	}	
 }

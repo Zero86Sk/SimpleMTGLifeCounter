@@ -1,6 +1,6 @@
 event_inherited();
 
-if (global.InputMode != 2)
+if (global.GameMode != 2)
 {
 	instance_deactivate_object(self);
 }

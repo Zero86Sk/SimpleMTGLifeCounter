@@ -1,4 +1,5 @@
 //Draw Rectangle
+draw_set_color(global.CBack);
 scr_draw_rectangle();
 
 draw_set_font(fnt_medium);
@@ -8,12 +9,12 @@ draw_set_color(global.CWhite);
 
 draw_self();
 
-if (rolling = true)
+if (rolling == true)
 {
-	draw_text(x, y + room_height/6, "...");
+	draw_text(x, room_height/1.3, "");
 }
 
-if (rolled = true)
+if (rolled == true)
 {
-	draw_text(x, y + room_height/6, string(image_index + 1));
+	draw_text(x, room_height/1.3, string(image_index + 1));
 }

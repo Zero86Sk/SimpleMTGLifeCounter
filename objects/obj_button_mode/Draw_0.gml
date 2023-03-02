@@ -1,7 +1,7 @@
 event_inherited();
 draw_self();
 
-switch (global.InputMode)
+switch (global.GameMode)
 {
 	case 0:
 		draw_text(x, y, "Mode: Swipe");

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_draw_roundrect_ext",
+  "name": "scr_draw_rectangles",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

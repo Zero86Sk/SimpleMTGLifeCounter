@@ -40,7 +40,7 @@ if (global.NameEntery3 == true)
 		switch (os_type)
 		{
 		case os_android:
-			keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
+			keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_default, kbv_autocapitalize_none, true)
 			break;
 		}
 		input_start = false;
@@ -52,6 +52,7 @@ if (global.NameEntery3 == true)
     }   
 
     if (keyboard_check_pressed(vk_enter))
+	or (keyboard_check_pressed(10))
 	or (os_is_paused())
     or (device_mouse_check_button_pressed(0, global.MouseLeft))
     {
@@ -75,9 +76,9 @@ if (global.NameEntery3 == true)
 			
 			switch (os_type)
 			{
-			case os_android:
-				keyboard_virtual_hide();
-				break;
+				case os_android:
+					keyboard_virtual_hide();
+					break;
 			}
 		} 
 	}

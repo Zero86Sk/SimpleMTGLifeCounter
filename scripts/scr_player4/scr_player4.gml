@@ -10,7 +10,7 @@ function scr_swipe_life4_add()
 {
 	with (obj_P4)
 	{
-	    if (P4Zone)
+	    if (SwipeZone)
 		and (obj_swipe.MouseXStart > ZoneX1)
 		and (obj_swipe.MouseXStart < ZoneX2)
 		and (obj_swipe.MouseYStart > ZoneY1)
@@ -30,7 +30,7 @@ function scr_swipe_life4_sub()
 {
 	with (obj_P4)
 	{
-		if (P4Zone)
+		if (SwipeZone)
 		and (obj_swipe.MouseXStart > ZoneX1)
 		and (obj_swipe.MouseXStart < ZoneX2)
 		and (obj_swipe.MouseYStart > ZoneY1)
@@ -44,4 +44,34 @@ function scr_swipe_life4_sub()
 		}
 	}
 	
+}
+
+function scr_tap_life4_add()
+{
+	with (obj_P4)
+	{
+		if (TapZoneA)
+		{
+			if (global.Loyalty4 == true)
+			{
+				P4L += 1;
+			}
+			else P4hp += 1;
+		}
+	}
+}
+
+function scr_tap_life4_sub()
+{
+	with (obj_P4)
+	{
+		if (TapZoneB)
+		{
+			if (global.Loyalty4 == true)
+			{
+				P4L -= 1;
+			}
+			else P4hp -= 1;
+		}
+	}	
 }

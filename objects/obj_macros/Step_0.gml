@@ -36,14 +36,15 @@ if (keyboard_check_pressed(global.BackKey))
 	if (global.back_twice == true)
 	and (keyboard_check_pressed(global.BackKey))
 	{
-		if (room == rm_main_menu)
-        {
-			game_end();
-        }
-        else
+		switch (room)
 		{
+		case rm_main_menu:
+			game_end();
+			break;
+        default:
 			room_goto(rm_main_menu);
 			scr_restart_room();
-		}		
+			break;
+		}
 	}
 }

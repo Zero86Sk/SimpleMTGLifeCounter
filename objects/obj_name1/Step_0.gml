@@ -40,7 +40,7 @@ if (global.NameEntery1 == true)
 		switch (os_type)
 		{
 		case os_android:
-			keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
+			keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_default, kbv_autocapitalize_none, true)
 			break;
 		}
 		input_start = false;
@@ -52,6 +52,7 @@ if (global.NameEntery1 == true)
     }   
 
     if (keyboard_check_pressed(vk_enter))
+	or (keyboard_check_pressed(global.BackKey))
 	or (os_is_paused())
 	or (device_mouse_check_button_pressed(0, global.MouseLeft))
     {
@@ -67,7 +68,6 @@ if (global.NameEntery1 == true)
 			input_finish = false;
 			keyboard_string = "";
 			
-			//scr_delete_settings();
 			scr_save_settings();
 			
 			global.NameEntery1 = false;
@@ -75,9 +75,9 @@ if (global.NameEntery1 == true)
 			
 			switch (os_type)
 			{
-			case os_android:
-				keyboard_virtual_hide();
-				break;
+				case os_android:
+					keyboard_virtual_hide();
+					break;
 			}
 		}
 		

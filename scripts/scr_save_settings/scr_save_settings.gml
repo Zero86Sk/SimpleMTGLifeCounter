@@ -13,7 +13,7 @@ function scr_save_settings()
 	ini_write_real("settings", "fullscreen", global.FullScreen);
 	ini_write_real("settings", "sfx", global.SoundFXVol); 
 	ini_write_real("settings", "background", global.MagicBG);
-	ini_write_real("settings", "mode", global.InputMode);
+	ini_write_real("settings", "mode", global.GameMode);
 
 	//Closes File
 	ini_close();

@@ -1,22 +1,31 @@
 ///Player 1 Health
 if (global.Exit == true)
 or (global.Win == true)
-or (global.NameEntery1 == true)
-or (global.NameEntery2 == true)
-or (global.NameEntery3 == true)
-or (global.NameEntery4 == true)
 {
     exit;
 }
 
-P1Zone = device_mouse_x(0) >= ZoneX1
+SwipeZone = device_mouse_x(0) >= ZoneX1
 and device_mouse_x(0) <= ZoneX2
 and device_mouse_y(0) >= ZoneY1
 and device_mouse_y(0) <= ZoneY2;
 
-if (P1Zone)
-{
+TapZoneA = device_mouse_x(0) >= TapAX1
+and device_mouse_x(0) <= TapAX2
+and device_mouse_y(0) >= TapAY1
+and device_mouse_y(0) <= TapAY2;
 
+TapZoneB = device_mouse_x(0) >= TapBX1
+and device_mouse_x(0) <= TapBX2
+and device_mouse_y(0) >= TapBY1
+and device_mouse_y(0) <= TapBY2;
+
+//if mouse or fingue is on a button, you are not in a zone
+if (position_meeting(mouse_x, mouse_y, obj_parent_button))
+{
+	SwipeZone = 0;
+	TapZoneA = 0;
+	TapZoneB = 0;
 }
 
 //Up Limit

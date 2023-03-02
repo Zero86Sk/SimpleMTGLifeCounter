@@ -4,13 +4,11 @@ if (global.Exit == true)
     exit;
 }
 
-image_index = 0;
-
 if (position_meeting(mouse_x, mouse_y, self))
 {
 	//scales image
-	image_xscale = lerp(image_xscale, 1.2, 0.1);
-	image_yscale = lerp(image_yscale, 1.2, 0.1);
+	image_xscale = lerp(image_xscale, scale_big, lerp_amount);
+	image_yscale = lerp(image_yscale, scale_big, lerp_amount);
 	
 	if (device_mouse_check_button(0, global.MouseLeft))
     {
@@ -33,9 +31,11 @@ if (position_meeting(mouse_x, mouse_y, self))
 }
 else
 {
+	image_index = 0;
+	
 	//returns image scale to normal
-	image_xscale = lerp(image_xscale, 1, 0.1);
-	image_yscale = lerp(image_yscale, 1, 0.1);
+	image_xscale = lerp(image_xscale, scale_default, lerp_amount);
+	image_yscale = lerp(image_yscale, scale_default, lerp_amount);
 }
 
 ///FadeIn
