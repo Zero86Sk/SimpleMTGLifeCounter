@@ -1,6 +1,6 @@
 if (global.Debug =  true)
 {
-	draw_set_color(c_orange);
+	draw_set_color(global.COrange);
 	draw_line(MouseXStart, MouseYStart, MouseX, MouseY);
 
 	//Draw Rectamgle

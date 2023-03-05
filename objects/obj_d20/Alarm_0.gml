@@ -1,3 +1,3 @@
 ///@description Rolled = True
-rolling = false;
-rolled = true;
+Rolling = false;
+Rolled = true;

@@ -1,11 +1,3 @@
-event_inherited();
-
-if (global.GameMode != 2)
-{
-	instance_deactivate_object(self);
-}
-
-///Button Script
 if (global.Exit == true)
 or (global.Win == true)
 or (global.NameEntery1 == true)
@@ -13,7 +5,14 @@ or (global.NameEntery2 == true)
 or (global.NameEntery3 == true)
 or (global.NameEntery4 == true)
 {
-    exit;
+	exit;
+}
+
+event_inherited();
+
+if (global.GameMode != 2)
+{
+	instance_deactivate_object(self);
 }
 
 if (position_meeting(mouse_x, mouse_y, self))

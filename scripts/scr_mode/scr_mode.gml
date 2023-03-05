@@ -1,15 +1,15 @@
 function scr_mode()
 {
-	if (global.GameMode == 0)
+	switch (global.GameMode)
 	{
-		global.GameMode = 1;
-	}
-	else if (global.GameMode == 1)
-	{
-		global.GameMode = 2;
-	}
-	else if (global.GameMode == 2)
-	{
-		global.GameMode = 0;
+		case 0:
+			global.GameMode = 1;
+			break;
+		case 1:
+			global.GameMode = 2;
+			break;
+		case 2:
+			global.GameMode = 0;
+			break;
 	}
 }

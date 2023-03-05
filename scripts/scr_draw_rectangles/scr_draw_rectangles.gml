@@ -1,40 +1,40 @@
 function scr_draw_rectangle()
 {
-	var _mar = 0;
+	var Margin = 0;
 	var _rad = 100;
 
 	draw_set_alpha(0.8);	
 	//draw_rectangle(0, 0, room_width, room_height, 0);
-	draw_roundrect_ext(0 + _mar, 0 + _mar, room_width - _mar, room_height - _mar, _rad, _rad, 0)
+	draw_roundrect_ext(0 + Margin, 0 + Margin, room_width - Margin, room_height - Margin, _rad, _rad, 0)
 	draw_set_alpha(1.0);
 }
 
 function scr_draw_roundrect_swipe()
 {
-	var _mar = 20;
+	var Margin = 20;
 	var _rad = 100;
 	
 	draw_set_alpha(0.2);
-	draw_roundrect_ext(ZoneX1 + _mar, ZoneY1 + _mar, ZoneX2 - _mar, ZoneY2 - _mar, _rad, _rad, 0);
+	draw_roundrect_ext(ZoneX1 + Margin, ZoneY1 + Margin, ZoneX2 - Margin, ZoneY2 - Margin, _rad, _rad, 0);
 	draw_set_alpha(1.0);
 }
 
 function scr_draw_roundrect_tapA()
 {
-	var _mar = 20;
+	var Margin = 20;
 	var _rad = 100;
 	
 	draw_set_alpha(0.2);	
-	draw_roundrect_ext(TapAX1 + _mar, TapAY1 + _mar, TapAX2 - _mar, TapAY2 - _mar, _rad, _rad, 0);
+	draw_roundrect_ext(TapAX1 + Margin, TapAY1 + Margin, TapAX2 - Margin, TapAY2 - Margin, _rad, _rad, 0);
 	draw_set_alpha(1.0);
 }
 
 function scr_draw_roundrect_tapB()
 {
-	var _mar = 20;
+	var Margin = 20;
 	var _rad = 100;
 	
 	draw_set_alpha(0.2);	
-	draw_roundrect_ext(TapBX1 + _mar, TapBY1 + _mar, TapBX2 - _mar, TapBY2 - _mar, _rad, _rad, 0);
+	draw_roundrect_ext(TapBX1 + Margin, TapBY1 + Margin, TapBX2 - Margin, TapBY2 - Margin, _rad, _rad, 0);
 	draw_set_alpha(1.0);
 }

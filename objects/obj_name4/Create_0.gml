@@ -3,8 +3,8 @@ event_inherited();
 Time = 0;
 
 Cursor = "";
-InputLength = 12;
 MinLength = 1;
+InputLength = 12;
 
-input_start = false;
+InputStart = false;
 input_finish = false;

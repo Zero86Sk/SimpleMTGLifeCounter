@@ -1,9 +1,10 @@
 ///Global Variables
 global.Exit = false;
 global.Win = false;
-
-//debug
 global.Debug = false;
+
+//Players
+global.Players = 1;
 
 //Player Names
 global.txt_P1Name = "Player 1";

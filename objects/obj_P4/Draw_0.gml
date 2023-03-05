@@ -21,7 +21,7 @@ switch (global.GameMode)
 			{	
 				scr_draw_roundrect_tapB();			
 			}
-		}
+		}		
 		
 		break;
 }

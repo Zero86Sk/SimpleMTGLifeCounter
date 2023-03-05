@@ -1,6 +1,3 @@
-event_inherited();
-
-///Button Script
 if (global.Exit == true)
 or (global.Win == true)
 or (global.NameEntery1 == true)
@@ -8,8 +5,10 @@ or (global.NameEntery2 == true)
 or (global.NameEntery3 == true)
 or (global.NameEntery4 == true)
 {
-    exit;
+	exit;
 }
+
+event_inherited();
 
 if (position_meeting(mouse_x, mouse_y, self))
 {
@@ -45,8 +44,7 @@ if (Time == 0)
 	if (instance_exists(obj_reset_msg))
 	{
 		instance_destroy(obj_reset_msg);
-		//show_debug_message(string(obj_reset_msg) + " destroyed")
-		
+		//show_debug_message(string(obj_reset_msg) + " destroyed")		
 	}
 }
 

@@ -1,5 +1,3 @@
-event_inherited();
-
 if (global.Exit == true)
 or (global.Win == true)
 or (global.NameEntery2 == true)
@@ -7,80 +5,85 @@ or (global.NameEntery3 == true)
 or (global.NameEntery4 == true)
 {
     exit;
-}
+} 
+
+event_inherited();
 
 if (position_meeting(mouse_x, mouse_y, self))
 {
     if (device_mouse_check_button(0, global.MouseLeft))
     {     
-        Time++;   
+        //Time++;
     }
     
     if (device_mouse_check_button_released(0, global.MouseLeft))
     {
-        Time = 0;
+        //Time = 0;
+		global.NameEntery1 = true;
+		InputStart = true;
     }
 }
 
 if (Time == 30)
 {
-    global.NameEntery1 = true;    
+	global.NameEntery1 = true;    
     Time = 0;
-	input_start = true;
+	InputStart = true;
 }
 
 if (global.NameEntery1 == true)
 {
     Cursor = "|";
     depth = -5000;
-	instance_deactivate_object(obj_macros);
 
-	if (input_start == true)
-	{
+	if (InputStart == true)
+	{		
 		switch (os_type)
 		{
 		case os_android:
-			keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_default, kbv_autocapitalize_none, true)
+			if (keyboard_virtual_status() != true)
+			{
+				keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_done, kbv_autocapitalize_none, true)
+			}
 			break;
 		}
-		input_start = false;
+		
+		InputStart = false;
 	}
 
     if(string_length(keyboard_string) <= InputLength)
     {
         global.txt_P1Name = string_copy(keyboard_string, 1, InputLength);
-    }   
+    } 
 
     if (keyboard_check_pressed(vk_enter))
-	or (keyboard_check_pressed(global.BackKey))
-	or (os_is_paused())
-	or (device_mouse_check_button_pressed(0, global.MouseLeft))
+	or (keyboard_check_pressed(13))
+    or (device_mouse_check_button_pressed(0, global.MouseLeft))
     {
         if(string_length(keyboard_string) < MinLength)
         {
             global.txt_P1Name = "Player 1";
         }
 		
-		input_finish = true;
-		
-		if (input_finish == true)
+		InputFinish = true;
+
+		if (InputFinish == true)
 		{	
-			input_finish = false;
-			keyboard_string = "";
-			
-			scr_save_settings();
-			
-			global.NameEntery1 = false;
-			instance_activate_object(obj_macros);
-			
 			switch (os_type)
 			{
 				case os_android:
-					keyboard_virtual_hide();
+					if (keyboard_virtual_status() == true)
+					{
+						keyboard_virtual_hide();
+					}
 					break;
 			}
+			
+			keyboard_string = "";		
+			scr_save_settings();
+			InputFinish = false;
+			global.NameEntery1 = false;
 		}
-		
 	}
 }
 else

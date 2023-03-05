@@ -11,20 +11,20 @@ or (global.NameEntery4 == true)
 
 if (global.back_once == true)
 {
-	time++;
+	Time++;
 }
 else instance_destroy(obj_back_msg);
 
-if (time > 5)
+if (Time > 5)
 {
 	global.back_twice = true;
 }
 
-if (time == 60)
+if (Time == 60)
 {
 	global.back_once = false;
 	global.back_twice = false;
-	time = 0;
+	Time = 0;
 }
 
 //Exit 

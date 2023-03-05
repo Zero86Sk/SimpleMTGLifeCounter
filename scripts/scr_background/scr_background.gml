@@ -1,3 +1,3 @@
-function scr_background(bg_name){
-	global.MagicBG = bg_name;
+function scr_background(BgName){
+	global.MagicBG = BgName;
 }

@@ -1,4 +1,4 @@
-if (rolling == true)
+if (Rolling == true)
 {
 	if (image_angle > 0)
 	{
@@ -13,7 +13,7 @@ if (rolling == true)
     }
 }
 
-if (rolled == true)
+if (Rolled == true)
 {
 	///Destroy Object
     if (device_mouse_check_button_pressed(0, global.MouseLeft))

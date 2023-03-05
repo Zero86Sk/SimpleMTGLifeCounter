@@ -1,4 +1,4 @@
-if (rolling == true)
+if (Rolling == true)
 {
 	if (image_angle > 0)
 	{

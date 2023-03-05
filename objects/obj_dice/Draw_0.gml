@@ -9,7 +9,7 @@ draw_set_color(global.CWhite);
 
 draw_self();
 
-if (rolling == true)
+if (Rolling == true)
 {
 	draw_text(x, room_height/1.3, "");
 }

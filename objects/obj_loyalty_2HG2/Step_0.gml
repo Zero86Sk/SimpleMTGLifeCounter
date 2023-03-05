@@ -1,6 +1,3 @@
-event_inherited();
-
-///Button Script
 if (global.Exit == true)
 or (global.Win == true)
 or (global.NameEntery1 == true)
@@ -8,8 +5,10 @@ or (global.NameEntery2 == true)
 or (global.NameEntery3 == true)
 or (global.NameEntery4 == true)
 {
-    exit;
+	exit;
 }
+
+event_inherited();
 
 if (global.Loyalty_2HG2 == true)
 {

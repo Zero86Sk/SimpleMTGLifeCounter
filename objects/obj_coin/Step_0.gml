@@ -1,13 +1,13 @@
-if (flipping == true)
+if (Flipping == true)
 {
-	sin_value += (pi * 2) / steps_cycle;
+	SinValue += (pi * 2) / StepsCycle;
 
-	if (sin_value >= (pi * 2))
+	if (SinValue >= (pi * 2))
 	{
-		sin_value = 0;
+		SinValue = 0;
 	}
 
-	image_yscale = sin(sin_value);
+	image_yscale = sin(SinValue);
 
 	if (image_yscale >= 0)
 	{
@@ -21,7 +21,7 @@ if (flipping == true)
     }
 }
 
-if (flipped == true)
+if (Flipped == true)
 {
 	///Destroy Object
     if (device_mouse_check_button_pressed(0, global.MouseLeft))

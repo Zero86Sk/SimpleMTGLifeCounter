@@ -1,23 +1,21 @@
-testmode = 0;
+TestMode = 0;
 
-if (testmode == 1)
+if (TestMode == 1)
 {
-	view_width = 1920;
-	view_height = 1080;
+	ViewWidth = 1920;
+	ViewHeight = 1080;
 }
 else
 {
-	view_width = round(window_get_width());
-	view_height = round(window_get_height());
+	ViewWidth = round(window_get_width());
+	ViewHeight = round(window_get_height());
 }
 
-window_scale = 1;
-
-window_set_size(view_width * window_scale, view_height * window_scale);
+WindowScale = 1;
+window_set_size(ViewWidth * WindowScale, ViewHeight * WindowScale);
 
 //recenter the resolution
 alarm[0] = 1;
 
-surface_resize(application_surface, view_width * window_scale, view_height * window_scale);
-
+surface_resize(application_surface, ViewWidth * WindowScale, ViewHeight * WindowScale);
 room_goto(room_next(room));

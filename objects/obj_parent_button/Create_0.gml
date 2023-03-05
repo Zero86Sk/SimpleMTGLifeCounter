@@ -7,6 +7,6 @@ FadeIn = true;
 FadeOut = false;
 
 //Lerp
-scale_default = 1;
-scale_big = 1.1;
-lerp_amount = 0.2;
+ScaleDefault = 1;
+ScaleBig = 1.1;
+LerpAmount = 0.2;

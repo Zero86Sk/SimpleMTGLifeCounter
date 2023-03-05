@@ -9,12 +9,12 @@ draw_set_color(global.CWhite);
 
 draw_self();
 
-if (flipping == true)
+if (Flipping == true)
 {
 	draw_text(x, room_height/1.3, "");
 }
 
-if (flipped == true)
+if (Flipped == true)
 {
 	if (image_index = 1)
 	{
