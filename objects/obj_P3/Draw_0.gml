@@ -6,6 +6,7 @@ switch (global.GameMode)
 		scr_draw_roundrect_swipe();
 		break;
 	case 1:
+		scr_draw_roundrect_tap();
 		scr_draw_roundrect_tapA();
 		scr_draw_roundrect_tapB();
 				

@@ -39,6 +39,7 @@ if (Swipe = true)
 		//Swipe Up  
 		else if ((PDir > 45) and (PDir < 135)) and (SwipeSpeed > 4.5)
         {
+			scr_swipe_players_add();
 			scr_swipe_life1_add();
 			scr_swipe_life2_add();
 			scr_swipe_life3_add();
@@ -54,6 +55,7 @@ if (Swipe = true)
 		//Swipe Down  
 		else if ((PDir > 225) and (PDir < 315)) and (SwipeSpeed > 4.5)  
         {
+			scr_swipe_players_sub();
 			scr_swipe_life1_sub();
 			scr_swipe_life2_sub();
 			scr_swipe_life3_sub();

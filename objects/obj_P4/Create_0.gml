@@ -2,9 +2,9 @@
 P4hp = 20;
 P4L = 0;
 
-switch (room)
+switch (global.Players)
 {	
-	case rm_4players:
+	case 4:
 		TextX = room_width/1.3;
 		TextY = room_height/3.35;
 		
@@ -17,6 +17,20 @@ switch (room)
 		TapAY2 = room_height/4.3;
 		TapBY1 = room_height/4.3;
 		TapBY2 = room_height/2;
+		break;
+	default:
+		TextX = 0;
+		TextY = 0;
+		ZoneX1 = 0;
+		ZoneX2 = 0;
+		ZoneY1 = 0;
+		ZoneY2 = 0;		
+		TapAY1 = 0;
+		TapAY2 = 0;	
+		TapBY1 = 0;
+		TapBY2 = 0;	
+		instance_destroy(self);
+		instance_destroy(obj_loyalty4);
 		break;
 }
 

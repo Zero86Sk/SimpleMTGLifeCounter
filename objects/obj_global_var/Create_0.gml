@@ -3,9 +3,6 @@ global.Exit = false;
 global.Win = false;
 global.Debug = false;
 
-//Players
-global.Players = 1;
-
 //Player Names
 global.txt_P1Name = "Player 1";
 global.txt_P2Name = "Player 2";
@@ -35,6 +32,19 @@ global.MouseLeft = mb_left;
 global.back_once = false;
 global.back_twice = false;
 
+//Return Key on PC and Android
+switch (os_type)
+	{
+	case os_windows:
+	case os_macosx:
+	case os_linux:
+		global.ReturnKey = vk_enter;
+		break;	
+	case os_android:
+		global.ReturnKey = 13;	
+		break;
+	}
+
 //Back Key is ESC on PC and Backspace (back button) on Phones
 switch (os_type)
 	{
@@ -53,6 +63,7 @@ global.FullScreen = false;
 global.SoundFXVol = true;
 global.MagicBG = bg_black;
 global.GameMode = 0;
+global.Players = 1;
 
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);

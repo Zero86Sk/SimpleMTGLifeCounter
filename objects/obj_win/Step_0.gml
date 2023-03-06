@@ -1,7 +1,7 @@
 ///Win Condition
-switch (room)
+switch (global.Players)
 {
-	case rm_2players:
+	case 2:
 	    //Player 1 Wins
 	    if (obj_P2.P2hp <= 0)
 	    {
@@ -14,7 +14,7 @@ switch (room)
 	        global.Win = true;
 	    }
 		break;
-	case rm_3players:
+	case 3:
 	    //Player 1 Wins
 	    if (obj_P2.P2hp <= 0)
 		and (obj_P3.P3hp <= 0)
@@ -37,7 +37,7 @@ switch (room)
 	    }
 
 		break;
-	case rm_4players:
+	case 4:
 	    //Player 1 Wins
 	    if (obj_P2.P2hp <= 0)
 	    and (obj_P3.P3hp <= 0)
@@ -70,18 +70,18 @@ switch (room)
 	        global.Win = true;
 	    }
 		break;
-	case rm_2headed:
-	    //Team 1 Wins
-	    if (obj_2HG_T2.T2hp <= 0)
-	    {
-	        global.Win = true;
-	    }
+	case 7:
+		//Team 1 Wins
+		if (obj_2HG_T2.T2hp <= 0)
+		{
+		    global.Win = true;
+		}
 
-	    //Team 2 Wins
-	    if (obj_2HG_T1.T1hp <= 0)
-	    {
-	        global.Win = true;
-	    }
+		//Team 2 Wins
+		if (obj_2HG_T1.T1hp <= 0)
+		{
+		    global.Win = true;
+		}
 		break;
 }
 

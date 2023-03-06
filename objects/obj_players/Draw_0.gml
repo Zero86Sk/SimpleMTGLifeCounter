@@ -22,8 +22,7 @@ switch (global.GameMode)
 			{	
 				scr_draw_roundrect_tapB();			
 			}
-		}		
-		
+		}
 		break;
 }
 
@@ -33,27 +32,11 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(global.CWhite);
 
-if (global.Loyalty4 == true)
-{
-	draw_sprite_ext(spr_planeswalker, 0, TextX, TextY, 0.5, 0.5, 0, -1, 1);	
-	draw_text(TextX, TextY, P4L);    
-}
-else
-{
-	draw_text(TextX, TextY, P4hp);    
-	
-	if (P4hp <= 0)
-	{
-		draw_set_color(global.CRed);
-		draw_text(TextX, TextY, P4hp);              
-	}
-}
+draw_text(TextX, TextY, global.Players);  
 
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
-
-draw_text(TextX, TextY - room_height/6, string(global.txt_P4Name));
-
+draw_text(TextX, TextY - room_height/6, "No. of Players");
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);
 
@@ -65,12 +48,12 @@ if (global.Debug == true)
 	draw_set_font(fnt_small);
 	draw_set_alpha(0.5);
 	
-	var _player = "Player 4";
+	var _player = "Menu";
 	
 	switch (global.GameMode)
 	{
 		case 0:
-			draw_set_color(c_lime);
+			draw_set_color(c_red);
 			draw_rectangle(ZoneX1, ZoneY1, ZoneX2, ZoneY2, 0);		
 			draw_set_color(c_white);
 			draw_set_alpha(1);	
@@ -78,9 +61,9 @@ if (global.Debug == true)
 			draw_text(ZoneX1 + 96, ZoneY1 + 96, "Inside: " + string(SwipeZone));			
 			break;
 		case 1:
-			draw_set_color(c_lime);
+			draw_set_color(c_red);
 			draw_rectangle(TapAX1, TapAY1, TapAX2, TapAY2, 0);
-			draw_set_color(c_green);
+			draw_set_color(c_maroon);
 			draw_rectangle(TapBX1, TapBY1, TapBX2, TapBY2, 0);		
 			draw_set_color(c_white);
 			draw_set_alpha(1);	

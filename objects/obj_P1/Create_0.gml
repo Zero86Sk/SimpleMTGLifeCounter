@@ -2,9 +2,23 @@
 P1hp = 20;
 P1L = 0;
 
-switch (room)
+switch (global.Players)
 {
-	case rm_2players:	
+	case 1:
+		TextX = room_width/2;
+		TextY = room_height/1.8;
+		
+		ZoneX1 = room_width/3;
+		ZoneX2 = room_width/1.50;
+		ZoneY1 = 0;
+		ZoneY2 = room_height;		
+
+		TapAY1 = 0;
+		TapAY2 = room_height/2;
+		TapBY1 = room_height/2;
+		TapBY2 = room_height;
+		break;
+	case 2:	
 		TextX = room_width/4;
 		TextY = room_height/1.8;
 		
@@ -18,7 +32,7 @@ switch (room)
 		TapBY1 = room_height/2;
 		TapBY2 = room_height;
 		break;
-	case rm_3players:	
+	case 3:	
 		TextX = room_width/6;
 		TextY = room_height/1.8;
 		
@@ -32,7 +46,7 @@ switch (room)
 		TapBY1 = room_height/2;
 		TapBY2 = room_height;
 		break;
-	case rm_4players:
+	case 4:
 		TextX = room_width/4;
 		TextY = room_height/1.25;	
 		

@@ -56,8 +56,7 @@ if (global.NameEntery1 == true)
         global.txt_P1Name = string_copy(keyboard_string, 1, InputLength);
     } 
 
-    if (keyboard_check_pressed(vk_enter))
-	or (keyboard_check_pressed(13))
+    if (keyboard_check_pressed(global.ReturnKey))
     or (device_mouse_check_button_pressed(0, global.MouseLeft))
     {
         if(string_length(keyboard_string) < MinLength)

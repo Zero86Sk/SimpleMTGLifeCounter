@@ -72,6 +72,6 @@ function scr_tap_life1_sub()
 				P1L -= 1;
 			}
 			else P1hp -= 1;
-		}
-	}	
+		}	
+	}
 }

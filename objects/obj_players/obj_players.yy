@@ -1,21 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_button_3players",
+  "name": "obj_players",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Main Menu",
-    "path": "folders/Objects/Buttons/Main Menu.yy",
+    "name": "Main",
+    "path": "folders/Objects/Main.yy",
   },
-  "parentObjectId": {
-    "name": "obj_parent_button",
-    "path": "objects/obj_parent_button/obj_parent_button.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,10 +29,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_btn",
-    "path": "sprites/spr_btn/spr_btn.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -9,9 +9,9 @@ if (global.Win == true)
     draw_set_valign(fa_middle);	
 	draw_set_color(global.CWhite);
     
-	switch (room)
+	switch (global.Players)
 	{
-		case rm_2players:
+		case 2:
 	        //Player 1 Wins
 	        if (obj_P2.P2hp <= 0)
 	        {
@@ -24,7 +24,7 @@ if (global.Win == true)
 	            draw_text(room_width/2, room_height/2, string(global.txt_P2Name) + "\nWins");   
 	        }
 			break;
-		case rm_3players:
+		case 3:
 	        //Player 1 Wins
 	        if (obj_P2.P2hp <= 0)
 	        and (obj_P3.P3hp <= 0)
@@ -46,7 +46,7 @@ if (global.Win == true)
 				draw_text(room_width/2, room_height/2, string(global.txt_P3Name) + "\nWins");    
 	        }
 			break;
-		case rm_4players:
+		case 4:
 	        //Player 1 Wins
 	        if (obj_P2.P2hp <= 0)
 	        and (obj_P3.P3hp <= 0)
@@ -79,18 +79,17 @@ if (global.Win == true)
 				draw_text(room_width/2, room_height/2, string(global.txt_P4Name) + "\nWins");    
 	        }
 			break;
-		case rm_2headed:
-	        //Team 1 Wins
-	        if (obj_2HG_T2.T2hp <= 0)
-	        {
+		case 7:
+			if (obj_2HG_T2.T2hp <= 0)
+			{
 				draw_text(room_width/2, room_height/2, string(global.txt_P1Name) + " & " + string(global.txt_P2Name) + "\nWin");   
-	        }
+			}
     
-	        //Team 2 Wins
-	        if (obj_2HG_T1.T1hp <= 0)
-	        {
+			//Team 2 Wins
+			if (obj_2HG_T1.T1hp <= 0)
+			{
 				draw_text(room_width/2, room_height/2, string(global.txt_P3Name) + " & " + string(global.txt_P4Name) + "\nWin");
-	        }
+			}
 			break;
 	}
 }  
