@@ -2,18 +2,17 @@
 TextX = room_width/4;
 TextY = room_height/1.8;
 
-ZoneX1 = 0;
-ZoneX2 = room_width/2;
-ZoneY1 = 0;
-ZoneY2 = room_height;
+ZoneXStart = 0;
+ZoneXEnd = room_width/2;
+ZoneYStart = 0;
+ZoneYEnd = room_height;
 
-TapAY1 = 0;
-TapAY2 = room_height/2;
-TapBY1 = room_height/2;
-TapBY2 = room_height;
+TapAXStart = 0
+TapAXEnd = room_width/2;
+TapBXStart = 0;
+TapBXEnd = room_width/2;
 
-TapAX1 = ZoneX1
-TapAX2 = ZoneX2;
-TapBX1 = ZoneX1;
-TapBX2 = ZoneX2;
-
+TapAYStart = 0;
+TapAYEnd = room_height/2;
+TapBYStart = room_height/2;
+TapBYEnd = room_height;

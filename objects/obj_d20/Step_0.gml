@@ -7,10 +7,7 @@ if (Rolling == true)
 	}
 	
 	//Play Sound
-	if (!audio_is_playing(snd_dice))
-    {
-	    audio_play_sound(snd_dice, 10, false);
-    }
+	scr_play_sound(snd_dice);
 }
 
 if (Rolled == true)

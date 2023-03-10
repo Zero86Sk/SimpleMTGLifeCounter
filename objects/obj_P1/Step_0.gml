@@ -5,20 +5,20 @@ or (global.Win == true)
     exit;
 }
 
-SwipeZone = device_mouse_x(0) >= ZoneX1
-and device_mouse_x(0) <= ZoneX2
-and device_mouse_y(0) >= ZoneY1
-and device_mouse_y(0) <= ZoneY2;
+SwipeZone = device_mouse_x(0) >= ZoneXStart
+and device_mouse_x(0) <= ZoneXEnd
+and device_mouse_y(0) >= ZoneYStart
+and device_mouse_y(0) <= ZoneYEnd;
 
-TapZoneA = device_mouse_x(0) >= TapAX1
-and device_mouse_x(0) <= TapAX2
-and device_mouse_y(0) >= TapAY1
-and device_mouse_y(0) <= TapAY2;
+TapZoneA = device_mouse_x(0) >= TapAXStart
+and device_mouse_x(0) <= TapAXEnd
+and device_mouse_y(0) >= TapAYStart
+and device_mouse_y(0) <= TapAYEnd;
 
-TapZoneB = device_mouse_x(0) >= TapBX1
-and device_mouse_x(0) <= TapBX2
-and device_mouse_y(0) >= TapBY1
-and device_mouse_y(0) <= TapBY2;
+TapZoneB = device_mouse_x(0) >= TapBXStart
+and device_mouse_x(0) <= TapBXEnd
+and device_mouse_y(0) >= TapBYStart
+and device_mouse_y(0) <= TapBYEnd;
 
 //if mouse or fingue is on a button, you are not in a zone
 if (position_meeting(mouse_x, mouse_y, obj_parent_button))

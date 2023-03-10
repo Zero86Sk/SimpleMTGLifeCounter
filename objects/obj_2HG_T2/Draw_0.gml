@@ -6,6 +6,7 @@ switch (global.GameMode)
 		scr_draw_roundrect_swipe();
 		break;
 	case 1:
+		scr_draw_roundrect_tap();
 		scr_draw_roundrect_tapA();
 		scr_draw_roundrect_tapB();
 				
@@ -72,22 +73,22 @@ if (global.Debug == true)
 	{
 		case 0:
 			draw_set_color(c_blue);
-			draw_rectangle(ZoneX1, ZoneY1, ZoneX2, ZoneY2, 0);		
+			draw_rectangle(ZoneXStart, ZoneYStart, ZoneXEnd, ZoneYEnd, 0);		
 			draw_set_color(c_white);
 			draw_set_alpha(1);	
-			draw_text(ZoneX1 + 96, ZoneY1 + 64, _player);
-			draw_text(ZoneX1 + 96, ZoneY1 + 96, "Inside: " + string(SwipeZone));			
+			draw_text(ZoneXStart + 96, ZoneYStart + 64, _player);
+			draw_text(ZoneXStart + 96, ZoneYStart + 96, "Inside: " + string(SwipeZone));			
 			break;
 		case 1:
 			draw_set_color(c_blue);
-			draw_rectangle(TapAX1, TapAY1, TapAX2, TapAY2, 0);
+			draw_rectangle(TapAXStart, TapAYStart, TapAXEnd, TapAYEnd, 0);
 			draw_set_color(c_navy);
-			draw_rectangle(TapBX1, TapBY1, TapBX2, TapBY2, 0);		
+			draw_rectangle(TapBXStart, TapBYStart, TapBXEnd, TapBYEnd, 0);		
 			draw_set_color(c_white);
 			draw_set_alpha(1);	
-			draw_text(TapAX1 + 96, TapAY1 + 64, _player);
-			draw_text(TapAX1 + 96, TapAY1 + 96, "Inside: " + string(TapZoneA));
-			draw_text(TapBX1 + 96, TapBY1 + 64, "Inside: " + string(TapZoneB));
+			draw_text(TapAXStart + 96, TapAYStart + 64, _player);
+			draw_text(TapAXStart + 96, TapAYStart + 96, "Inside: " + string(TapZoneA));
+			draw_text(TapBXStart + 96, TapBYStart + 64, "Inside: " + string(TapZoneB));
 			break;
 	}
 }

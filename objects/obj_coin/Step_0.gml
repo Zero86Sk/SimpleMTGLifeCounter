@@ -15,10 +15,7 @@ if (Flipping == true)
 	} else image_index = 0;
 
 	//Play Sound
-    if (!audio_is_playing(snd_coinflip))
-    {
-	    audio_play_sound(snd_coinflip, 10, false);
-    }
+	scr_play_sound(snd_coinflip);
 }
 
 if (Flipped == true)

@@ -12,10 +12,7 @@ if (position_meeting(mouse_x, mouse_y, self))
     if (device_mouse_check_button_pressed(0, global.MouseLeft))
     {	
 		///Play Sound
-        if (!audio_is_playing(snd_click1))
-        {
-	        audio_play_sound(snd_click1, 10, false);
-        }
+		scr_play_sound(snd_click1);
     }
 	
 	if (device_mouse_check_button_released(0, global.MouseLeft))

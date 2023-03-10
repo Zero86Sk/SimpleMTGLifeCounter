@@ -62,7 +62,7 @@ switch (os_type)
 global.FullScreen = false;
 global.SoundFXVol = true;
 global.MagicBG = bg_black;
-global.GameMode = 0;
+global.GameMode = 1;
 global.Players = 1;
 
 audio_group_load(audiogroup_default);

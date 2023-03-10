@@ -8,47 +8,47 @@ switch (global.Players)
 		TextX = room_width/1.2;
 		TextY = room_height/1.8;
 		
-		ZoneX1 = room_width/1.5;
-		ZoneY1 = 0;
-		ZoneX2 = room_width;
-		ZoneY2 = room_height;
+		ZoneXStart = room_width/1.5;
+		ZoneYStart = 0;
+		ZoneXEnd = room_width;
+		ZoneYEnd = room_height;
 		
-		TapAY1 = 0;
-		TapAY2 = room_height/2;		
-		TapBY1 = room_height/2;
-		TapBY2 = room_height;		
+		TapAYStart = 0;
+		TapAYEnd = room_height/2;		
+		TapBYStart = room_height/2;
+		TapBYEnd = room_height;		
 		break;
 	case 4:	
 		TextX = room_width/4;
 		TextY = room_height/3.35;
 		
-		ZoneX1 = 0;
-		ZoneX2 = room_width/2;
-		ZoneY1 = 0;
-		ZoneY2 = room_height/2;
+		ZoneXStart = 0;
+		ZoneXEnd = room_width/2;
+		ZoneYStart = 0;
+		ZoneYEnd = room_height/2;
 		
-		TapAY1 = 0;
-		TapAY2 = room_height/4.3;
-		TapBY1 = room_height/4.3;
-		TapBY2 = room_height/2;
+		TapAYStart = 0;
+		TapAYEnd = room_height/4.3;
+		TapBYStart = room_height/4.3;
+		TapBYEnd = room_height/2;
 		break;
 	default:
 		TextX = 0;
 		TextY = 0;
-		ZoneX1 = 0;
-		ZoneX2 = 0;
-		ZoneY1 = 0;
-		ZoneY2 = 0;
-		TapAY1 = 0;
-		TapAY2 = 0;	
-		TapBY1 = 0;
-		TapBY2 = 0;	
+		ZoneXStart = 0;
+		ZoneXEnd = 0;
+		ZoneYStart = 0;
+		ZoneYEnd = 0;
+		TapAYStart = 0;
+		TapAYEnd = 0;	
+		TapBYStart = 0;
+		TapBYEnd = 0;	
 		instance_destroy(self);
 		instance_destroy(obj_loyalty3);
 		break;
 }
 
-TapAX1 = ZoneX1
-TapAX2 = ZoneX2;
-TapBX1 = ZoneX1;
-TapBX2 = ZoneX2;
+TapAXStart = ZoneXStart
+TapAXEnd = ZoneXEnd;
+TapBXStart = ZoneXStart;
+TapBXEnd = ZoneXEnd;

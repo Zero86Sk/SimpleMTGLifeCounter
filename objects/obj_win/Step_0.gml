@@ -70,7 +70,7 @@ switch (global.Players)
 	        global.Win = true;
 	    }
 		break;
-	case 7:
+	case -1:
 		//Team 1 Wins
 		if (obj_2HG_T2.T2hp <= 0)
 		{

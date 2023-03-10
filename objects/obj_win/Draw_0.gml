@@ -79,7 +79,7 @@ if (global.Win == true)
 				draw_text(room_width/2, room_height/2, string(global.txt_P4Name) + "\nWins");    
 	        }
 			break;
-		case 7:
+		case -1:
 			if (obj_2HG_T2.T2hp <= 0)
 			{
 				draw_text(room_width/2, room_height/2, string(global.txt_P1Name) + " & " + string(global.txt_P2Name) + "\nWin");   

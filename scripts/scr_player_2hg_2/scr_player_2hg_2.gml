@@ -21,10 +21,10 @@ function scr_swipe_life_2HG2_add()
 	with (obj_2HG_T2)
 	{
 	    if (SwipeZone)
-		and (obj_swipe.MouseXStart > ZoneX1)
-		and (obj_swipe.MouseXStart < ZoneX2)
-		and (obj_swipe.MouseYStart > ZoneY1)
-		and (obj_swipe.MouseYStart < ZoneY2)
+		and (obj_swipe.MouseXStart > ZoneXStart)
+		and (obj_swipe.MouseXStart < ZoneXEnd)
+		and (obj_swipe.MouseYStart > ZoneYStart)
+		and (obj_swipe.MouseYStart < ZoneYEnd)
 	    {
 			if (global.Loyalty_2HG3 == true)
 			{
@@ -44,10 +44,10 @@ function scr_swipe_life_2HG2_sub()
 	with (obj_2HG_T2)
 	{
 		if (SwipeZone)
-		and (obj_swipe.MouseXStart > ZoneX1)
-		and (obj_swipe.MouseXStart < ZoneX2)
-		and (obj_swipe.MouseYStart > ZoneY1)
-		and (obj_swipe.MouseYStart < ZoneY2)
+		and (obj_swipe.MouseXStart > ZoneXStart)
+		and (obj_swipe.MouseXStart < ZoneXEnd)
+		and (obj_swipe.MouseYStart > ZoneYStart)
+		and (obj_swipe.MouseYStart < ZoneYEnd)
 		{
 			if (global.Loyalty_2HG3 == true)
 			{
