@@ -1,7 +1,7 @@
-function scr_play_sound(sound)
+function scr_play_sound(_sound)
 {	
-	if (!audio_is_playing(sound))
+	if (!audio_is_playing(_sound))
     {
-	    audio_play_sound(sound, 10, false);
+	    audio_play_sound(_sound, 10, false);
     }
 }

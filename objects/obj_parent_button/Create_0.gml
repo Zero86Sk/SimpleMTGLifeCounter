@@ -3,10 +3,10 @@ image_index = 0;
 image_speed = 0;
 image_alpha = 0;
 
-FadeIn = true;
-FadeOut = false;
+fade_in = true;
+fade_out = false;
 
 //Lerp
-ScaleDefault = 1;
-ScaleBig = 1.1;
-LerpAmount = 0.2;
+scale_default = 1;
+scale_big = 1.1;
+lerp_amount = 0.2;

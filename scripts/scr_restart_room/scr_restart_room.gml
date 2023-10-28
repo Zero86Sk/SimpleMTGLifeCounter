@@ -1,49 +1,49 @@
 function scr_restart_room()
 {
-	global.Loyalty1 = false;
-	global.Loyalty2 = false;
-	global.Loyalty3 = false;
-	global.Loyalty4 = false;
-	global.Loyalty_2HG1 = false;
-	global.Loyalty_2HG2 = false;
-	global.Loyalty_2HG3 = false;
-	global.Loyalty_2HG4 = false;
+	global.loyalty1 = false;
+	global.loyalty2 = false;
+	global.loyalty3 = false;
+	global.loyalty4 = false;
+	global.loyalty_team1_p1 = false;
+	global.loyalty_team1_p2 = false;
+	global.loyalty_team2_p1 = false;
+	global.loyalty_team2_p2 = false;
 
-	if (instance_exists(obj_P1))
+	if (instance_exists(obj_player1))
 	{
-		obj_P1.P1hp = 20;
-		obj_P1.P1L = 0;
+		obj_player1.player1_hp = 20;
+		obj_player1.player1_loyalty = 0;
 	}
 
-	if (instance_exists(obj_P2))
+	if (instance_exists(obj_player2))
 	{
-		obj_P2.P2hp = 20;
-		obj_P2.P2L = 0;
+		obj_player2.player2_hp = 20;
+		obj_player2.player2_loyalty = 0;
 	}
 
-	if (instance_exists(obj_P3))
+	if (instance_exists(obj_player3))
 	{
-		obj_P3.P3hp = 20;
-		obj_P3.P3L = 0;
+		obj_player3.player3_hp = 20;
+		obj_player3.player3_loyalty = 0;
 	}
 
-	if (instance_exists(obj_P4))
+	if (instance_exists(obj_player4))
 	{
-		obj_P4.P4hp = 20;  
-		obj_P4.P4L = 0;
+		obj_player4.player4_hp = 20;  
+		obj_player4.player4_loyalty = 0;
 	}
 
-	if (instance_exists(obj_2HG_T1))
+	if (instance_exists(obj_team1))
 	{
-		obj_2HG_T1.T1hp = 30;
-		obj_2HG_T1.P1L = 0;
-		obj_2HG_T1.P2L = 0;
+		obj_team1.team1_hp = 30;
+		obj_team1.player1_loyalty = 0;
+		obj_team1.player2_loyalty = 0;
 	}
 
-	if (instance_exists(obj_2HG_T2))
+	if (instance_exists(obj_team2))
 	{
-		obj_2HG_T2.T2hp = 30;
-		obj_2HG_T2.P1L = 0;
-		obj_2HG_T2.P2L = 0;
+		obj_team2.team2_hp = 30;
+		obj_team2.player1_loyalty = 0;
+		obj_team2.player2_loyalty = 0;
 	}
 }

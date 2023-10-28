@@ -1,8 +1,8 @@
-///@description Rolled = True
-Flipping = false;
-Flipped = true;
+///@description rolled = True
+flipping = false;
+flipped = true;
 
-if (Flipped == true)
+if (flipped == true)
 {	
 	image_yscale = 1;
 	image_index = choose(0,1);

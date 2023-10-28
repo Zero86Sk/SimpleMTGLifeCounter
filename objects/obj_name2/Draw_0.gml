@@ -1,37 +1,37 @@
 event_inherited();
 draw_self();
 
-draw_text(x, y, global.txt_P2Name);
+draw_text(x, y, global.txt_p2name);
 
-if (global.Exit == true)
-or (global.Win == true)
-or (global.NameEntery1 == true)
-or (global.NameEntery3 == true)
-or (global.NameEntery4 == true)
+if (global.pause == true)
+or (global.win == true)
+or (global.name_entery1 == true)
+or (global.name_entery3 == true)
+or (global.name_entery4 == true)
 {
     exit;
 }
 
-if (global.NameEntery2 == true)
+if (global.name_entery2 == true)
 {
-	draw_set_color(global.CBack);
+	draw_set_color(global.col_background);
 	scr_draw_rectangle();
-	draw_set_color(global.CWhite);
-    entername = "Enter Name:"
+	draw_set_color(global.col_white);
+    var _enter_name = "Enter Name:"
 		
     switch(os_type)
     {
     case os_windows:
     case os_linux:
 	case os_macosx:
-		draw_text(x, y - 105, entername);
+		draw_text(x, y - 105, _enter_name);
 		draw_sprite_ext(spr_btn, 1, x, y, 1.2, 1.2, 0, -1, 1);        
-		draw_text(x, y, global.txt_P2Name + Cursor);
+		draw_text(x, y, global.txt_p2name + cursor);
         break;
 	case os_android:    
 		draw_sprite_ext(spr_btn, 1, room_width/2, room_height/6, 1.2, 1.2, 0, -1, 1);
-		draw_text(room_width/2, room_height/6 - 105, entername);
-		draw_text(room_width/2, room_height/6, global.txt_P2Name + Cursor);
+		draw_text(room_width/2, room_height/6 - 105, _enter_name);
+		draw_text(room_width/2, room_height/6, global.txt_p2name + cursor);
         break;		
     }
 }

@@ -1,57 +1,57 @@
 function scr_draw_rectangle()
 {
-	var Margin = 0;
-	var Rad = 100;
-	var Alpha = 0.7;
+	var _margin = 0;
+	var _radius = 100;
+	var _alpha = 0.7;
 	
-	draw_set_alpha(Alpha);	
+	draw_set_alpha(_alpha);	
 	//draw_rectangle(0, 0, room_width, room_height, 0);
-	draw_roundrect_ext(0 + Margin, 0 + Margin, room_width - Margin, room_height - Margin, Rad, Rad, 0)
+	draw_roundrect_ext(0 + _margin, 0 + _margin, room_width - _margin, room_height - _margin, _radius, _radius, 0)
 	draw_set_alpha(1.0);
 }
 
 function scr_draw_roundrect_swipe()
 {
-	var Margin = 20;
-	var Rad = 100;
-	var Alpha = 0.2;
+	var _margin = 20;
+	var _radius = 100;
+	var _alpha = 0.2;
 	
-	draw_set_alpha(Alpha);
-	draw_roundrect_ext(ZoneXStart + Margin, ZoneYStart + Margin, ZoneXEnd - Margin, ZoneYEnd - Margin, Rad, Rad, 0);
+	draw_set_alpha(_alpha);
+	draw_roundrect_ext(zonex_start + _margin, zoney_start + _margin, zonex_end - _margin, zoney_end - _margin, _radius, _radius, 0);
 	draw_set_alpha(1.0);
 }
 
 function scr_draw_roundrect_tap()
 {
-	var Margin = 20;
-	var Rad = 100;
-	var Alpha = 0.1;
+	var _margin = 20;
+	var _radius = 100;
+	var _alpha = 0.1;
 	
-	draw_set_alpha(Alpha);
-	draw_roundrect_ext(ZoneXStart + Margin, ZoneYStart + Margin, ZoneXEnd - Margin, ZoneYEnd - Margin, Rad, Rad, 0);
+	draw_set_alpha(_alpha);
+	draw_roundrect_ext(zonex_start + _margin, zoney_start + _margin, zonex_end - _margin, zoney_end - _margin, _radius, _radius, 0);
 	draw_set_alpha(1.0);
 }
 
-function scr_draw_roundrect_tapA()
+function scr_draw_roundrect_tap_a()
 {
-	var Margin = 30;
-	var MarginY = 10;
-	var Rad = 100;
-	var Alpha = 0.1;
+	var _margin = 30;
+	var _margin_y = 10;
+	var _radius = 100;
+	var _alpha = 0.1;
 	
-	draw_set_alpha(Alpha);	
-	draw_roundrect_ext(TapAXStart + Margin, TapAYStart + Margin, TapAXEnd - Margin, TapAYEnd - MarginY, Rad, Rad, 0);
+	draw_set_alpha(_alpha);	
+	draw_roundrect_ext(tap_ax_start + _margin, tap_ay_start + _margin, tap_ax_end - _margin, tap_ay_end - _margin_y, _radius, _radius, 0);
 	draw_set_alpha(1.0);
 }
 
-function scr_draw_roundrect_tapB()
+function scr_draw_roundrect_tap_b()
 {
-	var Margin = 30;
-	var MarginY = 10;
-	var Rad = 100;
-	var Alpha = 0.1;
+	var _margin = 30;
+	var _margin_y = 10;
+	var _radius = 100;
+	var _alpha = 0.1;
 	
-	draw_set_alpha(Alpha);	
-	draw_roundrect_ext(TapBXStart + Margin, TapBYStart + MarginY, TapBXEnd - Margin, TapBYEnd - Margin, Rad, Rad, 0);
+	draw_set_alpha(_alpha);	
+	draw_roundrect_ext(tap_bx_start + _margin, tap_by_start + _margin_y, tap_bx_end - _margin, tap_by_end - _margin, _radius, _radius, 0);
 	draw_set_alpha(1.0);
 }

@@ -1,10 +1,10 @@
 function scr_fullscreen()
 {
-	if (global.FullScreen == false)
+	if (global.full_screen == false)
 	{
-	    global.FullScreen = true;
+	    global.full_screen = true;
 	}
-	else global.FullScreen = false;
+	else global.full_screen = false;
     
-	window_set_fullscreen(global.FullScreen);
+	window_set_fullscreen(global.full_screen);
 }

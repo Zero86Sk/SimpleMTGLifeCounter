@@ -1,2 +1,2 @@
 ///Variables
-Time = 0;
+time = 0;

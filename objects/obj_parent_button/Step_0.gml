@@ -1,21 +1,21 @@
 if (position_meeting(mouse_x, mouse_y, self))
 {
 	//scales image
-	image_xscale = lerp(image_xscale, ScaleBig, LerpAmount);
-	image_yscale = lerp(image_yscale, ScaleBig, LerpAmount);
+	image_xscale = lerp(image_xscale, scale_big, lerp_amount);
+	image_yscale = lerp(image_yscale, scale_big, lerp_amount);
 	
-	if (device_mouse_check_button(0, global.MouseLeft))
+	if (device_mouse_check_button(0, global.mouse_left))
     {
 		image_index = 1;
     }
 	
-    if (device_mouse_check_button_pressed(0, global.MouseLeft))
+    if (device_mouse_check_button_pressed(0, global.mouse_left))
     {	
 		///Play Sound
 		scr_play_sound(snd_click1);
     }
 	
-	if (device_mouse_check_button_released(0, global.MouseLeft))
+	if (device_mouse_check_button_released(0, global.mouse_left))
     {	
 		image_index = 0;
     }
@@ -25,12 +25,12 @@ else
 	image_index = 0;
 	
 	//returns image scale to normal
-	image_xscale = lerp(image_xscale, ScaleDefault, LerpAmount);
-	image_yscale = lerp(image_yscale, ScaleDefault, LerpAmount);
+	image_xscale = lerp(image_xscale, scale_default, lerp_amount);
+	image_yscale = lerp(image_yscale, scale_default, lerp_amount);
 }
 
-///FadeIn
-if (FadeIn == true)
+///fade_in
+if (fade_in == true)
 {
     if (image_alpha < 1)
     {
@@ -39,8 +39,8 @@ if (FadeIn == true)
     }
 }
 
-///FadeOut
-if (FadeOut == true)
+///fade_out
+if (fade_out == true)
 {
     if (image_alpha > 1)
     {

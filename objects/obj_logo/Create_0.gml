@@ -1,3 +1,3 @@
 image_speed = 0;
-FadeIn = true;
-FadeOut = false;
+fade_in = true;
+fade_out = false;

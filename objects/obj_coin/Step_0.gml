@@ -1,13 +1,13 @@
-if (Flipping == true)
+if (flipping == true)
 {
-	SinValue += (pi * 2) / StepsCycle;
+	sin_value += (pi * 2) / steps_cycle;
 
-	if (SinValue >= (pi * 2))
+	if (sin_value >= (pi * 2))
 	{
-		SinValue = 0;
+		sin_value = 0;
 	}
 
-	image_yscale = sin(SinValue);
+	image_yscale = sin(sin_value);
 
 	if (image_yscale >= 0)
 	{
@@ -18,10 +18,10 @@ if (Flipping == true)
 	scr_play_sound(snd_coinflip);
 }
 
-if (Flipped == true)
+if (flipped == true)
 {
 	///Destroy Object
-    if (device_mouse_check_button_pressed(0, global.MouseLeft))
+    if (device_mouse_check_button_pressed(0, global.mouse_left))
     {
 		alarm[1] = 15;
     }  

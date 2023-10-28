@@ -1,3 +1,3 @@
 ///@description destroy object 
-global.Exit = false;
+global.pause = false;
 instance_destroy(self);

@@ -13,7 +13,10 @@
     "name": "Main",
     "path": "folders/Objects/Main.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parent_zones",
+    "path": "objects/obj_parent_zones/obj_parent_zones.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -1,6 +1,6 @@
 ///Fade In and Out
-//FadeIn
-if (FadeIn == true)
+//fade_in
+if (fade_in == true)
 {
     if (image_alpha < 1)
     {
@@ -9,8 +9,8 @@ if (FadeIn == true)
     }
 }
 
-//FadeOut
-if (FadeOut == true)
+//fade_out
+if (fade_out == true)
 {
     if (image_alpha > 1)
     {

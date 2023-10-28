@@ -1,3 +1,3 @@
-///Swipe Control Variables
-MouseX = mouse_x;
-MouseY = mouse_y;
+///swipe Control Variables
+mousex = mouse_x;
+mousey = mouse_y;

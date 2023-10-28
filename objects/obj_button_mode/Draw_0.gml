@@ -1,10 +1,10 @@
 event_inherited();
 draw_self();
 
-switch (global.GameMode)
+switch (global.game_mode)
 {
 	case 0:
-		draw_text(x, y, "Mode: Swipe");
+		draw_text(x, y, "Mode: swipe");
 		break;
 	case 1:
 		draw_text(x, y, "Mode: Tap");

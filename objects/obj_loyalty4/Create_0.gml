@@ -1,12 +1,12 @@
 event_inherited();
 
-switch (global.Players)
+switch (global.players)
 {
 	case 4:
-		PosX = x;
-		PosY = y;
+		pos_x = x;
+		pos_y = y;
 		break;
 }
 
-self.x = PosX;
-self.y = PosY;
+self.x = pos_x;
+self.y = pos_y;

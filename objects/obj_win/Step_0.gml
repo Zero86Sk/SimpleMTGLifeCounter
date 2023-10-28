@@ -1,94 +1,94 @@
 ///Win Condition
-switch (global.Players)
+switch (global.players)
 {
 	case 2:
 	    //Player 1 Wins
-	    if (obj_P2.P2hp <= 0)
+	    if (obj_player2.player2_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
 
 	    //Player 2 Wins
-	    if (obj_P1.P1hp <= 0)
+	    if (obj_player1.player1_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
 		break;
 	case 3:
 	    //Player 1 Wins
-	    if (obj_P2.P2hp <= 0)
-		and (obj_P3.P3hp <= 0)
+	    if (obj_player2.player2_hp <= 0)
+		and (obj_player3.player3_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
 
 	    //Player 2 Wins
-	    if (obj_P1.P1hp <= 0)
-		and (obj_P3.P3hp <= 0)
+	    if (obj_player1.player1_hp <= 0)
+		and (obj_player3.player3_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
     
 	    //Player 3 Wins
-	    if (obj_P1.P1hp <= 0)
-		and (obj_P2.P2hp <= 0)
+	    if (obj_player1.player1_hp <= 0)
+		and (obj_player2.player2_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
 
 		break;
 	case 4:
 	    //Player 1 Wins
-	    if (obj_P2.P2hp <= 0)
-	    and (obj_P3.P3hp <= 0)
-	    and (obj_P4.P4hp <= 0)
+	    if (obj_player2.player2_hp <= 0)
+	    and (obj_player3.player3_hp <= 0)
+	    and (obj_player4.player4_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
 
 	    //Player 2 Wins
-	    if (obj_P1.P1hp <= 0)
-	    and (obj_P3.P3hp <= 0)
-	    and (obj_P4.P4hp <= 0)
+	    if (obj_player1.player1_hp <= 0)
+	    and (obj_player3.player3_hp <= 0)
+	    and (obj_player4.player4_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
     
 	    //Player 3 Wins
-	    if (obj_P1.P1hp <= 0)
-	    and (obj_P2.P2hp <= 0)
-	    and (obj_P4.P4hp <= 0)
+	    if (obj_player1.player1_hp <= 0)
+	    and (obj_player2.player2_hp <= 0)
+	    and (obj_player4.player4_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
     
 	    //Player 4 Wins
-	    if (obj_P1.P1hp <= 0)
-	    and (obj_P2.P2hp <= 0)
-	    and (obj_P3.P3hp <= 0)
+	    if (obj_player1.player1_hp <= 0)
+	    and (obj_player2.player2_hp <= 0)
+	    and (obj_player3.player3_hp <= 0)
 	    {
-	        global.Win = true;
+	        global.win = true;
 	    }
 		break;
 	case -1:
 		//Team 1 Wins
-		if (obj_2HG_T2.T2hp <= 0)
+		if (obj_team2.team2_hp <= 0)
 		{
-		    global.Win = true;
+		    global.win = true;
 		}
 
 		//Team 2 Wins
-		if (obj_2HG_T1.T1hp <= 0)
+		if (obj_team1.team1_hp <= 0)
 		{
-		    global.Win = true;
+		    global.win = true;
 		}
 		break;
 }
 
-if (global.Win == true)
+if (global.win == true)
 {
     ///Destroy Object
-    if (device_mouse_check_button_pressed(0, global.MouseLeft))
+    if (device_mouse_check_button_pressed(0, global.mouse_left))
     {
 		alarm[0] = 15;
     }  

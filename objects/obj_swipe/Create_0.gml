@@ -1,11 +1,11 @@
-///Swipe Control Variables
-MouseX = 0;
-MouseY = 0;
-MouseXStart = 0;
-MouseYStart = 0;
+///swipe Control Variables
+mousex = 0;
+mousey = 0;
+mousex_start = 0;
+mousey_start = 0;
 
-Swipe = false;
-SwipeTime = 0;
-SwipeSpeed = 0;
+swipe = false;
+swipe_time = 0;
+swipe_speed = 0;
 
-PDir = 0;
+point_dir = 0;

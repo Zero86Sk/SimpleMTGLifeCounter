@@ -1,10 +1,10 @@
 event_inherited();
 
-Time = 0;
+time = 0;
 
-Cursor = "";
-MinLength = 1;
-InputLength = 12;
+cursor = "";
+min_length = 1;
+input_length = 12;
 
-InputStart = false;
-InputFinish = false;
+input_start = false;
+input_finish = false;

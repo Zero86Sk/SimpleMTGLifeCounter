@@ -1,3 +1,3 @@
 ///@description restart room
-global.Win = false;
+global.win = false;
 scr_restart_room();

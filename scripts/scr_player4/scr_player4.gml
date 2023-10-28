@@ -1,26 +1,26 @@
 function scr_loyalty4()
 {
-	if (global.Loyalty4 == false)
+	if (global.loyalty4 == false)
 	{
-		global.Loyalty4 = true;
-	} else global.Loyalty4 = false;
+		global.loyalty4 = true;
+	} else global.loyalty4 = false;
 }
 
 function scr_swipe_life4_add()
 {
-	with (obj_P4)
+	with (obj_player4)
 	{
-	    if (SwipeZone)
-		and (obj_swipe.MouseXStart > ZoneXStart)
-		and (obj_swipe.MouseXStart < ZoneXEnd)
-		and (obj_swipe.MouseYStart > ZoneYStart)
-		and (obj_swipe.MouseYStart < ZoneYEnd)
+	    if (swipe_zone)
+		and (obj_swipe.mousex_start > zonex_start)
+		and (obj_swipe.mousex_start < zonex_end)
+		and (obj_swipe.mousey_start > zoney_start)
+		and (obj_swipe.mousey_start < zoney_end)
 	    {
-			if (global.Loyalty4 == true)
+			if (global.loyalty4 == true)
 			{
-				P4L += 1;
+				player4_loyalty += 1;
 			}
-			else P4hp += 1;
+			else player4_hp += 1;
 		}
 	}
 
@@ -28,19 +28,19 @@ function scr_swipe_life4_add()
 
 function scr_swipe_life4_sub()
 {
-	with (obj_P4)
+	with (obj_player4)
 	{
-		if (SwipeZone)
-		and (obj_swipe.MouseXStart > ZoneXStart)
-		and (obj_swipe.MouseXStart < ZoneXEnd)
-		and (obj_swipe.MouseYStart > ZoneYStart)
-		and (obj_swipe.MouseYStart < ZoneYEnd)
+		if (swipe_zone)
+		and (obj_swipe.mousex_start > zonex_start)
+		and (obj_swipe.mousex_start < zonex_end)
+		and (obj_swipe.mousey_start > zoney_start)
+		and (obj_swipe.mousey_start < zoney_end)
 		{
-			if (global.Loyalty4 == true)
+			if (global.loyalty4 == true)
 			{
-				P4L -= 1;
+				player4_loyalty -= 1;
 			}
-			else P4hp -= 1;
+			else player4_hp -= 1;
 		}
 	}
 	
@@ -48,30 +48,30 @@ function scr_swipe_life4_sub()
 
 function scr_tap_life4_add()
 {
-	with (obj_P4)
+	with (obj_player4)
 	{
-		if (TapZoneA)
+		if (tap_zone_a)
 		{
-			if (global.Loyalty4 == true)
+			if (global.loyalty4 == true)
 			{
-				P4L += 1;
+				player4_loyalty += 1;
 			}
-			else P4hp += 1;
+			else player4_hp += 1;
 		}
 	}
 }
 
 function scr_tap_life4_sub()
 {
-	with (obj_P4)
+	with (obj_player4)
 	{
-		if (TapZoneB)
+		if (tap_zone_b)
 		{
-			if (global.Loyalty4 == true)
+			if (global.loyalty4 == true)
 			{
-				P4L -= 1;
+				player4_loyalty -= 1;
 			}
-			else P4hp -= 1;
+			else player4_hp -= 1;
 		}
 	}	
 }

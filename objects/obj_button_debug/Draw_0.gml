@@ -1,12 +1,12 @@
 event_inherited();
 draw_self();
 
-switch (global.Debug)
+switch (global.debug)
 {
 	case true:
-		draw_text(x, y, "Debug: On");
+		draw_text(x, y, "debug: On");
 		break;
 	case false:	
-		draw_text(x, y, "Debug: Off");
+		draw_text(x, y, "debug: Off");
 		break;
 }

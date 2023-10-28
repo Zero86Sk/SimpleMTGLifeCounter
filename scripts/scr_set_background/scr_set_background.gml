@@ -1,6 +1,6 @@
 function scr_set_background()
 {
-	var LayId = layer_get_id("Background");
-	var BackId = layer_background_get_id(LayId);	
-	layer_background_sprite(BackId, global.MagicBG);
+	var _lay_id = layer_get_id("Background");
+	var _back_id = layer_background_get_id(_lay_id);	
+	layer_background_sprite(_back_id, global.magic_bg);
 }

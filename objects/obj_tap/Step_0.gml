@@ -1,16 +1,16 @@
-///Swipe Action Individualy
-if (global.GameMode != 1)
+///swipe Action Individualy
+if (global.game_mode != 1)
 {
 	instance_deactivate_object(self);
 }
 
-if (global.Exit == true)
-or (global.Win == true)
+if (global.pause == true)
+or (global.win == true)
 {
     exit;
 }
 
-if mouse_check_button_released(global.MouseLeft)
+if mouse_check_button_released(global.mouse_left)
 {
 	scr_tap_players_add();
 	scr_tap_players_sub();
@@ -24,8 +24,8 @@ if mouse_check_button_released(global.MouseLeft)
 	scr_tap_life4_add();
 	scr_tap_life4_sub();
 		
-	scr_tap_life_2HG1_add();
-	scr_tap_life_2HG1_sub();	
-	scr_tap_life_2HG2_add();
-	scr_tap_life_2HG2_sub();
+	scr_tap_life_team1_add();
+	scr_tap_life_team1_sub();	
+	scr_tap_life_team2_add();
+	scr_tap_life_team2_sub();
 }

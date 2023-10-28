@@ -1,17 +1,17 @@
-function scr_zones(ZoneXStart, ZoneXEnd, ZoneYStart, ZoneYEnd)
+function scr_zones(_zonex_start, _zonex_end, _zoney_start, _zoney_end)
 {
-	ZoneXStart = 0;
-	ZoneXEnd = room_width/2;
-	ZoneYStart = 0;
-	ZoneYEnd = room_height;
+	_zonex_start = 0;
+	_zonex_end = room_width/2;
+	_zoney_start = 0;
+	_zoney_end = room_height;
 
-	TapAXStart = 0
-	TapAXEnd = room_width/2;;
-	TapAYStart = 0;
-	TapAYEnd = room_height/2;
+	tap_ax_start = 0
+	tap_ax_end = room_width/2;
+	tap_ay_start = 0;
+	tap_ay_end = room_height/2;
 
-	TapBXStart = 0;
-	TapBXEnd = room_width/2;
-	TapBYStart = room_height/2;
-	TapBYEnd = room_height;
+	tap_bx_start = 0;
+	tap_bx_end = room_width/2;
+	tap_by_start = room_height/2;
+	tap_by_end = room_height;
 }

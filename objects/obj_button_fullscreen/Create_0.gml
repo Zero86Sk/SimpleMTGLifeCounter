@@ -1,9 +1,9 @@
-if (global.Exit == true)
-or (global.Win == true)
-or (global.NameEntery1 == true)
-or (global.NameEntery2 == true)
-or (global.NameEntery3 == true)
-or (global.NameEntery4 == true)
+if (global.pause == true)
+or (global.win == true)
+or (global.name_entery1 == true)
+or (global.name_entery2 == true)
+or (global.name_entery3 == true)
+or (global.name_entery4 == true)
 {
 	exit;
 }

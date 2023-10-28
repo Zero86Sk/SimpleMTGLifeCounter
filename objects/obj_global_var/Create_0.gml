@@ -1,32 +1,32 @@
 ///Global Variables
-global.Exit = false;
-global.Win = false;
-global.Debug = false;
+global.pause = false;
+global.win = false;
+global.debug = false;
 
 //Player Names
-global.txt_P1Name = "Player 1";
-global.txt_P2Name = "Player 2";
-global.txt_P3Name = "Player 3";
-global.txt_P4Name = "Player 4";
+global.txt_p1name = "Player 1";
+global.txt_p2name = "Player 2";
+global.txt_p3name = "Player 3";
+global.txt_p4name = "Player 4";
 
 //Name Entery Fields
-global.NameEntery1 = false;
-global.NameEntery2 = false;
-global.NameEntery3 = false;
-global.NameEntery4 = false;
+global.name_entery1 = false;
+global.name_entery2 = false;
+global.name_entery3 = false;
+global.name_entery4 = false;
 
 //Loyalty Counters
-global.Loyalty1 = false;
-global.Loyalty2 = false;
-global.Loyalty4 = false;
-global.Loyalty3 = false;
-global.Loyalty_2HG1 = false;
-global.Loyalty_2HG2 = false;
-global.Loyalty_2HG3 = false;
-global.Loyalty_2HG4 = false;
+global.loyalty1 = false;
+global.loyalty2 = false;
+global.loyalty4 = false;
+global.loyalty3 = false;
+global.loyalty_team1_p1 = false;
+global.loyalty_team1_p2 = false;
+global.loyalty_team2_p1 = false;
+global.loyalty_team2_p2 = false;
 
 //Mouse and Keyboard
-global.MouseLeft = mb_left;
+global.mouse_left = mb_left;
 
 //Pressing Backspace
 global.back_once = false;
@@ -38,10 +38,10 @@ switch (os_type)
 	case os_windows:
 	case os_macosx:
 	case os_linux:
-		global.ReturnKey = vk_enter;
+		global.return_key = vk_enter;
 		break;	
 	case os_android:
-		global.ReturnKey = 13;	
+		global.return_key = 13;	
 		break;
 	}
 
@@ -51,44 +51,44 @@ switch (os_type)
 	case os_windows:
 	case os_macosx:
 	case os_linux:
-		global.BackKey = vk_escape
+		global.back_key = vk_escape
 		break;	
 	case os_android:
-		global.BackKey = vk_backspace;	
+		global.back_key = vk_backspace;	
 		break;
 	}
 
 //Options
-global.FullScreen = false;
-global.SoundFXVol = true;
-global.MagicBG = bg_black;
-global.GameMode = 1;
-global.Players = 1;
+global.full_screen = false;
+global.sound_fxvol = true;
+global.magic_bg = spr_bg_black;
+global.game_mode = 1;
+global.players = 1;
 
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);
 
-//CWhite Text
-R1 = 245;
-G1 = 245;
-B1 = 245;
+//col_white Text
+r1 = 245;
+g1 = 245;
+b1 = 245;
 
-// COrange Text
-R2 = 254;
-G2 = 156;
-B2 = 1;
+// col_orange Text
+r2 = 254;
+g2 = 156;
+b2 = 1;
 
-// CRed Text
-R3 = 200;
-G3 = 0;
-B3 = 0;
+// col_red Text
+r3 = 200;
+g3 = 0;
+b3 = 0;
 
-//CBack Background
-RB = 52;
-GB = 52;
-BB = 52;
+//col_background Background
+rb = 52;
+gb = 52;
+bb = 52;
 
-global.CWhite = make_color_rgb(R1,G1,B1);	// Text Color (White)
-global.COrange = make_color_rgb(R2,G2,B2); 	// Text Color Orange
-global.CRed = make_color_rgb(R3,G3,B3); 	// Text Color Red
-global.CBack = make_color_rgb(RB,GB,BB);	// Background 
+global.col_white = make_color_rgb(r1,g1,b1);	// Text Color (White)
+global.col_orange = make_color_rgb(r2,g2,b2); 	// Text Color Orange
+global.col_red = make_color_rgb(r3,g3,b3); 	// Text Color Red
+global.col_background = make_color_rgb(rb,gb,bb);	// Background 

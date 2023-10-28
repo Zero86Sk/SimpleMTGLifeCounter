@@ -1,4 +1,4 @@
-if (Rolling == true)
+if (rolling == true)
 {
 	if (image_angle > 0)
 	{
@@ -13,7 +13,7 @@ if (Rolling == true)
 if (rolled == true)
 {
 	///Destroy Object
-    if (device_mouse_check_button_pressed(0, global.MouseLeft))
+    if (device_mouse_check_button_pressed(0, global.mouse_left))
     {
 		alarm[1] = 15;
     }  

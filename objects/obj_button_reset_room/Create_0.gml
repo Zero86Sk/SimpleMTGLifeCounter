@@ -1,3 +1,3 @@
 event_inherited();
 
-Time = 0;
+time = 0;

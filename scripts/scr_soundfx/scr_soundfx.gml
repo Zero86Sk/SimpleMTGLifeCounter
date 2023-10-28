@@ -1,10 +1,10 @@
 function scr_soundfx()
 {
-	if (global.SoundFXVol == true)
+	if (global.sound_fxvol == true)
 	{
-	    global.SoundFXVol = false;      
+	    global.sound_fxvol = false;      
 	}
-	else global.SoundFXVol = true;        
+	else global.sound_fxvol = true;        
 
-	audio_group_set_gain(ag_soundfx, global.SoundFXVol, 0);      
+	audio_group_set_gain(ag_soundfx, global.sound_fxvol, 0);      
 }

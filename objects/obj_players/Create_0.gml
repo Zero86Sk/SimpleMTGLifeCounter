@@ -1,18 +1,20 @@
 ///Player 1 variables
-TextX = room_width/4;
-TextY = room_height/1.8;
+event_inherited();
 
-ZoneXStart = 0;
-ZoneXEnd = room_width/2;
-ZoneYStart = 0;
-ZoneYEnd = room_height;
+text_x = room_width/4;
+text_y = room_height/1.8;
 
-TapAXStart = 0
-TapAXEnd = room_width/2;
-TapBXStart = 0;
-TapBXEnd = room_width/2;
+zonex_start = 0;
+zonex_end = room_width/2;
+zoney_start = 0;
+zoney_end = room_height;
 
-TapAYStart = 0;
-TapAYEnd = room_height/2;
-TapBYStart = room_height/2;
-TapBYEnd = room_height;
+tap_ax_start = 0
+tap_ax_end = room_width/2;
+tap_bx_start = 0;
+tap_bx_end = room_width/2;
+
+tap_ay_start = 0;
+tap_ay_end = room_height/2;
+tap_by_start = room_height/2;
+tap_by_end = room_height;

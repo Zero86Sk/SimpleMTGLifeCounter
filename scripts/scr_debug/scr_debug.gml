@@ -1,7 +1,7 @@
 function scr_debug()
 {
-	if (global.Debug == false)
+	if (global.debug == false)
 	{
-		global.Debug = true;
-	} else global.Debug = false;
+		global.debug = true;
+	} else global.debug = false;
 }

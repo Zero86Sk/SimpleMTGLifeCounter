@@ -1,8 +1,8 @@
-if (global.Exit == true)
-or (global.Win == true)
-or (global.NameEntery1 == true)
-or (global.NameEntery2 == true)
-or (global.NameEntery3 == true)
+if (global.pause == true)
+or (global.win == true)
+or (global.name_entery1 == true)
+or (global.name_entery2 == true)
+or (global.name_entery3 == true)
 {
     exit;
 }
@@ -11,32 +11,32 @@ event_inherited();
 
 if (position_meeting(mouse_x, mouse_y, self))
 {
-    if (device_mouse_check_button(0, global.MouseLeft))
+    if (device_mouse_check_button(0, global.mouse_left))
     {      
-        //Time++;   
+        //time++;   
     }
     
-    if (device_mouse_check_button_released(0, global.MouseLeft))
+    if (device_mouse_check_button_released(0, global.mouse_left))
     {
-        //Time = 0;
-		global.NameEntery4 = true;
-		InputStart = true;
+        //time = 0;
+		global.name_entery4 = true;
+		input_start = true;
     }
 }
 
-if (Time == 30)
+if (time == 30)
 {
-	global.NameEntery4 = true;    
-    Time = 0;
-	InputStart = true;
+	global.name_entery4 = true;    
+    time = 0;
+	input_start = true;
 }
 
-if (global.NameEntery4 == true)
+if (global.name_entery4 == true)
 {
-    Cursor = "|";
+    cursor = "|";
     depth = -5000;
     
-	if (InputStart == true)
+	if (input_start == true)
 	{		
 		switch (os_type)
 		{
@@ -48,25 +48,25 @@ if (global.NameEntery4 == true)
 			break;
 		}
 			
-		InputStart = false;
+		input_start = false;
 	}
 		
-    if(string_length(keyboard_string) <= InputLength)
+    if(string_length(keyboard_string) <= input_length)
     {
-        global.txt_P4Name = string_copy(keyboard_string, 1, InputLength);
+        global.txt_p4name = string_copy(keyboard_string, 1, input_length);
     }   
 
-    if (keyboard_check_pressed(global.ReturnKey))
-    or (device_mouse_check_button_pressed(0, global.MouseLeft))
+    if (keyboard_check_pressed(global.return_key))
+    or (device_mouse_check_button_pressed(0, global.mouse_left))
     {
-        if(string_length(keyboard_string) < MinLength)
+        if(string_length(keyboard_string) < min_length)
         {
-            global.txt_P4Name = "Player 4";
+            global.txt_p4name = "Player 4";
         }
 
-		InputFinish = true;
+		input_finish = true;
 		
-		if (InputFinish == true)
+		if (input_finish == true)
 		{				
 			switch (os_type)
 			{
@@ -80,13 +80,13 @@ if (global.NameEntery4 == true)
 			
 			keyboard_string = "";		
 			scr_save_settings();
-			InputFinish = false;
-			global.NameEntery4 = false;
+			input_finish = false;
+			global.name_entery4 = false;
 		}
 	}
 }
 else
 {
-	Cursor = "";
+	cursor = "";
 	depth = -10;
 }

@@ -2,10 +2,10 @@
 draw_set_font(fnt_small);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-draw_set_color(global.CWhite);
+draw_set_color(global.col_white);
 
 draw_text(x, y, "Help:");
-draw_text(x + 32, y + 164, "Swipe UP or DOWN over the numbers to add or subtract life.");
+draw_text(x + 32, y + 164, "swipe UP or DOWN over the numbers to add or subtract life.");
 
 draw_sprite_ext(spr_btn_planes_off, 0, x + 82, y + 264, 1, 1, 1, -1, 1);
 draw_text(x + 216, y + 264, "Toggle the Life Counter "+ "& Planeswalker Loyalty Counter.");

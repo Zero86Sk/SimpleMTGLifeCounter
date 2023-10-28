@@ -1,26 +1,26 @@
 function scr_loyalty2()
 {
-	if (global.Loyalty2 == false)
+	if (global.loyalty2 == false)
 	{
-		global.Loyalty2 = true;
-	} else global.Loyalty2 = false;
+		global.loyalty2 = true;
+	} else global.loyalty2 = false;
 }
 
 function scr_swipe_life2_add()
 {
-	with (obj_P2)
+	with (obj_player2)
 	{
-	    if (SwipeZone)
-		and (obj_swipe.MouseXStart > ZoneXStart)
-		and (obj_swipe.MouseXStart < ZoneXEnd)
-		and (obj_swipe.MouseYStart > ZoneYStart)
-		and (obj_swipe.MouseYStart < ZoneYEnd)
+	    if (swipe_zone)
+		and (obj_swipe.mousex_start > zonex_start)
+		and (obj_swipe.mousex_start < zonex_end)
+		and (obj_swipe.mousey_start > zoney_start)
+		and (obj_swipe.mousey_start < zoney_end)
 	    {
-			if (global.Loyalty2 == true)
+			if (global.loyalty2 == true)
 			{
-				P2L += 1;
+				player2_loyalty += 1;
 			}
-			else P2hp += 1;
+			else player2_hp += 1;
 		}
 	}
 	
@@ -28,19 +28,19 @@ function scr_swipe_life2_add()
 
 function scr_swipe_life2_sub()
 {
-	with (obj_P2)
+	with (obj_player2)
 	{
-		if (SwipeZone)
-		and (obj_swipe.MouseXStart > ZoneXStart)
-		and (obj_swipe.MouseXStart < ZoneXEnd)
-		and (obj_swipe.MouseYStart > ZoneYStart)
-		and (obj_swipe.MouseYStart < ZoneYEnd)
+		if (swipe_zone)
+		and (obj_swipe.mousex_start > zonex_start)
+		and (obj_swipe.mousex_start < zonex_end)
+		and (obj_swipe.mousey_start > zoney_start)
+		and (obj_swipe.mousey_start < zoney_end)
 		{
-			if (global.Loyalty2 == true)
+			if (global.loyalty2 == true)
 			{
-				P2L -= 1;
+				player2_loyalty -= 1;
 			}
-			else P2hp -= 1;
+			else player2_hp -= 1;
 		}
 	}
 	
@@ -48,30 +48,30 @@ function scr_swipe_life2_sub()
 
 function scr_tap_life2_add()
 {
-	with (obj_P2)
+	with (obj_player2)
 	{
-		if (TapZoneA)
+		if (tap_zone_a)
 		{
-			if (global.Loyalty2 == true)
+			if (global.loyalty2 == true)
 			{
-				P2L += 1;
+				player2_loyalty += 1;
 			}
-			else P2hp += 1;
+			else player2_hp += 1;
 		}
 	}
 }
 
 function scr_tap_life2_sub()
 {
-	with (obj_P2)
+	with (obj_player2)
 	{
-		if (TapZoneB)
+		if (tap_zone_b)
 		{
-			if (global.Loyalty2 == true)
+			if (global.loyalty2 == true)
 			{
-				P2L -= 1;
+				player2_loyalty -= 1;
 			}
-			else P2hp -= 1;
+			else player2_hp -= 1;
 		}
 	}	
 }

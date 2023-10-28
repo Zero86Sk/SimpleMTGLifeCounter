@@ -1,7 +1,7 @@
-if (global.Debug =  true)
+if (global.debug =  true)
 {
-	draw_set_color(global.COrange);
-	draw_line(MouseXStart, MouseYStart, MouseX, MouseY);
+	draw_set_color(global.col_orange);
+	draw_line(mousex_start, mousey_start, mousex, mousey);
 
 	//Draw Rectamgle
 	draw_set_color(c_black);
@@ -13,7 +13,7 @@ if (global.Debug =  true)
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
 	draw_set_color(c_white);
-	draw_text(room_width/3 + 10, room_width/2 - 210, "Swipe = " + string(Swipe));
-	draw_text(room_width/3 + 10, room_width/2 - 250, "Swipe Speed = " + string(SwipeSpeed));
-	draw_text(room_width/3 + 10, room_width/2 - 290, "Point Direction = " + string(PDir));
+	draw_text(room_width/3 + 10, room_width/2 - 210, "swipe = " + string(swipe));
+	draw_text(room_width/3 + 10, room_width/2 - 250, "swipe Speed = " + string(swipe_speed));
+	draw_text(room_width/3 + 10, room_width/2 - 290, "Point Direction = " + string(point_dir));
 }

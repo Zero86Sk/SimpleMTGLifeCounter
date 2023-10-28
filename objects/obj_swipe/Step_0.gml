@@ -1,68 +1,68 @@
-///Swipe Action Individualy
-if (global.GameMode != 0)
+///swipe Action Individualy
+if (global.game_mode != 0)
 {
 	instance_deactivate_object(self);
 }
 
-if (global.Exit == true)
-or (global.Win == true)
+if (global.pause == true)
+or (global.win == true)
 {
     exit;
 }
 
 
-if (device_mouse_check_button_pressed(0, global.MouseLeft))
+if (device_mouse_check_button_pressed(0, global.mouse_left))
 {
-	Swipe = true;
-	MouseXStart = mouse_x;
-	MouseYStart = mouse_y;
+	swipe = true;
+	mousex_start = mouse_x;
+	mousey_start = mouse_y;
 }
 
-if (Swipe = true)
+if (swipe = true)
 {
-	MouseX = mouse_x;
-	MouseY = mouse_y;
-	SwipeTime++;
-	PDir = point_direction(MouseXStart, MouseYStart, MouseX, MouseY);
+	mousex = mouse_x;
+	mousey = mouse_y;
+	swipe_time++;
+	point_dir = point_direction(mousex_start, mousey_start, mousex, mousey);
 
-    if (device_mouse_check_button_released(0, global.MouseLeft))
+    if (device_mouse_check_button_released(0, global.mouse_left))
     {
-	    Swipe = false;
-	    SwipeSpeed = point_distance(MouseXStart, MouseYStart, MouseX, MouseY) / SwipeTime; 
-	    SwipeTime = 0;
+	    swipe = false;
+	    swipe_speed = point_distance(mousex_start, mousey_start, mousex, mousey) / swipe_time; 
+	    swipe_time = 0;
 
-		//Swipe Right
-	    if ((PDir > 315) and (PDir < 45)) and (SwipeSpeed > 4.5)
+		//swipe Right
+	    if ((point_dir > 315) and (point_dir < 45)) and (swipe_speed > 4.5)
         {
         
         }	
-		//Swipe Up  
-		else if ((PDir > 45) and (PDir < 135)) and (SwipeSpeed > 4.5)
+		//swipe Up  
+		else if ((point_dir > 45) and (point_dir < 135)) and (swipe_speed > 4.5)
         {
 			scr_swipe_players_add();
 			scr_swipe_life1_add();
 			scr_swipe_life2_add();
 			scr_swipe_life3_add();
 			scr_swipe_life4_add();
-			scr_swipe_life_2HG1_add();
-			scr_swipe_life_2HG2_add();
+			scr_swipe_life_team1_add();
+			scr_swipe_life_team2_add();
         }		
-		//Swipe Left
-		else if ((PDir > 135) and (PDir < 225)) and (SwipeSpeed > 4.5) 
+		//swipe Left
+		else if ((point_dir > 135) and (point_dir < 225)) and (swipe_speed > 4.5) 
         {
 
         }		
-		//Swipe Down  
-		else if ((PDir > 225) and (PDir < 315)) and (SwipeSpeed > 4.5)  
+		//swipe Down  
+		else if ((point_dir > 225) and (point_dir < 315)) and (swipe_speed > 4.5)  
         {
 			scr_swipe_players_sub();
 			scr_swipe_life1_sub();
 			scr_swipe_life2_sub();
 			scr_swipe_life3_sub();
 			scr_swipe_life4_sub();
-			scr_swipe_life_2HG1_sub();
-			scr_swipe_life_2HG2_sub();
+			scr_swipe_life_team1_sub();
+			scr_swipe_life_team2_sub();
 		}
 		
 	} // End of Mouse released
-} // End of Swipe true
+} // End of swipe true

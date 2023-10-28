@@ -1,3 +1,3 @@
 ///Set Fade In and Out to False
-FadeIn = false;
-FadeOut = false;
+fade_in = false;
+fade_out = false;
