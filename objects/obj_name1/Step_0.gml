@@ -43,7 +43,7 @@ if (global.name_entery1 == true)
 		case os_android:
 			if (keyboard_virtual_status() != true)
 			{
-				keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_done, kbv_autocapitalize_none, true)
+				keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
 			}
 			break;
 		}
@@ -58,12 +58,7 @@ if (global.name_entery1 == true)
 
     if (keyboard_check_pressed(global.return_key))
     or (device_mouse_check_button_pressed(0, global.mouse_left))
-    {
-        if(string_length(keyboard_string) < min_length)
-        {
-            global.txt_p1name = "Player 1";
-        }
-		
+    {		
 		input_finish = true;
 
 		if (input_finish == true)
@@ -77,6 +72,11 @@ if (global.name_entery1 == true)
 					}
 					break;
 			}
+			
+			if(string_length(keyboard_string) < min_length)
+	        {
+	            global.txt_p1name = "Player 1";
+	        }
 			
 			keyboard_string = "";		
 			scr_save_settings();

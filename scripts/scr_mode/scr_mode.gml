@@ -1,4 +1,4 @@
-function scr_mode()
+function scr_game_mode()
 {
 	switch (global.game_mode)
 	{

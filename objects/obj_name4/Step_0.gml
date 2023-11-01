@@ -43,7 +43,7 @@ if (global.name_entery4 == true)
 		case os_android:
 			if (keyboard_virtual_status() != true)
 			{
-				keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_done, kbv_autocapitalize_none, true)
+				keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_default, kbv_autocapitalize_none, true)
 			}
 			break;
 		}

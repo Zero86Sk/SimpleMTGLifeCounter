@@ -1,7 +1,7 @@
 ///Player 2 variables
 event_inherited();
 
-player2_hp = 20;
+player2_hp = global.life_points;
 player2_loyalty = 0;
 
 swipe_zone = pointer_null;

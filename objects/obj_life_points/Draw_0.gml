@@ -23,7 +23,6 @@ switch (global.game_mode)
 				scr_draw_roundrect_tap_b();			
 			}
 		}
-		
 		break;
 }
 
@@ -33,27 +32,11 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(global.col_white);
 
-if (global.loyalty1 == true)
-{
-	draw_sprite_ext(spr_planeswalker, 0, text_x, text_y, 0.5, 0.5, 0, -1, 1);		
-	draw_text(text_x, text_y, player1_loyalty); 
-}
-else
-{	
-	draw_text(text_x, text_y, player1_hp);
-
-	if (player1_hp <= 0)
-	{
-		draw_set_color(global.col_red);
-		draw_text(text_x, text_y, player1_hp);              
-	}
-}
+draw_text(text_x, text_y, global.life_points);  
 
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
-
-draw_text(text_x, text_y - room_height/6, string(global.txt_p1name));
-
+draw_text(text_x, text_y - room_height/6, "Life Points");
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);
 
@@ -65,7 +48,7 @@ if (global.debug == true)
 	draw_set_font(fnt_small);
 	draw_set_alpha(0.5);
 	
-	var _player = "Player 1";
+	var _player = "Life";
 	
 	switch (global.game_mode)
 	{

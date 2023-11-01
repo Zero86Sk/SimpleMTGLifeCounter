@@ -16,6 +16,8 @@ function scr_load_settings()
 	    global.sound_fxvol = ini_read_real("settings", "sfx", true);
 	    global.magic_bg = ini_read_string("settings", "background", "bg_black");
 		global.game_mode = ini_read_real("settings", "mode", 1);
+		global.players = ini_read_real("settings", "players", 1);
+		global.life_points = ini_read_real("settings", "life_points", 20);
 
 		//Close File
 	    ini_close();

@@ -14,7 +14,9 @@ function scr_save_settings()
 	ini_write_real("settings", "sfx", global.sound_fxvol); 
 	ini_write_real("settings", "background", global.magic_bg);
 	ini_write_real("settings", "mode", global.game_mode);
-
+	ini_write_real("settings", "players", global.players);
+	ini_write_real("settings", "life_points", global.life_points);
+	
 	//Closes File
 	ini_close();
 }

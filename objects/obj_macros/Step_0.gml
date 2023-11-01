@@ -36,6 +36,8 @@ if (keyboard_check_pressed(global.back_key))
 	if (global.back_twice == true)
 	and (keyboard_check_pressed(global.back_key))
 	{
+		scr_save_settings(); 
+		
 		switch (room)
 		{
 		case rm_main_menu:

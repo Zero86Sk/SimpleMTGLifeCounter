@@ -1,7 +1,7 @@
 ///Player 1 variables
 event_inherited();
 
-player1_hp = 20;
+player1_hp = global.life_points;
 player1_loyalty = 0;
 
 switch (global.players)

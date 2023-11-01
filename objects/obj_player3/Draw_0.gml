@@ -33,6 +33,8 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(global.col_white);
 
+
+
 if (global.loyalty3 == true)
 {
 	draw_sprite_ext(spr_planeswalker, 0, text_x, text_y, 0.5, 0.5, 0, -1, 1);	

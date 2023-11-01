@@ -1,4 +1,3 @@
-///Player 1 Health
 if (global.pause == true)
 or (global.win == true)
 {
@@ -8,13 +7,13 @@ or (global.win == true)
 event_inherited();
 
 //Up Limit
-if (global.players >= 4)
+if (global.players > 4)
 {
     global.players = 4;
 }
 
 //Down Limit
-if (global.players <= 1)
+if (global.players < 1)
 {
     global.players = 1;
 }

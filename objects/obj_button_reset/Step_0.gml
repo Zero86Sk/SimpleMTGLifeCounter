@@ -25,6 +25,8 @@ if (position_meeting(mouse_x, mouse_y, self))
         global.magic_bg = spr_bg_black;
         global.sound_fxvol = true;
 		global.debug = false;
+		
+		global.players = 2;
          
 		audio_group_set_gain(ag_soundfx, global.sound_fxvol, 0);      
         

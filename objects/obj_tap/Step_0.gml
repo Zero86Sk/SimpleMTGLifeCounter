@@ -15,6 +15,9 @@ if mouse_check_button_released(global.mouse_left)
 	scr_tap_players_add();
 	scr_tap_players_sub();
 	
+	scr_tap_life_points_add();
+	scr_tap_life_points_sub();
+	
 	scr_tap_life1_add();
 	scr_tap_life1_sub();		
 	scr_tap_life2_add();

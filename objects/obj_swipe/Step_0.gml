@@ -40,6 +40,7 @@ if (swipe = true)
 		else if ((point_dir > 45) and (point_dir < 135)) and (swipe_speed > 4.5)
         {
 			scr_swipe_players_add();
+			scr_swipe_life_points_add();
 			scr_swipe_life1_add();
 			scr_swipe_life2_add();
 			scr_swipe_life3_add();
@@ -56,6 +57,7 @@ if (swipe = true)
 		else if ((point_dir > 225) and (point_dir < 315)) and (swipe_speed > 4.5)  
         {
 			scr_swipe_players_sub();
+			scr_swipe_life_points_sub();
 			scr_swipe_life1_sub();
 			scr_swipe_life2_sub();
 			scr_swipe_life3_sub();

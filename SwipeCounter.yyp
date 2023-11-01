@@ -102,6 +102,7 @@
     {"id":{"name":"fnt_medium","path":"fonts/fnt_medium/fnt_medium.yy",},},
     {"id":{"name":"fnt_big","path":"fonts/fnt_big/fnt_big.yy",},},
     {"id":{"name":"fnt_huge","path":"fonts/fnt_huge/fnt_huge.yy",},},
+    {"id":{"name":"obj_life_points","path":"objects/obj_life_points/obj_life_points.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_name1","path":"objects/obj_name1/obj_name1.yy",},},
     {"id":{"name":"obj_name2","path":"objects/obj_name2/obj_name2.yy",},},
@@ -167,6 +168,7 @@
     {"id":{"name":"spr_d20","path":"sprites/spr_d20/spr_d20.yy",},},
     {"id":{"name":"obj_txt_version","path":"objects/obj_txt_version/obj_txt_version.yy",},},
     {"id":{"name":"obj_button_d20","path":"objects/obj_button_d20/obj_button_d20.yy",},},
+    {"id":{"name":"scr_life_points","path":"scripts/scr_life_points/scr_life_points.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"rm_2headed","path":"rooms/rm_2headed/rm_2headed.yy",},},
     {"id":{"name":"rm_settings","path":"rooms/rm_settings/rm_settings.yy",},},
@@ -176,10 +178,10 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_res_manager","path":"rooms/rm_res_manager/rm_res_manager.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_2headed","path":"rooms/rm_2headed/rm_2headed.yy",},},
     {"roomId":{"name":"rm_settings","path":"rooms/rm_settings/rm_settings.yy",},},
     {"roomId":{"name":"rm_help","path":"rooms/rm_help/rm_help.yy",},},
-    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

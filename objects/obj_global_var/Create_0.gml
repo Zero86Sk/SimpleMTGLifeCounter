@@ -41,7 +41,7 @@ switch (os_type)
 		global.return_key = vk_enter;
 		break;	
 	case os_android:
-		global.return_key = 13;	
+		global.return_key = vk_return;	
 		break;
 	}
 
@@ -51,7 +51,7 @@ switch (os_type)
 	case os_windows:
 	case os_macosx:
 	case os_linux:
-		global.back_key = vk_escape
+		global.back_key = vk_escape;
 		break;	
 	case os_android:
 		global.back_key = vk_backspace;	
@@ -63,7 +63,8 @@ global.full_screen = false;
 global.sound_fxvol = true;
 global.magic_bg = spr_bg_black;
 global.game_mode = 1;
-global.players = 1;
+global.players = 2;
+global.life_points = 20;
 
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);
