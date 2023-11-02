@@ -1,6 +1,6 @@
 ///Player 2 Health
-if (global.pause == true)
-or (global.win == true)
+if (global.pause)
+or (global.win)
 {
     exit;
 }

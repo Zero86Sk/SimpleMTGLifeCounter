@@ -85,11 +85,16 @@ switch (global.players)
 		break;
 }
 
-if (global.win == true)
-{
+if  (global.win)
+{	
+	if !instance_exists(obj_fireworks)
+	{
+		instance_create_layer(x, y, "Win" , obj_fireworks);
+	}
+	
     ///Destroy Object
     if (device_mouse_check_button_pressed(0, global.mouse_left))
     {
 		alarm[0] = 15;
-    }  
+    }
 } 

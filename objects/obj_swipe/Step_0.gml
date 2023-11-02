@@ -4,8 +4,8 @@ if (global.game_mode != 0)
 	instance_deactivate_object(self);
 }
 
-if (global.pause == true)
-or (global.win == true)
+if (global.pause)
+or (global.win)
 {
     exit;
 }

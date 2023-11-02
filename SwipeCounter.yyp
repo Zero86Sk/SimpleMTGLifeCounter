@@ -52,6 +52,7 @@
   },
   "resources": [
     {"id":{"name":"obj_parent_zones","path":"objects/obj_parent_zones/obj_parent_zones.yy",},},
+    {"id":{"name":"obj_fireworks","path":"objects/obj_fireworks/obj_fireworks.yy",},},
     {"id":{"name":"spr_bg_blue","path":"sprites/spr_bg_blue/spr_bg_blue.yy",},},
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"spr_planeswalker","path":"sprites/spr_planeswalker/spr_planeswalker.yy",},},

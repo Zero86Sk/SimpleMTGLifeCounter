@@ -1,9 +1,9 @@
 ///Draw
-if (global.win == true)
+if (global.win)
 {
 	draw_set_color(global.col_background);
 	scr_draw_rectangle();
-	
+
     draw_set_font(fnt_medium);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);	
@@ -80,6 +80,7 @@ if (global.win == true)
 	        }
 			break;
 		case -1:
+			//Team 1 Wins
 			if (obj_team2.team2_hp <= 0)
 			{
 				draw_text(room_width/2, room_height/2, string(global.txt_p1name) + " & " + string(global.txt_p2name) + "\nWin");   

@@ -29,6 +29,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"obj_parent_zones","order":1,"path":"objects/obj_parent_zones/obj_parent_zones.yy",},
+    {"name":"obj_fireworks","order":15,"path":"objects/obj_fireworks/obj_fireworks.yy",},
     {"name":"spr_bg_blue","order":3,"path":"sprites/spr_bg_blue/spr_bg_blue.yy",},
     {"name":"spr_logo","order":4,"path":"sprites/spr_logo/spr_logo.yy",},
     {"name":"spr_planeswalker","order":5,"path":"sprites/spr_planeswalker/spr_planeswalker.yy",},
