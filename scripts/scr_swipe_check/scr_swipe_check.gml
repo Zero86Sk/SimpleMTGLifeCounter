@@ -1,14 +1,5 @@
-/*
-function scr_swipe_check(StartX, StartY, EndX, EndY, Object, Prec, NotMe)
+function scr_swipe_check(_start_x, _start_y, _end_x, _end_y, _object, _prec, _not_me)
 {
-	StartX = argument0;
-	StartY = argument1;
-	EndX = argument2;
-	EndY = argument3;
-	Object = argument4;
-	Prec = argument5;
-	NotMe = argument6;
-
-	Inst = collision_line(StartX, StartY, EndX, EndY, Object, Prec, NotMe);
-	return Inst;
+	var _inst = collision_line(_start_x, _start_y, _end_x, _end_y, _object, _prec, _not_me);
+	return _inst;
 }

@@ -4,12 +4,9 @@ draw_self();
 switch (global.game_mode)
 {
 	case 0:
-		draw_text(x, y, "Mode: swipe");
+		scr_draw_icon(spr_ico_mode_swipe);
 		break;
 	case 1:
-		draw_text(x, y, "Mode: Tap");
-		break;
-	case 2:
-		draw_text(x, y, "Mode: Button");
+		scr_draw_icon(spr_ico_mode_tap);
 		break;
 }

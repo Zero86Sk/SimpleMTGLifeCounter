@@ -10,11 +10,12 @@ or (global.name_entery4 == true)
 
 event_inherited();
 
+
 if (global.loyalty3 == true)
 {
-	sprite_index = spr_btn_planes_on
+	sprite_index = spr_button_orange;
 } 
-else sprite_index = spr_btn_planes_off
+else sprite_index = spr_button;
 
 if (position_meeting(mouse_x, mouse_y, self))
 {

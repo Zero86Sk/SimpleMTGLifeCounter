@@ -4,9 +4,9 @@ draw_self();
 switch (global.sound_fxvol)
 {
 	case true:
-		draw_text(x, y, "Sound: On");
+		scr_draw_icon(spr_ico_sound_on);
 		break;
 	case false:	
-		draw_text(x, y, "Sound: Off");
+		scr_draw_icon(spr_ico_sound_off);
 		break;
 }

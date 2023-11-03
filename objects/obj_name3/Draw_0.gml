@@ -25,11 +25,11 @@ if (global.name_entery3 == true)
     case os_linux:
 	case os_macosx:
 		draw_text(x, y - 105, _enter_name);	
-		draw_sprite_ext(spr_btn, 1, x, y, 1.2, 1.2, 0, -1, 1);
+		draw_sprite_ext(spr_button_big, 1, x, y, 1.2, 1.2, 0, -1, 1);
 		draw_text(x, y, global.txt_p3name + cursor);
         break;
 	case os_android:	     
-		draw_sprite_ext(spr_btn, 1, room_width/2, room_height/6, 1.2, 1.2, 0, -1, 1);
+		draw_sprite_ext(spr_button_big, 1, room_width/2, room_height/6, 1.2, 1.2, 0, -1, 1);
 		draw_text(room_width/2, room_height/6 - 105, _enter_name);
 		draw_text(room_width/2, room_height/6, global.txt_p3name + cursor);
         break;		

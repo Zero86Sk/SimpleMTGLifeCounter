@@ -12,7 +12,7 @@ event_inherited();
 
 if (global.game_mode != 2)
 {
-	instance_deactivate_object(self);
+	instance_destroy(self);
 }
 
 ///Button Script

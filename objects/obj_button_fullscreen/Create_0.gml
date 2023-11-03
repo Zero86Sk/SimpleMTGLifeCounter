@@ -18,6 +18,6 @@ switch(os_type)
 	case os_macosx:
 	    break;
 	case os_android:
-	    instance_deactivate_object(self);
+	    instance_destroy(self);
 	    break;
 }

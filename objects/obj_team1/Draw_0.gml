@@ -55,7 +55,7 @@ else
 
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
-draw_text(text_x, text_y - room_height/4.5, string(global.txt_p1name) + " &\n" + string(global.txt_p2name));
+draw_text(text_x, text_y - room_height/6, string(global.txt_p1name) + " &\n" + string(global.txt_p2name));
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);
 

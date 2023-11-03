@@ -1,6 +1,7 @@
 test_mode = 0;
+window_scale = 1;
 
-if (test_mode == 1)
+if (test_mode)
 {
 	view_width = 1920;
 	view_height = 1080;
@@ -11,7 +12,6 @@ else
 	view_height = round(window_get_height());
 }
 
-window_scale = 1;
 window_set_size(view_width * window_scale, view_height * window_scale);
 
 //recenter the resolution

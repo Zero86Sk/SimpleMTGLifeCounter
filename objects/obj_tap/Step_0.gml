@@ -1,7 +1,7 @@
 ///swipe Action Individualy
 if (global.game_mode != 1)
 {
-	instance_deactivate_object(self);
+	instance_destroy(self);
 }
 
 if (global.pause)

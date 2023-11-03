@@ -1,5 +1,4 @@
 event_inherited();
 draw_self();
-
-draw_text(x, y, "Settings");
+scr_draw_icon(spr_ico_settings);
 	

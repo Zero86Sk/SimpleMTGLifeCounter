@@ -12,7 +12,7 @@ event_inherited();
 
 if (global.game_mode != 2)
 {
-	instance_deactivate_object(self);
+	instance_destroy(self);
 }
 
 if (position_meeting(mouse_x, mouse_y, self))

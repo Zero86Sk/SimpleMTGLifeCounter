@@ -12,9 +12,9 @@ event_inherited();
 
 if (global.loyalty_team1_p2 == true)
 {
-	sprite_index = spr_btn_planes_on
+	sprite_index = spr_button_orange;
 } 
-else sprite_index = spr_btn_planes_off
+else sprite_index = spr_button;
 
 if (position_meeting(mouse_x, mouse_y, self))
 {

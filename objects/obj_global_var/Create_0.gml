@@ -69,6 +69,18 @@ global.life_points = 20;
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);
 
+//Room Dimensions
+global.roomx_start = 0;
+global.roomx_end = room_width;
+global.roomx_half = room_width/2;
+
+global.roomy_start = 0;
+global.roomy_end = room_height;
+global.roomy_half = room_height/2;
+
+global.roomy_up3rd = room_height/4.3;
+global.roomy_low3rd = room_height/1.3;
+
 //col_white Text
 r1 = 245;
 g1 = 245;

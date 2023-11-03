@@ -1,6 +1,6 @@
 event_inherited();
 
-draw_sprite_ext(spr_btn, 0, room_width/2, room_height - 170, 2, 2, 0, -1, image_alpha);
+draw_sprite_ext(spr_button_big, 0, room_width/2, room_height - 170, 2, 2, 0, -1, image_alpha);
 image_alpha = lerp(image_alpha, 1, 0.1); 
 
 switch (room)

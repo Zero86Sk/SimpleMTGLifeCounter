@@ -4,7 +4,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_color(global.col_orange);
 
-if (global.debug == true)
+if (global.debug)
 {
 	//Corner Text
 	draw_set_halign(fa_left);

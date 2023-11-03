@@ -3,10 +3,10 @@ draw_self();
 
 switch (global.debug)
 {
-	case true:
-		draw_text(x, y, "debug: On");
+	case 0:
+		draw_text(x, y, "debug: off");
 		break;
-	case false:	
-		draw_text(x, y, "debug: Off");
+	case 1:	
+		draw_text(x, y, "debug: on");
 		break;
 }
