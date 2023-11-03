@@ -3,6 +3,7 @@ event_inherited();
 
 player4_hp = global.life_points;
 player4_loyalty = 0;
+player4_poison = 0;
 
 switch (global.players)
 {	
@@ -33,6 +34,7 @@ switch (global.players)
 		tap_by_end = 0;	
 		instance_destroy(self);
 		instance_destroy(obj_loyalty4);
+		instance_destroy(obj_poison4);
 		break;
 }
 

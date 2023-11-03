@@ -2,6 +2,7 @@
 team2_hp = 30;
 player1_loyalty = 0;
 player2_loyalty = 0;
+team2_poison = 0;
 
 text_x = room_width/2;
 text_y = room_height/3.35;

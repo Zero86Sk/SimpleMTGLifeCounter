@@ -4,6 +4,7 @@ function scr_loyalty_team1_p1()
 	{
 		global.loyalty_team1_p1 = true;
 		global.loyalty_team1_p2 = false;
+		global.poison_team1 = false;
 	} else global.loyalty_team1_p1 = false;
 }
 
@@ -13,7 +14,18 @@ function scr_loyalty_team1_p2()
 	{
 		global.loyalty_team1_p2 = true;
 		global.loyalty_team1_p1 = false;
+		global.poison_team1 = false;
 	} else global.loyalty_team1_p2 = false;
+}
+
+function scr_poison_team1()
+{
+	if (global.poison_team1 == false)
+	{
+		global.poison_team1 = true;
+		global.loyalty_team1_p1 = false;
+		global.loyalty_team1_p2 = false;
+	} else global.poison_team1 = false;
 }
 
 
@@ -34,6 +46,10 @@ function scr_swipe_life_team1_add()
 			else if (global.loyalty_team1_p2 == true)
 			{
 				player2_loyalty += 1;
+			}
+			else if (global.poison_team1 == true)
+			{
+				team1_poison += 1;
 			}
 			else team1_hp += 1;
 		}
@@ -58,6 +74,10 @@ function scr_swipe_life_team1_sub()
 			{
 				player2_loyalty -= 1;
 			}
+			else if (global.poison_team1 == true)
+			{
+				team1_poison -= 1;
+			}
 			else team1_hp -= 1;
 		}
 	}	
@@ -77,6 +97,10 @@ function scr_tap_life_team1_add()
 			{
 				player2_loyalty += 1;
 			}
+			else if (global.poison_team1 == true)
+			{
+				team1_poison += 1;
+			}
 			else team1_hp += 1;
 		}
 	}
@@ -95,6 +119,10 @@ function scr_tap_life_team1_sub()
 			else if (global.loyalty_team1_p2 == true)
 			{
 				player2_loyalty -= 1;
+			}
+			else if (global.poison_team1 == true)
+			{
+				team1_poison -= 1;
 			}
 			else team1_hp -= 1;
 		}

@@ -7,6 +7,12 @@ or (global.win)
 
 event_inherited();
 
+//poison effect
+if (player3_poison >= 10)
+{
+	player3_hp = 0;
+}
+
 //Up Limit
 if (player3_hp >= 999)
 {
@@ -27,4 +33,9 @@ if (player3_hp <= -20)
 if (player3_loyalty <= 0)
 {
 	player3_loyalty = 0;
+}
+
+if (player3_poison <= 0)
+{
+	player3_poison = 0;
 }

@@ -34,13 +34,18 @@ draw_set_color(global.col_white);
 
 if (global.loyalty_team2_p1 == true)
 {
-	draw_sprite_ext(spr_planeswalker, 0, text_x, text_y, 0.5, 0.5, 0, -1, 1);	
+	draw_sprite_ext(spr_ico_loyalty, 0, text_x, text_y, 5, 5, 0, -1, 0.1);	
 	draw_text(text_x, text_y, player1_loyalty); 
 }
 else if (global.loyalty_team2_p2 == true)
 {
-	draw_sprite_ext(spr_planeswalker, 0, text_x, text_y, 0.5, 0.5, 0, -1, 1);	
+	draw_sprite_ext(spr_ico_loyalty, 0, text_x, text_y, 5, 5, 0, -1, 0.1);	
 	draw_text(text_x, text_y, player2_loyalty); 
+}
+else if (global.poison_team2)
+{
+	draw_sprite_ext(spr_ico_poison, 0, text_x, text_y, 5, 5, 0, -1, 0.1);		
+	draw_text(text_x, text_y, team2_poison); 
 }
 else 
 {

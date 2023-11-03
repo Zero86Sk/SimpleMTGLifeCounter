@@ -4,6 +4,7 @@ if (position_meeting(mouse_x, mouse_y, self))
 	image_xscale = lerp(image_xscale, scale_big, lerp_amount);
 	image_yscale = lerp(image_yscale, scale_big, lerp_amount);
 	
+	
 	if (device_mouse_check_button(0, global.mouse_left))
     {
 		image_index = 1;

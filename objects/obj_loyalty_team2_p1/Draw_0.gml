@@ -9,5 +9,5 @@ draw_set_font(fnt_medium);
 
 if !(obj_team2.player1_loyalty <= 0)
 {
-	draw_text(x, y - 100, obj_team2.player1_loyalty);
+	draw_text(x, y + 125, obj_team2.player1_loyalty);
 }

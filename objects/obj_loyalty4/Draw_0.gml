@@ -8,5 +8,5 @@ draw_set_font(fnt_medium);
 
 if !(obj_player4.player4_loyalty <= 0)
 {
-	draw_text(x, y + 100, obj_player4.player4_loyalty);
+	draw_text(x, y + 125, obj_player4.player4_loyalty);
 }

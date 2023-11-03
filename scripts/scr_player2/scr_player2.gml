@@ -3,8 +3,19 @@ function scr_loyalty2()
 	if (global.loyalty2 == false)
 	{
 		global.loyalty2 = true;
+		global.poison2 = false;
 	} else global.loyalty2 = false;
 }
+
+function scr_poison2()
+{
+	if (global.poison2 == false)
+	{
+		global.poison2 = true;
+		global.loyalty2 = false;
+	} else global.poison2 = false;
+}
+
 
 function scr_swipe_life2_add()
 {
@@ -19,6 +30,10 @@ function scr_swipe_life2_add()
 			if (global.loyalty2 == true)
 			{
 				player2_loyalty += 1;
+			}
+			else if (global.poison2 == true)
+			{
+				player2_poison += 1;
 			}
 			else player2_hp += 1;
 		}
@@ -40,6 +55,10 @@ function scr_swipe_life2_sub()
 			{
 				player2_loyalty -= 1;
 			}
+			else if (global.poison2 == true)
+			{
+				player2_poison -= 1;
+			}
 			else player2_hp -= 1;
 		}
 	}
@@ -56,6 +75,10 @@ function scr_tap_life2_add()
 			{
 				player2_loyalty += 1;
 			}
+			else if (global.poison2 == true)
+			{
+				player2_poison += 1;
+			}
 			else player2_hp += 1;
 		}
 	}
@@ -70,6 +93,10 @@ function scr_tap_life2_sub()
 			if (global.loyalty2 == true)
 			{
 				player2_loyalty -= 1;
+			}
+			else if (global.poison2 == true)
+			{
+				player2_poison -= 1;
 			}
 			else player2_hp -= 1;
 		}

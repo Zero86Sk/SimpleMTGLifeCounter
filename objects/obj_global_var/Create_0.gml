@@ -25,41 +25,25 @@ global.loyalty_team1_p2 = false;
 global.loyalty_team2_p1 = false;
 global.loyalty_team2_p2 = false;
 
-//Mouse and Keyboard
+//poison Counters
+global.poison1 = false;
+global.poison2 = false;
+global.poison3 = false;
+global.poison4 = false;
+global.poison_team1 = false;
+global.poison_team2 = false;
+
+//Keys
 global.mouse_left = mb_left;
+global.return_key = vk_return;	
+global.back_key = vk_backspace;	
 
 //Pressing Backspace
 global.back_once = false;
 global.back_twice = false;
 
-//Return Key on PC and Android
-switch (os_type)
-	{
-	case os_windows:
-	case os_macosx:
-	case os_linux:
-		global.return_key = vk_enter;
-		break;	
-	case os_android:
-		global.return_key = vk_return;	
-		break;
-	}
-
-//Back Key is ESC on PC and Backspace (back button) on Phones
-switch (os_type)
-	{
-	case os_windows:
-	case os_macosx:
-	case os_linux:
-		global.back_key = vk_escape;
-		break;	
-	case os_android:
-		global.back_key = vk_backspace;	
-		break;
-	}
-
 //Options
-global.full_screen = false;
+global.full_screen = true;
 global.sound_fxvol = true;
 global.magic_bg = spr_bg_black;
 global.game_mode = 1;
@@ -69,7 +53,7 @@ global.life_points = 20;
 audio_group_load(audiogroup_default);
 audio_group_load(ag_soundfx);
 
-//Room Dimensions
+//Room Dimensions for Swipe zones and Tap Zones
 global.roomx_start = 0;
 global.roomx_end = room_width;
 global.roomx_half = room_width/2;

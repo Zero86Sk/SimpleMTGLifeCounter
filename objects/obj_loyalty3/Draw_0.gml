@@ -6,18 +6,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_medium);
 
-switch (global.players)
+if !(obj_player3.player3_loyalty <= 0)
 {
-	case 4:
-		if !(obj_player3.player3_loyalty <= 0)
-		{
-			draw_text(x, y + 100, obj_player3.player3_loyalty);
-		}
-		break;
-	default: 
-		if !(obj_player3.player3_loyalty <= 0)
-		{
-			draw_text(x, y - 100, obj_player3.player3_loyalty);
-		}
-		break;
+	draw_text(x, y + 125, obj_player3.player3_loyalty);
 }

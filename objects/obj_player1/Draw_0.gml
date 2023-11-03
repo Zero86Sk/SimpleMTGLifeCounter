@@ -33,10 +33,15 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(global.col_white);
 
-if (global.loyalty1 == true)
+if (global.loyalty1)
 {
-	draw_sprite_ext(spr_planeswalker, 0, text_x, text_y, 0.5, 0.5, 0, -1, 1);		
+	draw_sprite_ext(spr_ico_loyalty, 0, text_x, text_y, 5, 5, 0, -1, 0.1);		
 	draw_text(text_x, text_y, player1_loyalty); 
+}
+else if (global.poison1)
+{
+	draw_sprite_ext(spr_ico_poison, 0, text_x, text_y, 5, 5, 0, -1, 0.1);		
+	draw_text(text_x, text_y, player1_poison); 
 }
 else
 {	

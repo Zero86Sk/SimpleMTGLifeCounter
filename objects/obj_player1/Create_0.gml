@@ -3,6 +3,7 @@ event_inherited();
 
 player1_hp = global.life_points;
 player1_loyalty = 0;
+player1_poison = 0;
 
 switch (global.players)
 {

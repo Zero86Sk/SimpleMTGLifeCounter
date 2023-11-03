@@ -36,7 +36,7 @@ draw_text(text_x, text_y, global.players);
 
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
-draw_text(text_x, text_y - room_height/6, "No. of Players");
+draw_text(text_x, text_y - room_height/6, "Players");
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);
 

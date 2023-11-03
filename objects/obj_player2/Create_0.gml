@@ -3,6 +3,7 @@ event_inherited();
 
 player2_hp = global.life_points;
 player2_loyalty = 0;
+player2_poison = 0;
 
 swipe_zone = pointer_null;
 tap_zone_a = pointer_null;
@@ -65,6 +66,7 @@ switch (global.players)
 		tap_by_end = 0;
 		instance_destroy(self);
 		instance_destroy(obj_loyalty2);
+		instance_destroy(obj_poison2);
 		break;
 }
 

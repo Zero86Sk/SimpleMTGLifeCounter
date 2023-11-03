@@ -8,5 +8,14 @@ draw_set_font(fnt_medium);
 
 if !(obj_player2.player2_loyalty <= 0)
 {
-	draw_text(x, y - 100, obj_player2.player2_loyalty);
+	switch (global.players)
+	{
+	case 2:
+	case 3:
+		draw_text(x, y + 125, obj_player2.player2_loyalty);
+		break;
+	case 4:
+		draw_text(x, y - 125, obj_player2.player2_loyalty);
+		break;
+	}
 }

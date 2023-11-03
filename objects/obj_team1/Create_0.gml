@@ -4,6 +4,7 @@ event_inherited();
 team1_hp = 30;
 player1_loyalty = 0;
 player2_loyalty = 0;
+team1_poison = 0;
 
 text_x = room_width/2;
 text_y = room_height/1.25;	

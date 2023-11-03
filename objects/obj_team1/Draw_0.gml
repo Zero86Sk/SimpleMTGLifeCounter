@@ -34,13 +34,18 @@ draw_set_color(global.col_white);
 
 if (global.loyalty_team1_p1 == true)
 {
-	draw_sprite_ext(spr_planeswalker, 0, text_x, text_y, 0.5, 0.5, 0, -1, 1);	
+	draw_sprite_ext(spr_ico_loyalty, 0, text_x, text_y, 5, 5, 0, -1, 0.1);	
 	draw_text(text_x, text_y, player1_loyalty);  
 }
 else if (global.loyalty_team1_p2 == true)
 {
-	draw_sprite_ext(spr_planeswalker, 0, text_x, text_y, 0.5, 0.5, 0, -1, 1);	
+	draw_sprite_ext(spr_ico_loyalty, 0, text_x, text_y, 5, 5, 0, -1, 0.1);	
 	draw_text(text_x, text_y, player2_loyalty);  
+}
+else if (global.poison_team1)
+{
+	draw_sprite_ext(spr_ico_poison, 0, text_x, text_y, 5, 5, 0, -1, 0.1);		
+	draw_text(text_x, text_y, team1_poison); 
 }
 else
 {
@@ -55,7 +60,7 @@ else
 
 draw_set_font(fnt_medium);
 draw_set_alpha(0.5);
-draw_text(text_x, text_y - room_height/6, string(global.txt_p1name) + " &\n" + string(global.txt_p2name));
+draw_text(text_x, text_y - room_height/6, string(global.txt_p1name) + "\n & \n" + string(global.txt_p2name));
 draw_set_alpha(1.0);
 draw_set_font(fnt_huge);
 
