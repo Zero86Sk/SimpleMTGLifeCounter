@@ -4,18 +4,20 @@ player1_loyalty = 0;
 player2_loyalty = 0;
 team2_poison = 0;
 
+padding = 50;
+
 text_x = room_width/2;
 text_y = room_height/3.35;
 		
 zonex_start = global.roomx_start;
 zonex_end = global.roomx_end;
 zoney_start = global.roomy_start;
-zoney_end = global.roomy_half;		
+zoney_end = global.roomy_half - padding;		
 
 tap_ay_start = global.roomy_start;
 tap_ay_end = global.roomy_up3rd;
 tap_by_start = global.roomy_up3rd;
-tap_by_end = global.roomy_half;
+tap_by_end = global.roomy_half - padding;
 
 tap_ax_start = zonex_start;
 tap_ax_end = zonex_end;

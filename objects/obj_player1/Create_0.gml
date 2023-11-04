@@ -5,6 +5,9 @@ player1_hp = global.life_points;
 player1_loyalty = 0;
 player1_poison = 0;
 
+padding = 50;
+padding_2 = 170;
+
 switch (global.players)
 {
 	case 1:
@@ -13,13 +16,13 @@ switch (global.players)
 		
 		zonex_start = global.roomx_start;
 		zonex_end = global.roomx_end;
-		zoney_start = global.roomy_start + 175;
-		zoney_end = global.roomy_end - 175;		
+		zoney_start = global.roomy_start + padding_2;
+		zoney_end = global.roomy_end - padding_2;		
 
-		tap_ay_start = global.roomy_start + 175;
+		tap_ay_start = global.roomy_start + padding_2;
 		tap_ay_end = global.roomy_half;
 		tap_by_start = global.roomy_half;
-		tap_by_end = global.roomy_end - 175;
+		tap_by_end = global.roomy_end - padding_2;
 		break;
 	case 2:	
 		text_x = room_width/2;
@@ -27,10 +30,10 @@ switch (global.players)
 		
 		zonex_start = global.roomx_start;
 		zonex_end = global.roomx_end;
-		zoney_start = global.roomy_half + 50;
+		zoney_start = global.roomy_half + padding;
 		zoney_end = global.roomy_end;		
 
-		tap_ay_start = global.roomy_half + 50;
+		tap_ay_start = global.roomy_half + padding;
 		tap_ay_end = global.roomy_low3rd;
 		tap_by_start = global.roomy_low3rd;
 		tap_by_end = global.roomy_end;
@@ -41,24 +44,24 @@ switch (global.players)
 		
 		zonex_start = global.roomx_start;
 		zonex_end = global.roomx_end;
-		zoney_start = global.roomy_half;
+		zoney_start = global.roomy_half + padding;
 		zoney_end = global.roomy_end;		
 
-		tap_ay_start = global.roomy_half;
+		tap_ay_start = global.roomy_half + padding;
 		tap_ay_end = global.roomy_low3rd;
 		tap_by_start = global.roomy_low3rd;
 		tap_by_end = global.roomy_end;
 		break;
 	case 4:
-		text_x = room_width/4;
+		text_x = room_width/4
 		text_y = room_height/1.25;	
 		
 		zonex_start = global.roomx_start;
 		zonex_end = global.roomx_half;
-		zoney_start = global.roomy_half;
+		zoney_start = global.roomy_half + padding;
 		zoney_end = global.roomy_end;		
 
-		tap_ay_start = global.roomy_half;
+		tap_ay_start = global.roomy_half + padding;
 		tap_ay_end = global.roomy_low3rd;
 		tap_by_start = global.roomy_low3rd;
 		tap_by_end = global.roomy_end;

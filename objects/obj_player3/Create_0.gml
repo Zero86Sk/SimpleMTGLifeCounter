@@ -5,6 +5,8 @@ player3_hp = global.life_points;
 player3_loyalty = 0;
 player3_poison = 0;
 
+padding = 50;
+
 switch (global.players)
 {
 	case 3:	
@@ -14,12 +16,12 @@ switch (global.players)
 		zonex_start = global.roomx_half;
 		zonex_end = global.roomx_end;
 		zoney_start = global.roomy_start;
-		zoney_end = global.roomy_half;		
+		zoney_end = global.roomy_half - padding;		
 
 		tap_ay_start = global.roomy_start;
 		tap_ay_end = global.roomy_up3rd;
 		tap_by_start = global.roomy_up3rd;
-		tap_by_end = global.roomy_half;
+		tap_by_end = global.roomy_half - padding;
 		break;
 	case 4:	
 		text_x = room_width/4;
@@ -28,12 +30,12 @@ switch (global.players)
 		zonex_start = global.roomx_start;
 		zonex_end = global.roomx_half;
 		zoney_start = global.roomy_start;
-		zoney_end = global.roomy_half;		
+		zoney_end = global.roomy_half - padding;		
 
 		tap_ay_start = global.roomy_start;
 		tap_ay_end = global.roomy_up3rd;
 		tap_by_start = global.roomy_up3rd;
-		tap_by_end = global.roomy_half;
+		tap_by_end = global.roomy_half - padding;
 		break;
 	default:
 		text_x = 0;

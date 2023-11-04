@@ -91,10 +91,12 @@ if (room = rm_2headed)
 }
 
 if  (global.win)
-{	
+{
+	depth = -1000;
+	
 	if !instance_exists(obj_fireworks)
 	{
-		instance_create_layer(x, y, "Win" , obj_fireworks);
+		instance_create_depth(x, y, 800 , obj_fireworks);
 	}
 	
     ///Destroy Object
