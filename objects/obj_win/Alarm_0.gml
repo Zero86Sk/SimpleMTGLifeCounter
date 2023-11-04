@@ -1,4 +1,4 @@
 ///@description restart room
 global.win = false;
-depth = 400;
+//depth = 0;
 scr_restart_room();

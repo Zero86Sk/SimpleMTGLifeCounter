@@ -92,7 +92,7 @@ if (room = rm_2headed)
 
 if  (global.win)
 {
-	depth = -1000;
+	//depth = -1000;
 	
 	if !instance_exists(obj_fireworks)
 	{
