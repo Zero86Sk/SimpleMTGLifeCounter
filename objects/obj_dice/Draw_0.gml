@@ -11,10 +11,10 @@ draw_self();
 
 if (rolling == true)
 {
-	draw_text(x, room_height/1.3, "");
+	draw_text(global.roomx_half, global.roomy_low3rd, "");
 }
 
 if (rolled == true)
 {
-	draw_text(x, room_height/1.3, string(image_index + 1));
+	draw_text(global.roomx_half, global.roomy_low3rd, string(image_index + 1));
 }

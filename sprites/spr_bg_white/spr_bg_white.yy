@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_bg_white",
-  "bbox_bottom": 1079,
+  "bbox_bottom": 1919,
   "bbox_left": 0,
-  "bbox_right": 1919,
+  "bbox_right": 1079,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8387cab8-7a25-4a39-a1ed-dd66cde771f6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7c3e2199-6367-458f-afa5-9e8999ea32de",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 1080,
+  "height": 1920,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"24a8c272-b1e9-475f-bbac-f0e75072e0d2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0c50b6b2-7450-460d-8af3-d909e9016b1a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -77,7 +77,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8387cab8-7a25-4a39-a1ed-dd66cde771f6","path":"sprites/spr_bg_white/spr_bg_white.yy",},},},"Disabled":false,"id":"7cec6752-82fb-4fcd-8b6d-abd41a3c70df","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7c3e2199-6367-458f-afa5-9e8999ea32de","path":"sprites/spr_bg_white/spr_bg_white.yy",},},},"Disabled":false,"id":"28a9843a-be36-4114-a4e3-30bfec2ebf07","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -93,5 +93,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1920,
+  "width": 1080,
 }

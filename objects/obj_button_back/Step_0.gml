@@ -1,5 +1,3 @@
-event_inherited();
-
 ///Button Script
 if (global.pause)
 or (global.win)
@@ -10,6 +8,8 @@ or (global.name_entery4 == true)
 {
     exit;
 }
+
+event_inherited();
 
 if (position_meeting(mouse_x, mouse_y, self))
 {

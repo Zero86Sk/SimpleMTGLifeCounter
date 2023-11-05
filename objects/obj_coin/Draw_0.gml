@@ -11,14 +11,14 @@ draw_self();
 
 if (flipping == true)
 {
-	draw_text(x, room_height/1.3, "");
+	draw_text(global.roomx_half, global.roomy_low3rd, "");
 }
 
 if (flipped == true)
 {
 	if (image_index = 1)
 	{
-		draw_text(x, room_height/1.3, "Heads");	
+		draw_text(global.roomx_half, global.roomy_low3rd, "Heads");	
 	}
-	else draw_text(x, room_height/1.3, "Tails");
+	else draw_text(global.roomx_half, global.roomy_low3rd, "Tails");
 }

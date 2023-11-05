@@ -1,12 +1,18 @@
 event_inherited();
 
-time = 0;
-
-switch (global.players)
+if (room == rm_game)
 {
-	case 2:
-	case 3:
-	case 4:
-		y = global.roomy_half;
-		break;
+	switch (global.players)
+	{
+		case 2:
+		case 3:
+		case 4:
+			y = global.roomy_half;
+			break;
+	}
+}
+
+if (room == rm_2headed)
+{
+	y = global.roomy_half;
 }
