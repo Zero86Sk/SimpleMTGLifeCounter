@@ -12,11 +12,11 @@ function scr_load_settings()
 	    global.txt_p3name = ini_read_string("names", "player3", "Player 3");
 	    global.txt_p4name = ini_read_string("names", "player4", "Player 4");
 
-	    global.full_screen = ini_read_real("settings", "full_screen", false);    
+	    global.full_screen = ini_read_real("settings", "full_screen", true);    
 	    global.sound_fxvol = ini_read_real("settings", "sfx", true);
 	    global.magic_bg = ini_read_string("settings", "background", "bg_black");
 		global.game_mode = ini_read_real("settings", "mode", 1);
-		global.players = ini_read_real("settings", "players", 1);
+		global.players = ini_read_real("settings", "players", 2);
 		global.life_points = ini_read_real("settings", "life_points", 20);
 
 		//Close File

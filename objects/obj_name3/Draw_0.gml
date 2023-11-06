@@ -18,20 +18,8 @@ if (global.name_entery3 == true)
 	scr_draw_rectangle();
     draw_set_color(global.col_white);   
 	var _enter_name = "Enter Name:"
-	
-    switch(os_type)
-    {
-    case os_windows:
-    case os_linux:
-	case os_macosx:
-		draw_text(x, y - 105, _enter_name);	
-		draw_sprite_ext(spr_button_big, 1, x, y, 1.2, 1.2, 0, -1, 1);
-		draw_text(x, y, global.txt_p3name + cursor);
-        break;
-	case os_android:	     
-		draw_sprite_ext(spr_button_big, 1, room_width/2, room_height/6, 1.2, 1.2, 0, -1, 1);
-		draw_text(room_width/2, room_height/6 - 105, _enter_name);
-		draw_text(room_width/2, room_height/6, global.txt_p3name + cursor);
-        break;		
-    }
+
+	draw_text(global.roomx_half, global.roomy_up3rd - 150, _enter_name);
+	draw_sprite_ext(spr_button_big, 0, global.roomx_half, global.roomy_up3rd, 1.2, 1.2, 0, -1, 1);
+	draw_text(global.roomx_half, global.roomy_up3rd, global.txt_p3name + cursor);
 }

@@ -8,5 +8,5 @@ fade_out = false;
 
 //Lerp
 scale_default = 1;
-scale_big = 1.1;
+scale_big = 1.3;
 lerp_amount = 0.2;

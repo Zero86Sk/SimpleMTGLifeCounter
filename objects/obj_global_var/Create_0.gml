@@ -38,10 +38,6 @@ global.mouse_left = mb_left;
 global.return_key = vk_return;	
 global.back_key = vk_backspace;	
 
-//Pressing Backspace
-global.back_once = false;
-global.back_twice = false;
-
 //Options
 global.full_screen = true;
 global.sound_fxvol = true;

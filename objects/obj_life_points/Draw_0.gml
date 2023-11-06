@@ -53,7 +53,7 @@ if (global.debug == true)
 	switch (global.game_mode)
 	{
 		case 0:
-			draw_set_color(c_red);
+			draw_set_color(c_blue);
 			draw_rectangle(zonex_start, zoney_start, zonex_end, zoney_end, 0);		
 			draw_set_color(c_white);
 			draw_set_alpha(1);	
@@ -61,9 +61,9 @@ if (global.debug == true)
 			draw_text(zonex_start + 96, zoney_start + 96, "Inside: " + string(swipe_zone));			
 			break;
 		case 1:
-			draw_set_color(c_red);
+			draw_set_color(c_blue);
 			draw_rectangle(tap_ax_start, tap_ay_start, tap_ax_end, tap_ay_end, 0);
-			draw_set_color(c_maroon);
+			draw_set_color(c_navy);
 			draw_rectangle(tap_bx_start, tap_by_start, tap_bx_end, tap_by_end, 0);		
 			draw_set_color(c_white);
 			draw_set_alpha(1);	

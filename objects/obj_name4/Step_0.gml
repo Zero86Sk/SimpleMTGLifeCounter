@@ -3,90 +3,74 @@ or (global.win)
 or (global.name_entery1 == true)
 or (global.name_entery2 == true)
 or (global.name_entery3 == true)
+//or (global.name_entery4 == true)
 {
     exit;
-}
+} 
 
 event_inherited();
 
 if (position_meeting(mouse_x, mouse_y, self))
-{
-    if (device_mouse_check_button(0, global.mouse_left))
-    {      
-        //time++;   
-    }
-    
-    if (device_mouse_check_button_released(0, global.mouse_left))
-    {
-        //time = 0;
+{   
+	if (device_mouse_check_button_released(0, global.mouse_left))
+	{
 		global.name_entery4 = true;
 		input_start = true;
-    }
-}
-
-if (time == 30)
-{
-	global.name_entery4 = true;    
-    time = 0;
-	input_start = true;
+	}
 }
 
 if (global.name_entery4 == true)
 {
-    cursor = "|";
-    depth = -5000;
-    
+	cursor = "|";
+	depth = -1000;
+
 	if (input_start == true)
-	{		
-		switch (os_type)
+	{	
+		if !(keyboard_virtual_status())
 		{
-		case os_android:
-			if (keyboard_virtual_status() != true)
-			{
-				keyboard_virtual_show(kbv_type_ascii, kbv_returnkey_default, kbv_autocapitalize_none, true)
-			}
-			break;
+			keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, true)
 		}
-			
+
 		input_start = false;
 	}
-		
-    if(string_length(keyboard_string) <= input_length)
-    {
-        global.txt_p4name = string_copy(keyboard_string, 1, input_length);
-    }   
 
-    if (keyboard_check_pressed(global.return_key))
-    or (device_mouse_check_button_pressed(0, global.mouse_left))
-    {
-        if(string_length(keyboard_string) < min_length)
-        {
-            global.txt_p4name = "Player 4";
-        }
+	if(string_length(keyboard_string) <= input_length)
+	{
+	    global.txt_p4name = string_copy(keyboard_string, 1, input_length);
+	} 
 
+	if (keyboard_check_pressed(global.return_key))
+	{		
 		input_finish = true;
-		
-		if (input_finish == true)
-		{				
-			switch (os_type)
-			{
-				case os_android:
-					if (keyboard_virtual_status() == true)
-					{
-						keyboard_virtual_hide();
-					}
-					break;
-			}
-			
-			keyboard_string = "";		
-			scr_save_settings();
-			input_finish = false;
-			global.name_entery4 = false;
+	}
+	
+	if (input_finish == true)
+	{	
+		if (keyboard_virtual_status())
+		{
+			keyboard_virtual_hide();
 		}
+			
+		if(string_length(keyboard_string) <= min_length)
+		{
+		    global.txt_p4name = "Player 4";
+		}
+			
+		keyboard_string = "";
+		scr_save_settings();
+		input_finish = false;
+		global.name_entery4 = false;
+	}
+	
+	if (device_mouse_check_button_pressed(0, global.mouse_left))
+	and !(keyboard_virtual_status())
+	{
+		input_start = true;
 	}
 }
 else
 {
 	cursor = "";
-	depth = -10;
+	depth = -100;
 }
+

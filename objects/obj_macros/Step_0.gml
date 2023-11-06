@@ -14,5 +14,18 @@ or (global.name_entery4 == true)
 //exit 
 if (keyboard_check_pressed(global.back_key))
 {
-
+	switch (room)
+	{
+		case rm_main_menu:
+			scr_exit_create_dialog();
+			break;
+		case rm_game:
+		case rm_2headed:
+			scr_exit_create_dialog();
+			break;
+		case rm_help:
+		case rm_settings:
+			room_goto(rm_main_menu);
+			break;
+	}
 }

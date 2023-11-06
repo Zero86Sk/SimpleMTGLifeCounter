@@ -7,10 +7,9 @@ or (global.win)
 event_inherited();
 
 //Up Limit
-if (global.life_points > 100)
+if (global.life_points > 40)
 {
-    global.life_points = 100;
-	
+    global.life_points = 40;
 }
 
 //Down Limit

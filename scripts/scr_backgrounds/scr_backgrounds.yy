@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_mode",
+  "name": "scr_backgrounds",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Settings",
-    "path": "folders/Scripts/Settings.yy",
+    "name": "Backgrounds",
+    "path": "folders/Scripts/Backgrounds.yy",
   },
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_play_sound",
+  "name": "scr_name_entery",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

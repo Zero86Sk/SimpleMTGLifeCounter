@@ -18,10 +18,6 @@ if (position_meeting(mouse_x, mouse_y, self))
     {
 		switch (room)
 		{
-			case rm_main_menu:
-			case rm_game:
-			case rm_2headed:
-				break;
 			case rm_settings:
 			case rm_help:
 				room_goto(rm_main_menu);

@@ -1,26 +1,6 @@
-if (global.pause)
-or (global.win)
-or (global.name_entery1 == true)
-or (global.name_entery2 == true)
-//or (global.name_entery3 == true)
-or (global.name_entery4 == true)
+function scr_player_name(_name_entery, _txt_pname)
 {
-    exit;
-} 
-
-event_inherited();
-
-if (position_meeting(mouse_x, mouse_y, self))
-{   
-	if (device_mouse_check_button_released(0, global.mouse_left))
-	{
-		global.name_entery3 = true;
-		input_start = true;
-	}
-}
-
-if (global.name_entery3 == true)
-{
+	
 	cursor = "|";
 	depth = -1000;
 
@@ -36,7 +16,7 @@ if (global.name_entery3 == true)
 
 	if(string_length(keyboard_string) <= input_length)
 	{
-	    global.txt_p3name = string_copy(keyboard_string, 1, input_length);
+		_txt_pname = string_copy(keyboard_string, 1, input_length);
 	} 
 
 	if (keyboard_check_pressed(global.return_key))
@@ -53,13 +33,13 @@ if (global.name_entery3 == true)
 			
 		if(string_length(keyboard_string) <= min_length)
 		{
-		    global.txt_p3name = "Player 3";
+		    _txt_pname = "Player 1";
 		}
 			
 		keyboard_string = "";
 		scr_save_settings();
 		input_finish = false;
-		global.name_entery3 = false;
+		_name_entery = false;
 	}
 	
 	if (device_mouse_check_button_pressed(0, global.mouse_left))
@@ -67,9 +47,4 @@ if (global.name_entery3 == true)
 	{
 		input_start = true;
 	}
-}
-else
-{
-	cursor = "";
-	depth = -100;
 }

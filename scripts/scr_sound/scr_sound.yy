@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_soundfx",
+  "name": "scr_sound",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Settings",
-    "path": "folders/Scripts/Settings.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

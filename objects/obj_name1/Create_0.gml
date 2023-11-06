@@ -1,6 +1,6 @@
 event_inherited();
 
-time = 0;
+defualt_name = global.txt_p1name;
 
 cursor = "";
 min_length = 1;
