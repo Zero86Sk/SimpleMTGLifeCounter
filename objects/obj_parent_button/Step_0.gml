@@ -9,23 +9,23 @@ if (position_meeting(mouse_x, mouse_y, self))
 	
 	if (device_mouse_check_button(0, global.mouse_left))
     {
-		image_index = 1;
+		//image_index = 1;
     }
 	
     if (device_mouse_check_button_pressed(0, global.mouse_left))
-    {	
+    {			
 		///Play Sound
 		scr_play_sound(snd_click1);
     }
 	
 	if (device_mouse_check_button_released(0, global.mouse_left))
     {	
-		image_index = 0;
+		
 	}
 }
 else
 {	
-	image_index = 0;
+	//image_index = 0;
 	//depth = 100;
 
 	//returns image scale to normal
