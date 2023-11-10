@@ -11,14 +11,19 @@ draw_self();
 
 if (flipping == true)
 {
-	draw_text(global.roomx_half, global.roomy_low3rd, "");
+	//draw_text(global.roomx_half, global.roomy_low3rd, "...");
 }
 
 if (flipped == true)
 {
 	if (image_index = 1)
 	{
+		draw_sprite(spr_coin, 1, global.roomx_half, global.roomy_half);
 		draw_text(global.roomx_half, global.roomy_low3rd, "Heads");	
 	}
-	else draw_text(global.roomx_half, global.roomy_low3rd, "Tails");
+	else 
+	{
+		draw_sprite(spr_coin, 2, global.roomx_half, global.roomy_half);
+		draw_text(global.roomx_half, global.roomy_low3rd, "Tails");
+	}
 }

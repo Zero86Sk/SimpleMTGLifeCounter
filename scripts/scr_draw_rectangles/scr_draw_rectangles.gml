@@ -5,8 +5,8 @@ function scr_draw_rectangle()
 	var _alpha = 0.7;
 	
 	draw_set_alpha(_alpha);	
-	//draw_rectangle(0, 0, room_width, room_height, 0);
-	draw_roundrect_ext(0 + _margin, 0 + _margin, room_width - _margin, room_height - _margin, _radius, _radius, 0)
+	draw_rectangle(0, 0, room_width, room_height, 0);
+	//draw_roundrect_ext(0 + _margin, 0 + _margin, room_width - _margin, room_height - _margin, _radius, _radius, 0)
 	draw_set_alpha(1.0);
 }
 

@@ -3,7 +3,8 @@ if (rolling == true)
 	if (image_angle > 0)
 	{
 		image_angle -= 15;
-		image_index = irandom(19);
+		//image_index = irandom(19);
+		numbers = irandom(19) + 1;
 	}
 	
 	//Play Sound

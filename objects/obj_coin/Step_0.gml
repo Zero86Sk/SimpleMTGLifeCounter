@@ -7,12 +7,9 @@ if (flipping == true)
 		sin_value = 0;
 	}
 
+	//Coin fliping animation and image index
 	image_yscale = sin(sin_value);
-
-	if (image_yscale >= 0)
-	{
-		image_index = 1;
-	} else image_index = 0;
+	image_index = 0;
 
 	//Play Sound
 	scr_play_sound(snd_coinflip);

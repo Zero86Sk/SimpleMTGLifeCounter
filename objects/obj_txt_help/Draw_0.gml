@@ -16,6 +16,6 @@ draw_sprite(spr_ico_mode_swipe, 0, x + _ico, y + 405);
 
 draw_sprite(spr_ico_loyalty, 0, x + _ico, y + 540);
 draw_sprite(spr_ico_poison, 0, x + _ico, y + 650);
-draw_sprite(spr_ico_dice, 0, x + _ico, y +  760);
-draw_sprite(spr_ico_coin, 0, x + _ico, y + 870);
+draw_sprite(spr_ico_coin, 0, x + _ico, y +  760);
+draw_sprite(spr_ico_dice, 0, x + _ico, y + 870);
 draw_sprite(spr_ico_d20, 0, x + _ico, y + 980);

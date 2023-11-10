@@ -16,5 +16,6 @@ if	(rolling == true)
 
 if	(rolled == true)
 {
-	draw_text(global.roomx_half, global.roomy_low3rd, string(image_index + 1));
+	//draw_text(global.roomx_half, global.roomy_low3rd, string(image_index + 1));
+	draw_text(global.roomx_half, global.roomy_low3rd, numbers);
 }
