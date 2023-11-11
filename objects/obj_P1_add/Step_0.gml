@@ -21,8 +21,12 @@ if (position_meeting(mouse_x, mouse_y, self))
 	{
 			if (global.loyalty1 == true)
 			{
-				obj_player1.player1_loyalty += 1;
+			 obj_player1.player1_loyalty += 1;
 			}
-			else obj_player1.player1_hp += 1;		
+			else if (global.poison1 == true)
+			{
+				obj_player1.player1_poison += 1;
+			}
+			else obj_player1.player1_hp += 1;	
 	}
 }

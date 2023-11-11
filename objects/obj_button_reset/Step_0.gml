@@ -26,7 +26,9 @@ if (position_meeting(mouse_x, mouse_y, self))
         global.sound_fxvol = true;
 		global.debug = false;
 		
+		global.game_mode = 1;
 		global.players = 2;
+		global.life_points = 20;
          
 		audio_group_set_gain(ag_soundfx, global.sound_fxvol, 0);      
         

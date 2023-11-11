@@ -101,3 +101,4 @@ function scr_tap_life1_sub()
 		}	
 	}
 }
+

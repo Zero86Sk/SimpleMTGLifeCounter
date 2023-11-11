@@ -1,7 +1,7 @@
 ///Subtitle String
 draw_set_font(fnt_small);
 draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
+draw_set_valign(fa_top);
 draw_set_color(global.col_white);
 
 //draw_text(x, y, "Help:");
@@ -9,7 +9,7 @@ draw_set_color(global.col_white);
 var _ico = 20;
 var _txt = 90;
 
-draw_text(x + _txt, y + 600, text);
+draw_text(x + _txt, y + 190, text);
 
 draw_sprite(spr_ico_mode_tap, 0, x + _ico, y + 245);
 draw_sprite(spr_ico_mode_swipe, 0, x + _ico, y + 405);

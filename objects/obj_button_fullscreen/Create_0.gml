@@ -10,8 +10,8 @@ or (global.name_entery4 == true)
 
 event_inherited();
 
-///Destroy if on Android and Windows
-switch(os_type)
+///Destroy on Windows
+switch (os_type)
 {
 	case os_windows:
 	case os_linux:
