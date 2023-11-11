@@ -6,7 +6,7 @@ team2_poison = 0;
 
 padding = 50;
 
-text_x = room_width/2;
+text_x = global.roomx_half;
 text_y = room_height/3.35;
 		
 zonex_start = global.roomx_start;

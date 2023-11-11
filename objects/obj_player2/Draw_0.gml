@@ -45,7 +45,6 @@ else if (global.poison2)
 else
 {
 	draw_text(text_x, text_y, player2_hp);      
-	//draw_text_ext_transformed(text_x, text_y, player2_hp, 10, 300, 1, 1, 0);   
 	
 	if (player2_hp <= 0)
 	{

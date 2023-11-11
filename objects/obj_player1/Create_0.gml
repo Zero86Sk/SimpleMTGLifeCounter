@@ -11,7 +11,7 @@ padding_2 = 170;
 switch (global.players)
 {
 	case 1:
-		text_x = room_width/2;
+		text_x = global.roomx_half;
 		text_y = room_height/1.8;
 		
 		zonex_start = global.roomx_start;
@@ -25,7 +25,7 @@ switch (global.players)
 		tap_by_end = global.roomy_end - padding_2;
 		break;
 	case 2:	
-		text_x = room_width/2;
+		text_x = global.roomx_half;
 		text_y = room_height/1.25;	
 		
 		zonex_start = global.roomx_start;
@@ -39,7 +39,7 @@ switch (global.players)
 		tap_by_end = global.roomy_end;
 		break;
 	case 3:	
-		text_x = room_width/2;
+		text_x = global.roomx_half;
 		text_y = room_height/1.25;	
 		
 		zonex_start = global.roomx_start;
@@ -53,7 +53,7 @@ switch (global.players)
 		tap_by_end = global.roomy_end;
 		break;
 	case 4:
-		text_x = room_width/4
+		text_x = global.roomx_left3rd
 		text_y = room_height/1.25;	
 		
 		zonex_start = global.roomx_start;

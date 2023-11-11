@@ -1,7 +1,7 @@
 ///Player 1 variables
 event_inherited();
 
-text_x = room_width/4;
+text_x = global.roomx_left3rd;
 text_y = room_height/1.8;
 		
 zonex_start = global.roomx_start;

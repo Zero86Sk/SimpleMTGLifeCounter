@@ -54,6 +54,10 @@ global.roomx_start = 0;
 global.roomx_end = room_width;
 global.roomx_half = room_width/2;
 
+global.roomx_left3rd = room_width/4;
+global.roomx_right3rd = room_width/1.3;
+
+
 global.roomy_start = 0;
 global.roomy_end = room_height;
 global.roomy_half = room_height/2;

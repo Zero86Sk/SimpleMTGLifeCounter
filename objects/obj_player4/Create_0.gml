@@ -10,7 +10,7 @@ padding = 50;
 switch (global.players)
 {	
 	case 4:
-		text_x = room_width/1.3;
+		text_x = global.roomx_right3rd;
 		text_y = room_height/3.35;
 		
 		zonex_start = global.roomx_half;

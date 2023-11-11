@@ -10,7 +10,7 @@ padding = 50;
 switch (global.players)
 {
 	case 2:	
-		text_x = room_width/2;
+		text_x = global.roomx_half;
 		text_y = room_height/3.35;
 		
 		zonex_start = global.roomx_start;
@@ -24,7 +24,7 @@ switch (global.players)
 		tap_by_end = global.roomy_half - padding;
 		break;
 	case 3:	
-		text_x = room_width/4;
+		text_x = global.roomx_left3rd;
 		text_y = room_height/3.35;
 		
 		zonex_start = global.roomx_start;
@@ -38,7 +38,7 @@ switch (global.players)
 		tap_by_end = global.roomy_half - padding;
 		break;
 	case 4:	
-		text_x = room_width/1.3;
+		text_x = global.roomx_right3rd;
 		text_y = room_height/1.25;
 		
 		zonex_start = global.roomx_half;
