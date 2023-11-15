@@ -1,3 +1,4 @@
+/*
 function scr_player_name(_name_entery, _txt_pname)
 {
 	

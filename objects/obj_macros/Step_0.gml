@@ -25,6 +25,7 @@ if (keyboard_check_pressed(global.back_key))
 			break;
 		case rm_help:
 		case rm_settings:
+		case rm_credits:
 			room_goto(rm_main_menu);
 			break;
 	}
