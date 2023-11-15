@@ -10,6 +10,7 @@
     {"name":"Main Menu","order":1,"path":"folders/Objects/Buttons/Main Menu.yy",},
     {"name":"Main","order":4,"path":"folders/Objects/Buttons/Main.yy",},
     {"name":"Names","order":5,"path":"folders/Objects/Buttons/Names.yy",},
+    {"name":"Themes","order":8,"path":"folders/Objects/Buttons/Themes.yy",},
     {"name":"Exit Dialog","order":9,"path":"folders/Objects/Exit Dialog.yy",},
     {"name":"Parent Objects","order":1,"path":"folders/Objects/Parent Objects.yy",},
     {"name":"Restart Dialog","order":10,"path":"folders/Objects/Restart Dialog.yy",},
@@ -30,7 +31,6 @@
     {"name":"Icons","order":10,"path":"folders/Sprites/Icons.yy",},
     {"name":"Tile Sets","order":3,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":9,"path":"folders/Timelines.yy",},
-    {"name":"Themes","order":8,"path":"folders/Objects/Buttons/Themes.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_parent_zones","order":1,"path":"objects/obj_parent_zones/obj_parent_zones.yy",},
