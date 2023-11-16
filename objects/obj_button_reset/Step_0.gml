@@ -21,7 +21,7 @@ if (position_meeting(mouse_x, mouse_y, self))
         global.txt_p3name = "Player 3";
         global.txt_p4name = "Player 4";
         
-        global.full_screen = 0;
+        global.full_screen = 1;
         global.magic_bg = spr_bg_black;
         global.sound_fxvol = true;
 		global.debug = false;

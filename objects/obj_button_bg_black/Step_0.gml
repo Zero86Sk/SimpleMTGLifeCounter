@@ -16,5 +16,6 @@ if (position_meeting(mouse_x, mouse_y, self))
     {  
 		scr_background(spr_bg_black);
 		scr_set_background();
+		scr_save_settings();
     }
 }
