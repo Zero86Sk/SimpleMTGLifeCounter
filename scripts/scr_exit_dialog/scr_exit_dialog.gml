@@ -6,7 +6,6 @@ function scr_exit_create_dialog()
 	instance_create_depth(global.roomx_half, global.roomy_half, -100, obj_exit_no);
 	instance_create_depth(global.roomx_half, global.roomy_half, -100, obj_exit_bg);	
 	instance_create_depth(global.roomx_half, global.roomy_half, -200, obj_txt_exit);
-
 }
 
 function scr_exit_destroy_dialog()

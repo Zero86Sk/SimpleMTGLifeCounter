@@ -9,13 +9,15 @@ draw_set_color(global.col_white);
 
 draw_self();
 
+var _offset = 300;
+
 if	(rolling == true)
 {
-	draw_text(global.roomx_half, global.roomy_low3rd, "");
+	//draw_text(global.roomx_half, global.roomy_low3rd, "");
 }
 
 if	(rolled == true)
 {
 	//draw_text(global.roomx_half, global.roomy_low3rd, string(image_index + 1));
-	draw_text(global.roomx_half ,global.roomy_half + 300, string(numbers));
+	draw_text(global.roomx_half ,global.roomy_half + _offset, string(numbers));
 }
