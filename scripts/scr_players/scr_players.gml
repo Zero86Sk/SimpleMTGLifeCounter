@@ -10,6 +10,7 @@ function scr_swipe_players_add()
 		and (global.players <= 3)
 		{
 			global.players += 1;
+			scr_save_settings();
 		}
 	}
 }
@@ -26,6 +27,7 @@ function scr_swipe_players_sub()
 		and (global.players >= 2)
 		{
 			global.players -= 1;
+			scr_save_settings();
 		}
 	}
 }
@@ -38,6 +40,7 @@ function scr_tap_players_add()
 		and (global.players <= 3)
 		{
 			global.players += 1;
+			scr_save_settings();
 		}
 	}
 }
@@ -50,6 +53,7 @@ function scr_tap_players_sub()
 		and (global.players >= 2)
 		{
 			global.players -= 1;
+			scr_save_settings();
 		}
 	}
 }

@@ -10,11 +10,13 @@
     {"name":"inst_2D4A13CD_1","path":"rooms/rm_credits/rm_credits.yy",},
     {"name":"inst_1BB2BC27_1","path":"rooms/rm_credits/rm_credits.yy",},
     {"name":"inst_5AADBCEA","path":"rooms/rm_credits/rm_credits.yy",},
+    {"name":"inst_5971EE51","path":"rooms/rm_credits/rm_credits.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Buttons","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BB2BC27_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_button_back","path":"objects/obj_button_back/obj_button_back.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5971EE51","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_button_kofi","path":"objects/obj_button_kofi/obj_button_kofi.yy",},"properties":[],"rotation":0.0,"scaleX":3.868965,"scaleY":1.0,"x":288.0,"y":1824.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Objects","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D4A13CD_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_logo","path":"objects/obj_logo/obj_logo.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":64.0,},

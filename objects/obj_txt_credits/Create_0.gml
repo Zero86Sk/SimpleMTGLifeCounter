@@ -10,5 +10,4 @@ text =
 + "\npermitted under the Fan Content Policy. Not"
 + "\napproved / endorsed by Wizards. Portions of"
 + "\nthe materials used are property of Wizards"
-+ "\nof the Coast. © Wizards of the Coast LLC."
-;
++ "\nof the Coast. © Wizards of the Coast LLC.";

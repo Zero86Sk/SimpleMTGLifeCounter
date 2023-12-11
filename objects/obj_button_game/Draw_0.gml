@@ -4,7 +4,7 @@ draw_self();
 var _pad_spr = 40;
 var _pad_txt = 55;
 
-draw_text(x, y + _pad_txt, string(global.players) + " Player Counter");
+draw_text(x, y + _pad_txt, "Start Duel");
 
 switch (global.players) 
 {

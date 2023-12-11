@@ -10,6 +10,7 @@ function scr_swipe_life_points_add()
 		and (global.life_points <= 30)
 		{
 			global.life_points += 10;
+			scr_save_settings();
 		}
 	}
 }
@@ -26,6 +27,7 @@ function scr_swipe_life_points_sub()
 		and (global.life_points >= 30)
 		{
 			global.life_points -= 10;
+			scr_save_settings();
 		}
 	}
 }
@@ -38,6 +40,7 @@ function scr_tap_life_points_add()
 		and (global.life_points <= 30)
 		{
 			global.life_points += 10;
+			scr_save_settings();
 		}
 	}
 }
@@ -50,6 +53,7 @@ function scr_tap_life_points_sub()
 		and (global.life_points >= 30)
 		{
 			global.life_points -= 10;
+			scr_save_settings();
 		}
 	}
 }
