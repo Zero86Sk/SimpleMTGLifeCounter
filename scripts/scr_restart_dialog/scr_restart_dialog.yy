@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_restart_dialog",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Dialogs",
-    "path": "folders/Scripts/Dialogs.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_restart_dialog",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_restart_dialog",
+  "parent":{
+    "name":"Dialogs",
+    "path":"folders/Scripts/Dialogs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

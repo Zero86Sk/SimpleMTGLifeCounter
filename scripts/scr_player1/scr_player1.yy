@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_player1",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Players",
-    "path": "folders/Scripts/Players.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_player1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_player1",
+  "parent":{
+    "name":"Players",
+    "path":"folders/Scripts/Players.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
