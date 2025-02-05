@@ -9,8 +9,8 @@
   "name":"obj_parent_zones",
   "overriddenProperties":[],
   "parent":{
-    "name":"Parent Objects",
-    "path":"folders/Objects/Parent Objects.yy",
+    "name":"Main",
+    "path":"folders/Objects/Main.yy",
   },
   "parentObjectId":null,
   "persistent":false,

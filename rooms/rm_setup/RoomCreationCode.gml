@@ -6,3 +6,5 @@ if (!file_exists("settings.ini"))
 
 //Randomise RNG seed
 randomise();
+
+room_goto(rm_main_menu);

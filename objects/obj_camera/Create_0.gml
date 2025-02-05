@@ -1,3 +1,4 @@
+/*
 test_mode = 0;
 window_scale = 1;
 

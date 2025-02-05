@@ -27,7 +27,6 @@
     {"$GMFolder":"","%Name":"Themes","folderPath":"folders/Objects/Buttons/Themes.yy","name":"Themes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Exit Dialog","folderPath":"folders/Objects/Exit Dialog.yy","name":"Exit Dialog","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Main","folderPath":"folders/Objects/Main.yy","name":"Main","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Parent Objects","folderPath":"folders/Objects/Parent Objects.yy","name":"Parent Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Restart Dialog","folderPath":"folders/Objects/Restart Dialog.yy","name":"Restart Dialog","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Text","folderPath":"folders/Objects/Text.yy","name":"Text","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -52,7 +51,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2023.11.0.121",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"SimpleMTGLifeCounter",
   "resources":[
@@ -147,8 +146,8 @@
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_help","path":"rooms/rm_help/rm_help.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
-    {"id":{"name":"rm_res_manager","path":"rooms/rm_res_manager/rm_res_manager.yy",},},
     {"id":{"name":"rm_settings","path":"rooms/rm_settings/rm_settings.yy",},},
+    {"id":{"name":"rm_setup","path":"rooms/rm_setup/rm_setup.yy",},},
     {"id":{"name":"scr_backgrounds","path":"scripts/scr_backgrounds/scr_backgrounds.yy",},},
     {"id":{"name":"scr_debug","path":"scripts/scr_debug/scr_debug.yy",},},
     {"id":{"name":"scr_delete_settings","path":"scripts/scr_delete_settings/scr_delete_settings.yy",},},
@@ -223,7 +222,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_res_manager","path":"rooms/rm_res_manager/rm_res_manager.yy",},},
+    {"roomId":{"name":"rm_setup","path":"rooms/rm_setup/rm_setup.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_2headed","path":"rooms/rm_2headed/rm_2headed.yy",},},
