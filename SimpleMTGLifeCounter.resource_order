@@ -60,7 +60,6 @@
     {"name":"obj_button_reset","order":4,"path":"objects/obj_button_reset/obj_button_reset.yy",},
     {"name":"obj_button_settings","order":4,"path":"objects/obj_button_settings/obj_button_settings.yy",},
     {"name":"obj_button_soundfx","order":3,"path":"objects/obj_button_soundfx/obj_button_soundfx.yy",},
-    {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_coin","order":9,"path":"objects/obj_coin/obj_coin.yy",},
     {"name":"obj_d20","order":7,"path":"objects/obj_d20/obj_d20.yy",},
     {"name":"obj_dice","order":8,"path":"objects/obj_dice/obj_dice.yy",},

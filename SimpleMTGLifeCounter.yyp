@@ -84,7 +84,6 @@
     {"id":{"name":"obj_button_reset","path":"objects/obj_button_reset/obj_button_reset.yy",},},
     {"id":{"name":"obj_button_settings","path":"objects/obj_button_settings/obj_button_settings.yy",},},
     {"id":{"name":"obj_button_soundfx","path":"objects/obj_button_soundfx/obj_button_soundfx.yy",},},
-    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_d20","path":"objects/obj_d20/obj_d20.yy",},},
     {"id":{"name":"obj_dice","path":"objects/obj_dice/obj_dice.yy",},},
